@@ -1,0 +1,22 @@
+{
+  "name": "Glossom Property Services",
+  "short_name": "Glossom",
+  "description": "Glossom Property Services is a property management company that provides a range of services to landlords and tenants.",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "start_url": "/",
+  "display_override": ["minimal-ui", "standalone"],
+  "display": "standalone"
+}
