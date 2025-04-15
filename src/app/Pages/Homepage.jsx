@@ -2,6 +2,15 @@ import React from "react";
 import HomeHeader from "../Component/HomeHeader";
 import HomeSlider from "../Component/HomeSlider";
 import HomeAbout from "../Component/HomeAbout";
+import HomeService from "../Component/HomeService";
+import HomeCallForm from "../Component/HomeCallForm";
+import PricingTable from "../Component/PricingTable";
+import ProgressArea from "../Component/ProgressArea";
+import HomeBanner from "../Component/HomeBanner";
+import Testimonial from "../Component/Testimonial";
+import HomeBlog from "../Component/HomeBlog";
+import Footer from "../Component/Footer";
+import Team from "../Component/Team";
 const Homepage = () => {
   return (
     <div>
@@ -13,6 +22,15 @@ const Homepage = () => {
         <HomeHeader />
         <HomeSlider />
         <HomeAbout />
+        <HomeService />
+        <HomeCallForm />
+        <HomeBanner />
+        <PricingTable />
+        <Team />
+        <ProgressArea />
+        <Testimonial />
+        <HomeBlog />
+        <Footer />
       </div>
     </div>
   );
