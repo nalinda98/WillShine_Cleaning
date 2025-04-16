@@ -1,6 +1,9 @@
 import React from "react";
 
-const Banner = () => {
+const Banner = ({
+    title,
+    path
+}) => {
   return (
     <div>
       <section
@@ -11,12 +14,12 @@ const Banner = () => {
           <div className="row">
             <div className="col-12">
               <div className="breadcrumbs-area">
-                <h1>Contact Us</h1>
+                <h1>{title}</h1>
                 <ul>
                   <li>
                     <a href="index.html">Home</a>
                   </li>
-                  <li>Contact</li>
+                  <li>{path}</li>
                 </ul>
               </div>
             </div>

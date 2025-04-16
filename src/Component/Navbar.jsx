@@ -84,14 +84,6 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link href="/about">About</Link>
-                    <ul className="dropdown-menu-col-1">
-                      <li>
-                        <Link href="/about1">About 1</Link>
-                      </li>
-                      <li>
-                        <Link href="/about2">About 2</Link>
-                      </li>
-                    </ul>
                   </li>
                   <li>
                     <Link href="/services">Services</Link>
@@ -114,13 +106,10 @@ const Navbar = () => {
                     <Link href="/blog">Blog</Link>
                     <ul className="dropdown-menu-col-1">
                       <li>
-                        <Link href="/blog1">Blog 1</Link>
+                        <Link href="/blog">Blog</Link>
                       </li>
                       <li>
-                        <Link href="/blog2">Blog 2</Link>
-                      </li>
-                      <li>
-                        <Link href="/single-blog1">Blog Details</Link>
+                        <Link href="/single-blog">Blog Details</Link>
                       </li>
                     </ul>
                   </li>

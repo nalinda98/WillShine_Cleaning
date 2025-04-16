@@ -4,7 +4,7 @@ import Banner from "../../Component/Banner";
 const Contact = () => {
   return (
     <>
-      <Banner />
+      <Banner title={"Contact Us"} path={"Contact"}/>
       <section className="section-padding-12-10">
         <div className="container">
           <div className="row">
