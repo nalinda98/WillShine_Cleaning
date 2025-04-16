@@ -5,7 +5,7 @@ import BlogContent from "../../Component/BlogContent";
 const Blog = () => {
   return (
     <div>
-      <Banner topic={"Our Latest Blog"} path={"Blogs"} />
+      <Banner title={"Our Latest Blog"} path={"Blogs"} />
       <BlogContent />
     </div>
   );

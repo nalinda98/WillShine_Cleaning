@@ -80,7 +80,7 @@ const BlogContent = () => {
                   <div key={index} className="col-md-6 col-12">
                     <div className="blog-box-layout1">
                       <div className="item-img">
-                        <a href={`/blog/single/${index + 1}`}>
+                        <a href={`/blog/${index + 1}`}>
                           <img src={post.img} alt="blog-thumb" />
                         </a>
                       </div>
@@ -89,7 +89,7 @@ const BlogContent = () => {
                           <i className="fas fa-calendar-alt" /> {post.date}
                         </div>
                         <h3 className="item-title">
-                          <a href={`/blog/single/${index + 1}`}>{post.title}</a>
+                          <a href={`/blog/${index + 1}`}>{post.title}</a>
                         </h3>
                         <div className="item-author">By {post.author}</div>
                         <p>
