@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Script from "next/script";
+import Link from "next/link"; // Import Link for client-side navigation
 import "./styles/css/style.css";
 import "./styles/css/main.css";
 import "./styles/css/bootstrap.min.css";
@@ -27,8 +28,11 @@ export default function Home() {
         <link rel="manifest" href="/site.webmanifest.json" />
       </Head>
       <div>
+        <a href="#wrapper" data-type="section-switch" className="scrollup">
+          <i className="fas fa-angle-double-up"></i>
+        </a>
+        <div id="preloader"></div>
         <div id="wrapper" className="wrapper">
-          {/* Add your site or application content here */}
           {/* Header Area Start Here */}
           <header className="header">
             <div id="header-topbar" className="bg-Primary">
@@ -38,21 +42,21 @@ export default function Home() {
                     <div className="header-topbar-layout1">
                       <ul className="header-top-left">
                         <li className="social-icon">
-                          <a href="#">
+                          <Link href="https://facebook.com">
                             <i className="fab fa-facebook-f" />
-                          </a>
-                          <a href="#">
+                          </Link>
+                          <Link href="https://twitter.com">
                             <i className="fab fa-twitter" />
-                          </a>
-                          <a href="#">
+                          </Link>
+                          <Link href="https://plus.google.com">
                             <i className="fab fa-google-plus-g" />
-                          </a>
-                          <a href="#">
+                          </Link>
+                          <Link href="https://pinterest.com">
                             <i className="fab fa-pinterest" />
-                          </a>
-                          <a href="#">
+                          </Link>
+                          <Link href="https://snapchat.com">
                             <i className="fab fa-snapchat-ghost" />
-                          </a>
+                          </Link>
                         </li>
                         <li className="opening-hour">
                           <i className="far fa-clock" />
@@ -64,10 +68,10 @@ export default function Home() {
                   <div className="col-lg-6 d-flex justify-content-end">
                     <div className="header-topbar-layout1">
                       <div className="header-top-right">
-                        <a href="#" className="header-top-btn">
+                        <Link href="/quote" className="header-top-btn">
                           <i className="fas fa-bell" />
                           Get A Quote
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -80,83 +84,83 @@ export default function Home() {
                 <div className="row d-flex align-items-center">
                   <div className="col-xl-2 col-lg-2">
                     <div className="logo-area">
-                      <a href="index.html" className="temp-logo">
+                      <Link href="/" className="temp-logo">
                         <img
                           src="img/logo-dark.png"
                           alt="logo"
                           className="img-fluid"
                         />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="col-lg-7 d-flex justify-content-end position-static">
                     <nav id="dropdown" className="template-main-menu">
                       <ul>
                         <li>
-                          <a href="#">Home</a>
+                          <Link href="/">Home</Link>
                           <ul className="dropdown-menu-col-1">
                             <li>
-                              <a href="index.html">Home Page 1</a>
+                              <Link href="/">Home Page 1</Link>
                             </li>
                             <li>
-                              <a href="index2.html">Home Page 2</a>
+                              <Link href="/home2">Home Page 2</Link>
                             </li>
                             <li>
-                              <a href="index3.html">Home Page 3</a>
+                              <Link href="/home3">Home Page 3</Link>
                             </li>
                             <li>
-                              <a href="index4.html">Home Page 4</a>
+                              <Link href="/home4">Home Page 4</Link>
                             </li>
                           </ul>
                         </li>
                         <li>
-                          <a href="#">About</a>
+                          <Link href="/about">About</Link>
                           <ul className="dropdown-menu-col-1">
                             <li>
-                              <a href="about1.html">About 1</a>
+                              <Link href="/about1">About 1</Link>
                             </li>
                             <li>
-                              <a href="about2.html">About 2</a>
+                              <Link href="/about2">About 2</Link>
                             </li>
                           </ul>
                         </li>
                         <li>
-                          <a href="#">Services</a>
+                          <Link href="/services">Services</Link>
                           <ul className="dropdown-menu-col-1">
                             <li>
-                              <a href="service1.html">Services 1</a>
+                              <Link href="/service1">Services 1</Link>
                             </li>
                             <li>
-                              <a href="service2.html">Services 2</a>
+                              <Link href="/service2">Services 2</Link>
                             </li>
                             <li>
-                              <a href="single-service1.html">
+                              <Link href="/single-service1">
                                 Single Services 1
-                              </a>
+                              </Link>
                             </li>
                             <li>
-                              <a href="single-service2.html">
+                              <Link href="/single-service2">
                                 Single Services 2
-                              </a>
+                              </Link>
                             </li>
                           </ul>
                         </li>
                         <li>
-                          <a href="#">Blog</a>
+                          <Link href="/blog">Blog</Link>
                           <ul className="dropdown-menu-col-1">
                             <li>
-                              <a href="blog1.html">Blog 1</a>
+                              <Link href="/blog1">Blog 1</Link>
                             </li>
                             <li>
-                              <a href="blog2.html">Blog 2</a>
+                              <Link href="/blog2">Blog 2</Link>
                             </li>
                             <li>
-                              <a href="single-blog1.html">Blog Details</a>
+                              <Link href="/single-blog1">Blog Details</Link>
                             </li>
                           </ul>
                         </li>
                         <li className="position-static hide-on-mobile-menu">
-                          <a href="#">Pages</a>
+                          <Link href="/pages">Pages</Link>
                           <div className="template-mega-menu">
                             <div className="container">
                               <div className="row">
@@ -164,22 +168,22 @@ export default function Home() {
                                   <div className="menu-ctg-title">Pages</div>
                                   <ul className="sub-menu">
                                     <li>
-                                      <a href="project1.html">
+                                      <Link href="/project1">
                                         <i className="fas fa-handshake" />
                                         Project
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="single-project1.html">
+                                      <Link href="/single-project1">
                                         <i className="fas fa-handshake" />
                                         Project Details
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="pricing-table.html">
+                                      <Link href="/pricing-table">
                                         <i className="far fa-money-bill-alt" />
                                         Pricing Table
-                                      </a>
+                                      </Link>
                                     </li>
                                   </ul>
                                 </div>
@@ -187,22 +191,22 @@ export default function Home() {
                                   <div className="menu-ctg-title">Pages</div>
                                   <ul className="sub-menu">
                                     <li>
-                                      <a href="team1.html">
+                                      <Link href="/team1">
                                         <i className="fas fa-user-tie" />
                                         Team 1
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="team2.html">
+                                      <Link href="/team2">
                                         <i className="fas fa-user-tie" />
                                         Team 2
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="single-team.html">
+                                      <Link href="/single-team">
                                         <i className="fas fa-user-tie" />
                                         Single Team
-                                      </a>
+                                      </Link>
                                     </li>
                                   </ul>
                                 </div>
@@ -210,22 +214,22 @@ export default function Home() {
                                   <div className="menu-ctg-title">Pages</div>
                                   <ul className="sub-menu">
                                     <li>
-                                      <a href="shop.html">
+                                      <Link href="/shop">
                                         <i className="fas fa-cart-plus" />
                                         Shop
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="single-product.html">
+                                      <Link href="/single-product">
                                         <i className="fas fa-cart-plus" />
                                         Product Details
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="calculate-form.html">
+                                      <Link href="/calculate-form">
                                         <i className="fas fa-calculator" />
                                         Calculation Form
-                                      </a>
+                                      </Link>
                                     </li>
                                   </ul>
                                 </div>
@@ -233,22 +237,22 @@ export default function Home() {
                                   <div className="menu-ctg-title">Pages</div>
                                   <ul className="sub-menu">
                                     <li>
-                                      <a href="faq.html">
+                                      <Link href="/faq">
                                         <i className="fas fa-chalkboard-teacher" />
                                         Faq Page
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="404.html">
+                                      <Link href="/404">
                                         <i className="fas fa-exclamation-triangle" />
                                         404 Error
-                                      </a>
+                                      </Link>
                                     </li>
                                     <li>
-                                      <a href="coming-soon.html">
+                                      <Link href="/coming-soon">
                                         <i className="fas fa-spinner" />
                                         Coming Soon
-                                      </a>
+                                      </Link>
                                     </li>
                                   </ul>
                                 </div>
@@ -257,27 +261,27 @@ export default function Home() {
                           </div>
                         </li>
                         <li className="hide-on-desktop-menu">
-                          <a href="#">Pages</a>
+                          <Link href="/pages">Pages</Link>
                           <ul>
                             <li>
-                              <a href="about1.html">About</a>
+                              <Link href="/about1">About</Link>
                             </li>
                             <li>
-                              <a href="service1.html">Services</a>
+                              <Link href="/service1">Services</Link>
                             </li>
                             <li>
-                              <a href="project1.html">Project</a>
+                              <Link href="/project1">Project</Link>
                             </li>
                             <li>
-                              <a href="404.html">404 Error</a>
+                              <Link href="/404">404 Error</Link>
                             </li>
                             <li>
-                              <a href="contact.html">Contact</a>
+                              <Link href="/contact">Contact</Link>
                             </li>
                           </ul>
                         </li>
                         <li>
-                          <a href="contact.html">Contact</a>
+                          <Link href="/contact">Contact</Link>
                         </li>
                       </ul>
                     </nav>
@@ -337,10 +341,10 @@ export default function Home() {
                         can.
                       </div>
                       <div className="slider-btn-area">
-                        <a href="#" className="item-btn-fill">
+                        <Link href="/services" className="item-btn-fill">
                           Take Our Service
                           <i className="fas fa-angle-right" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -361,10 +365,10 @@ export default function Home() {
                         can.
                       </div>
                       <div className="slider-btn-area">
-                        <a href="#" className="item-btn-fill">
+                        <Link href="/services" className="item-btn-fill">
                           Take Our Service
                           <i className="fas fa-angle-right" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -385,10 +389,10 @@ export default function Home() {
                         can.
                       </div>
                       <div className="slider-btn-area">
-                        <a href="#" className="item-btn-fill">
+                        <Link href="/services" className="item-btn-fill">
                           Take Our Service
                           <i className="fas fa-angle-right" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -437,17 +441,17 @@ export default function Home() {
                         <li>Experienced Team</li>
                         <li>Keep the same cleaner for every visit</li>
                         <li>One-off, weekly or fortnightly visits</li>
-                        <li>Book, manage &amp; pay online</li>
+                        <li>Book, manage & pay online</li>
                       </ul>
                     </div>
                     <div className="action-area">
-                      <a
-                        href="#"
+                      <Link
+                        href="/services"
                         className="btn-fill-sm bg-accent text-primarytext btn-slide-hover"
                       >
                         Book a Service
                         <i className="fas fa-angle-right" />
-                      </a>
+                      </Link>
                       <div className="phone-number">
                         <i className="flaticon-phone-call" />+ 985 8844 000
                       </div>
@@ -486,7 +490,7 @@ export default function Home() {
                     </div>
                     <div className="item-content">
                       <h3 className="item-title">
-                        <a href="single-service1.html">Residential</a>
+                        <Link href="/single-service1">Residential</Link>
                       </h3>
                       <div className="serivce-list">
                         <ul>
@@ -515,7 +519,7 @@ export default function Home() {
                     </div>
                     <div className="item-content">
                       <h3 className="item-title">
-                        <a href="single-service1.html">Commercial</a>
+                        <Link href="/single-service1">Commercial</Link>
                       </h3>
                       <div className="serivce-list">
                         <ul>
@@ -544,7 +548,7 @@ export default function Home() {
                     </div>
                     <div className="item-content">
                       <h3 className="item-title">
-                        <a href="single-service1.html">Vehicle Wash</a>
+                        <Link href="/single-service1">Vehicle Wash</Link>
                       </h3>
                       <div className="serivce-list">
                         <ul>
@@ -579,13 +583,13 @@ export default function Home() {
                     <div className="item-img bottom-bubble">
                       <img src="img/figure/figure4.png" alt="img" />
                     </div>
-                    <a
-                      href="#"
+                    <Link
+                      href="/estimate"
                       className="btn-fill-md hover-textprimary bg-accent text-primarytext"
                     >
                       Get an Estimate
                       <i className="fas fa-angle-right" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -632,7 +636,7 @@ export default function Home() {
                           </p>
                         </li>
                         <li>
-                          <h3>Regular &amp; Monthly Cleaning</h3>
+                          <h3>Regular & Monthly Cleaning</h3>
                           <p>
                             Aorem ipsum dolor sit amet consectetur adipisicing
                             elit sed do eiusmod tempor incididunt ut labore et
@@ -646,7 +650,7 @@ export default function Home() {
                 <div className="col-xl-5 col-lg-6 col-12">
                   <div className="about-box-layout2">
                     <h3 className="item-title">Request An Estimate</h3>
-                    <form className="contact-form-box" id="contact-form">
+                    <div className="contact-form-box" id="contact-form">
                       <div className="row gutters-10">
                         <div className="col-12 form-group">
                           <select className="select2">
@@ -795,7 +799,7 @@ export default function Home() {
                         </div>
                       </div>
                       <div className="form-response" />
-                    </form>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -814,13 +818,13 @@ export default function Home() {
                     <h2 className="item-title">
                       Together <span>We'll Explore</span> New Things
                     </h2>
-                    <a
-                      href="#"
+                    <Link
+                      href="/about"
                       className="btn-fill-md btn-slide-hover bg-accent text-primarytext"
                     >
                       Read More
                       <i className="fas fa-angle-right" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -872,12 +876,12 @@ export default function Home() {
                       <div className="item-currency">$49</div>
                       <div className="item-duration">/per mo</div>
                     </div>
-                    <a
-                      href="#"
+                    <Link
+                      href="/pricing-table"
                       className="btn-fill-xl bg-accent text-primarytext"
                     >
                       Get It Now
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-lg-4">
@@ -915,12 +919,12 @@ export default function Home() {
                       <div className="item-currency">$99</div>
                       <div className="item-duration">/per mo</div>
                     </div>
-                    <a
-                      href="#"
+                    <Link
+                      href="/pricing-table"
                       className="btn-fill-xl bg-accent text-primarytext"
                     >
                       Get It Now
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-lg-4">
@@ -957,12 +961,12 @@ export default function Home() {
                       <div className="item-currency">$199</div>
                       <div className="item-duration">/per mo</div>
                     </div>
-                    <a
-                      href="#"
+                    <Link
+                      href="/pricing-table"
                       className="btn-fill-xl bg-accent text-primarytext"
                     >
                       Get It Now
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -987,30 +991,30 @@ export default function Home() {
                     </div>
                     <div className="item-content">
                       <h3 className="item-title">
-                        <a href="single-team.html">Richard Powel</a>
+                        <Link href="/single-team">Richard Powel</Link>
                       </h3>
                       <div className="item-subtitle">Office Cleaner</div>
                       <div className="item-social">
                         <ul>
                           <li>
-                            <a href="#">
+                            <Link href="https://facebook.com">
                               <i className="fab fa-facebook-f" />
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
+                            <Link href="https://twitter.com">
                               <i className="fab fa-twitter" />
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
+                            <Link href="https://linkedin.com">
                               <i className="fab fa-linkedin-in" />
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
+                            <Link href="https://pinterest.com">
                               <i className="fab fa-pinterest" />
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -1024,30 +1028,30 @@ export default function Home() {
                     </div>
                     <div className="item-content">
                       <h3 className="item-title">
-                        <a href="single-team.html">Merry Patel</a>
+                        <Link href="/single-team">Merry Patel</Link>
                       </h3>
                       <div className="item-subtitle">Kitchen Cleaner</div>
                       <div className="item-social">
                         <ul>
                           <li>
-                            <a href="#">
+                            <Link href="https://facebook.com">
                               <i className="fab fa-facebook-f" />
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
+                            <Link href="https://twitter.com">
                               <i className="fab fa-twitter" />
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
+                            <Link href="https://linkedin.com">
                               <i className="fab fa-linkedin-in" />
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
+                            <Link href="https://pinterest.com">
                               <i className="fab fa-pinterest" />
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -1061,30 +1065,30 @@ export default function Home() {
                     </div>
                     <div className="item-content">
                       <h3 className="item-title">
-                        <a href="single-team.html">Johnson Jack</a>
+                        <Link href="/single-team">Johnson Jack</Link>
                       </h3>
                       <div className="item-subtitle">Floor Cleaner</div>
                       <div className="item-social">
                         <ul>
                           <li>
-                            <a href="#">
+                            <Link href="https://facebook.com">
                               <i className="fab fa-facebook-f" />
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
+                            <Link href="https://twitter.com">
                               <i className="fab fa-twitter" />
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
+                            <Link href="https://linkedin.com">
                               <i className="fab fa-linkedin-in" />
-                            </a>
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">
+                            <Link href="https://pinterest.com">
                               <i className="fab fa-pinterest" />
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -1289,9 +1293,9 @@ export default function Home() {
                 <div className="col-lg-4 col-md-6 col-12">
                   <div className="blog-box-layout1">
                     <div className="item-img">
-                      <a href="single-blog1.html">
+                      <Link href="/single-blog1">
                         <img src="img/blog/blog7.jpg" alt="blog-thumb" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="item-content">
                       <div className="item-date">
@@ -1299,9 +1303,9 @@ export default function Home() {
                         24 July, 2019
                       </div>
                       <h3 className="item-title">
-                        <a href="single-blog1.html">
+                        <Link href="/single-blog1">
                           What is Best domin Name For Business
-                        </a>
+                        </Link>
                       </h3>
                       <div className="item-author">By Mark Wily</div>
                       <p>
@@ -1316,7 +1320,7 @@ export default function Home() {
                           </li>
                           <li>
                             <i className="fas fa-comment" />
-                            <span>02</span> <a href="#">Comments</a>
+                            <span>02</span> <Link href="#">Comments</Link>
                           </li>
                         </ul>
                       </div>
@@ -1326,9 +1330,9 @@ export default function Home() {
                 <div className="col-lg-4 col-md-6 col-12">
                   <div className="blog-box-layout1">
                     <div className="item-img">
-                      <a href="single-blog1.html">
+                      <Link href="/single-blog1">
                         <img src="img/blog/blog2.jpg" alt="blog-thumb" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="item-content">
                       <div className="item-date">
@@ -1336,9 +1340,9 @@ export default function Home() {
                         24 July, 2019
                       </div>
                       <h3 className="item-title">
-                        <a href="single-blog1.html">
+                        <Link href="/single-blog1">
                           What is Best domin Name For Business
-                        </a>
+                        </Link>
                       </h3>
                       <div className="item-author">By Mark Wily</div>
                       <p>
@@ -1353,7 +1357,7 @@ export default function Home() {
                           </li>
                           <li>
                             <i className="fas fa-comment" />
-                            <span>02</span> <a href="#">Comments</a>
+                            <span>02</span> <Link href="#">Comments</Link>
                           </li>
                         </ul>
                       </div>
@@ -1363,9 +1367,9 @@ export default function Home() {
                 <div className="col-lg-4 d-block d-md-none d-lg-block col-12">
                   <div className="blog-box-layout1">
                     <div className="item-img">
-                      <a href="single-blog1.html">
+                      <Link href="/single-blog1">
                         <img src="img/blog/blog3.jpg" alt="blog-thumb" />
-                      </a>
+                      </Link>
                     </div>
                     <div className="item-content">
                       <div className="item-date">
@@ -1373,9 +1377,9 @@ export default function Home() {
                         24 July, 2019
                       </div>
                       <h3 className="item-title">
-                        <a href="single-blog1.html">
+                        <Link href="/single-blog1">
                           What is Best domin Name For Business
-                        </a>
+                        </Link>
                       </h3>
                       <div className="item-author">By Mark Wily</div>
                       <p>
@@ -1390,7 +1394,7 @@ export default function Home() {
                           </li>
                           <li>
                             <i className="fas fa-comment" />
-                            <span>02</span> <a href="#">Comments</a>
+                            <span>02</span> <Link href="#">Comments</Link>
                           </li>
                         </ul>
                       </div>
@@ -1414,19 +1418,19 @@ export default function Home() {
                       <div className="footer-menu-box">
                         <ul className="footer-menu-list">
                           <li>
-                            <a href="#">Residential Services</a>
+                            <Link href="/services">Residential Services</Link>
                           </li>
                           <li>
-                            <a href="#">Commercial Services</a>
+                            <Link href="/services">Commercial Services</Link>
                           </li>
                           <li>
-                            <a href="#">Vechile Wash</a>
+                            <Link href="/services">Vechile Wash</Link>
                           </li>
                           <li>
-                            <a href="#">Londry Facilities</a>
+                            <Link href="/services">Londry Facilities</Link>
                           </li>
                           <li>
-                            <a href="#">Carpet Removal</a>
+                            <Link href="/services">Carpet Removal</Link>
                           </li>
                         </ul>
                       </div>
@@ -1440,19 +1444,19 @@ export default function Home() {
                       <div className="footer-menu-box">
                         <ul className="footer-menu-list">
                           <li>
-                            <a href="about1.html">About Us</a>
+                            <Link href="/about1">About Us</Link>
                           </li>
                           <li>
-                            <a href="#">Testimonials</a>
+                            <Link href="/testimonials">Testimonials</Link>
                           </li>
                           <li>
-                            <a href="#">Terms</a>
+                            <Link href="/terms">Terms</Link>
                           </li>
                           <li>
-                            <a href="#">Media Kit</a>
+                            <Link href="/media-kit">Media Kit</Link>
                           </li>
                           <li>
-                            <a href="#">Sitemap</a>
+                            <Link href="/sitemap">Sitemap</Link>
                           </li>
                         </ul>
                       </div>
@@ -1466,16 +1470,18 @@ export default function Home() {
                       <div className="footer-menu-box">
                         <ul className="footer-menu-list">
                           <li>
-                            <a href="#">Features</a>
+                            <Link href="/features">Features</Link>
                           </li>
                           <li>
-                            <a href="#">Pricing</a>
+                            <Link href="/pricing">Pricing</Link>
                           </li>
                           <li>
-                            <a href="#">Partners</a>
+                            <Link href="/partners">Partners</Link>
                           </li>
                           <li>
-                            <a href="#">Cloud Affiliate Program</a>
+                            <Link href="/affiliate-program">
+                              Cloud Affiliate Program
+                            </Link>
                           </li>
                         </ul>
                       </div>
@@ -1489,16 +1495,20 @@ export default function Home() {
                       <div className="footer-menu-box">
                         <ul className="footer-menu-list">
                           <li>
-                            <a href="#">Become An Affiliate</a>
+                            <Link href="/become-affiliate">
+                              Become An Affiliate
+                            </Link>
                           </li>
                           <li>
-                            <a href="#">Affiliate Portal</a>
+                            <Link href="/affiliate-portal">
+                              Affiliate Portal
+                            </Link>
                           </li>
                         </ul>
-                        <a href="contact.html" className="contact-btn">
+                        <Link href="/contact" className="contact-btn">
                           <i className="far fa-envelope" />
                           HAVE ANY QUESTION
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -1528,34 +1538,34 @@ export default function Home() {
                       <h4 className="item-title">Follow Us On :</h4>
                       <ul className="social-icon">
                         <li>
-                          <a href="#">
+                          <Link href="https://facebook.com">
                             <i className="fab fa-facebook-f" />
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="#">
+                          <Link href="https://twitter.com">
                             <i className="fab fa-twitter" />
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="#">
+                          <Link href="https://linkedin.com">
                             <i className="fab fa-linkedin-in" />
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="#">
+                          <Link href="https://plus.google.com">
                             <i className="fab fa-google-plus-g" />
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="#">
+                          <Link href="https://pinterest.com">
                             <i className="fab fa-pinterest" />
-                          </a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="#">
+                          <Link href="https://vimeo.com">
                             <i className="fab fa-vimeo-v" />
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -1573,13 +1583,13 @@ export default function Home() {
                     <div className="footer-bottom-menu">
                       <ul>
                         <li>
-                          <a href="#">Sitemap</a>
+                          <Link href="/sitemap">Sitemap</Link>
                         </li>
                         <li>
-                          <a href="#">Terms of Service</a>
+                          <Link href="/terms">Terms of Service</Link>
                         </li>
                         <li>
-                          <a href="#">Privacy Policy</a>
+                          <Link href="/privacy">Privacy Policy</Link>
                         </li>
                       </ul>
                     </div>
