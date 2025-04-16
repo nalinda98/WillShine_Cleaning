@@ -67,20 +67,6 @@ const Navbar = () => {
                 <ul>
                   <li>
                     <Link href="/">Home</Link>
-                    <ul className="dropdown-menu-col-1">
-                      <li>
-                        <Link href="/">Home Page 1</Link>
-                      </li>
-                      <li>
-                        <Link href="/home2">Home Page 2</Link>
-                      </li>
-                      <li>
-                        <Link href="/home3">Home Page 3</Link>
-                      </li>
-                      <li>
-                        <Link href="/home4">Home Page 4</Link>
-                      </li>
-                    </ul>
                   </li>
                   <li>
                     <Link href="/about">About</Link>
@@ -89,16 +75,10 @@ const Navbar = () => {
                     <Link href="/services">Services</Link>
                     <ul className="dropdown-menu-col-1">
                       <li>
-                        <Link href="/service1">Services 1</Link>
+                        <Link href="/service">Service</Link>
                       </li>
                       <li>
-                        <Link href="/service2">Services 2</Link>
-                      </li>
-                      <li>
-                        <Link href="/single-service1">Single Services 1</Link>
-                      </li>
-                      <li>
-                        <Link href="/single-service2">Single Services 2</Link>
+                        <Link href="/single-service">Single Services</Link>
                       </li>
                     </ul>
                   </li>
