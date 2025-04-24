@@ -51,6 +51,14 @@
       "static/chunks/151-20830b1f8d42e9f2.js",
       "static/chunks/app/contact/page-8b24fd207a324947.js"
     ],
+    "/page": [
+      "static/chunks/webpack-fdc7a53d1bc67fb6.js",
+      "static/chunks/4bd1b696-363a7950ee86d0c8.js",
+      "static/chunks/684-d8ca8156e243359f.js",
+      "static/chunks/main-app-f65d46ba3034b760.js",
+      "static/chunks/992-697c8d1d52ba8bbb.js",
+      "static/chunks/app/page-e1d169d862b77c8a.js"
+    ],
     "/service/carpet-cleaning/page": [
       "static/chunks/webpack-fdc7a53d1bc67fb6.js",
       "static/chunks/4bd1b696-363a7950ee86d0c8.js",
@@ -71,14 +79,6 @@
       "static/chunks/684-d8ca8156e243359f.js",
       "static/chunks/main-app-f65d46ba3034b760.js",
       "static/chunks/app/service/page-0688c2fcb426c265.js"
-    ],
-    "/page": [
-      "static/chunks/webpack-fdc7a53d1bc67fb6.js",
-      "static/chunks/4bd1b696-363a7950ee86d0c8.js",
-      "static/chunks/684-d8ca8156e243359f.js",
-      "static/chunks/main-app-f65d46ba3034b760.js",
-      "static/chunks/992-697c8d1d52ba8bbb.js",
-      "static/chunks/app/page-e1d169d862b77c8a.js"
     ],
     "/service/pressure-washing/page": [
       "static/chunks/webpack-fdc7a53d1bc67fb6.js",
