@@ -1,27 +1,39 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
+  const placeholderRef = useRef(null);
+  const menuRef = useRef(null);
+  const topbarRef = useRef(null);
+  const middlebarRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      const offset = window.scrollY;
-      setIsSticky(offset > 100); // You can adjust this threshold
+      if (!menuRef.current || !placeholderRef.current) return;
+
+      const topbarHeight = topbarRef.current?.offsetHeight || 0;
+      const middlebarHeight = middlebarRef.current?.offsetHeight || 0;
+      const targetScroll = topbarHeight + middlebarHeight;
+      const scrollY = window.scrollY;
+
+      if (scrollY > targetScroll) {
+        if (!isSticky) setIsSticky(true);
+        placeholderRef.current.style.height = `${menuRef.current.offsetHeight}px`;
+      } else {
+        if (isSticky) setIsSticky(false);
+        placeholderRef.current.style.height = "0px";
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  useEffect(()=>{
-    console.log(isSticky)
-  },[isSticky])
+  }, [isSticky]);
   return (
     <header className="header">
-      <div id="header-topbar" className="bg-assh-2 pd-y-10">
+      <div id="header-topbar" ref={topbarRef}  className="bg-assh-2 pd-y-10">
         <div className="container">
           <div className="row d-flex align-items-center">
             <div className="col-lg-6">
@@ -52,7 +64,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div id="header-middlebar" className="header-middlebar-layout1">
+      <div id="header-middlebar"  ref={middlebarRef} className="header-middlebar-layout1">
         <div className="container">
           <div className="row d-flex align-items-center">
             <div className="col-lg-3">
@@ -107,8 +119,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div id="rt-sticky-placeholder" />
-      <div id="header-menu" className="header-menu menu-layout3">
+      <div id="rt-sticky-placeholder" ref={placeholderRef}/>
+      <div id="header-menu" ref={menuRef} className={`header-menu menu-layout3 ${isSticky ? "rt-sticky" : ""}`}>
         <div className="container">
           <div className="bg-Primary border-radius-4 pl-4">
             <div className="row d-flex align-items-center">
@@ -157,7 +169,7 @@ const Navbar = () => {
                   </ul>
                 </nav>
               </div>
-              <div className="col-lg-3 d-flex justify-content-end">
+              <div className="col-lg-3 d-flex justify-content-end align-items-center">
                 <div className="header-action-layout1">
                   <ul>
                     <li className="header-action-btn">
