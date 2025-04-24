@@ -1,0 +1,15 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
+  "/blog/[id]/page": "app/blog/[id]/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/service/carpet-cleaning/page": "app/service/carpet-cleaning/page.js",
+  "/service/office-cleaning/page": "app/service/office-cleaning/page.js",
+  "/service/page": "app/service/page.js",
+  "/page": "app/page.js",
+  "/service/pressure-washing/page": "app/service/pressure-washing/page.js",
+  "/service/stripping-and-sealing/page": "app/service/stripping-and-sealing/page.js",
+  "/single-blog/page": "app/single-blog/page.js",
+  "/single-service/page": "app/single-service/page.js"
+}
