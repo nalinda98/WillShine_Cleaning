@@ -267,7 +267,7 @@ const SingleBlog = () => {
                     </div>
                   </div>
                 </div>
-                <div className="blog-form">
+                {/* <div className="blog-form">
                   <div className="heading-layout4">
                     <h3>Leave a Reply</h3>
                   </div>
@@ -331,7 +331,7 @@ const SingleBlog = () => {
                     </div>
                     <div className="form-response" />
                   </form>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-lg-4 sidebar-break-md sidebar-widget-area">
@@ -434,7 +434,7 @@ const SingleBlog = () => {
                   </li>
                 </ul>
               </div>
-              <div className="widget widget-newsletter">
+              {/* <div className="widget widget-newsletter">
                 <div className="item-img">
                   <img src="img/figure/widget.png" alt="mail" />
                 </div>
@@ -463,7 +463,7 @@ const SingleBlog = () => {
                     <div className="form-response" />
                   </form>
                 </div>
-              </div>
+              </div> */}
               <div className="widget widget-archive">
                 <div className="heading-layout4">
                   <h4>Archives</h4>

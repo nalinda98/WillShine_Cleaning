@@ -103,7 +103,7 @@ const BlogSidebar = () => {
             </li>
           </ul>
         </div>
-        <div className="widget widget-newsletter">
+        {/* <div className="widget widget-newsletter">
           <div className="item-img">
             <img src="img/figure/widget.png" alt="mail" />
           </div>
@@ -132,7 +132,7 @@ const BlogSidebar = () => {
               <div className="form-response" />
             </form>
           </div>
-        </div>
+        </div> */}
         <div className="widget widget-archive">
           <div className="heading-layout4">
             <h4>Archives</h4>
