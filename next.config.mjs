@@ -8,7 +8,6 @@ const nextConfig = {
   },
   assetPrefix: isProd ? "/Blossom_Property/" : "",
   basePath: isProd ? "/Blossom_Property" : "",
-  output: "export",
   distDir: "dist",
   // Ensure trailing slash is disabled for consistency with static exports
   trailingSlash: false,

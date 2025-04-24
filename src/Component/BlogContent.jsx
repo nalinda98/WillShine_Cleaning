@@ -3,7 +3,7 @@ import BlogSidebar from "./BlogSidebar";
 
 const blogPosts = [
   {
-    img: "img/blog/blog3.jpg",
+    img: "/img/blog/blog3.jpg",
     date: "24 July, 2019",
     title: "What is Best domin Name For Business",
     author: "Mark Wily",
@@ -11,7 +11,7 @@ const blogPosts = [
     comments: 2,
   },
   {
-    img: "img/blog/blog4.jpg",
+    img: "/img/blog/blog4.jpg",
     date: "24 July, 2019",
     title: "What is Best domin Name For Business",
     author: "Mark Wily",
@@ -19,7 +19,7 @@ const blogPosts = [
     comments: 2,
   },
   {
-    img: "img/blog/blog5.jpg",
+    img: "/img/blog/blog5.jpg",
     date: "24 July, 2019",
     title: "What is Best domin Name For Business",
     author: "Mark Wily",
@@ -27,7 +27,7 @@ const blogPosts = [
     comments: 2,
   },
   {
-    img: "img/blog/blog6.jpg",
+    img: "/img/blog/blog6.jpg",
     date: "24 July, 2019",
     title: "What is Best domin Name For Business",
     author: "Mark Wily",
@@ -35,7 +35,7 @@ const blogPosts = [
     comments: 2,
   },
   {
-    img: "img/blog/blog7.jpg",
+    img: "/img/blog/blog7.jpg",
     date: "24 July, 2019",
     title: "What is Best domin Name For Business",
     author: "Mark Wily",
@@ -43,7 +43,7 @@ const blogPosts = [
     comments: 2,
   },
   {
-    img: "img/blog/blog8.jpg",
+    img: "/img/blog/blog8.jpg",
     date: "24 July, 2019",
     title: "What is Best domin Name For Business",
     author: "Mark Wily",
@@ -51,7 +51,7 @@ const blogPosts = [
     comments: 2,
   },
   {
-    img: "img/blog/blog1.jpg",
+    img: "/img/blog/blog1.jpg",
     date: "24 July, 2019",
     title: "What is Best domin Name For Business",
     author: "Mark Wily",
@@ -59,7 +59,7 @@ const blogPosts = [
     comments: 2,
   },
   {
-    img: "img/blog/blog2.jpg",
+    img: "/img/blog/blog2.jpg",
     date: "24 July, 2019",
     title: "What is Best domin Name For Business",
     author: "Mark Wily",
@@ -96,24 +96,7 @@ const BlogContent = () => {
                           Aimply dummy text of the printing anden type setting
                           industrym Ipsum has been the industry's standard.
                         </p>
-                        <div className="entry-meta">
-                          <ul>
-                            <li>
-                              <i className="fas fa-heart" />
-                              <span>
-                                {post.likes.toString().padStart(2, "0")}
-                              </span>{" "}
-                              Likes
-                            </li>
-                            <li>
-                              <i className="fas fa-comment" />
-                              <span>
-                                {post.comments.toString().padStart(2, "0")}
-                              </span>{" "}
-                              <a href="#">Comments</a>
-                            </li>
-                          </ul>
-                        </div>
+                        
                       </div>
                     </div>
                   </div>
@@ -147,7 +130,6 @@ const BlogContent = () => {
               </div>
             </div>
 
-            {/* Sidebar */}
             <div className="col-lg-4 sidebar-break-md sidebar-widget-area">
               <BlogSidebar />
             </div>
