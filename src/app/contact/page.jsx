@@ -36,7 +36,7 @@ const Contact = () => {
                     <div className="media-body space-md">
                       <h4>E-mail:</h4>
                       <ul>
-                        <li>blossompropertyservices@gmail.com</li>
+                        <li>info@blossom.com</li>
                       </ul>
                     </div>
                   </div>
