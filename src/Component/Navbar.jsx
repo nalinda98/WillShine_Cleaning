@@ -42,11 +42,14 @@ const Navbar = () => {
             <div className="col-lg-3">
               <div className="logo-area">
                 <a href="index.html" className="temp-logo">
-                  <Image
-                    src="/img/logo-dark2.png"
-                    alt="logo"
-                    className="img-fluid"
-                  />
+                  <div>
+                    <Image
+                      fill={true}
+                      src="/img/logo-dark2.png"
+                      alt="logo"
+                      className="img-fluid"
+                    />
+                  </div>
                 </a>
               </div>
             </div>
@@ -108,10 +111,18 @@ const Navbar = () => {
                       <Link href="/service">Services</Link>
                       <ul className="dropdown-menu-col-1">
                         <li>
-                          <Link href="/service/office-cleaning">Office Cleaning</Link>
-                          <Link href="/service/stripping-and-sealing">Stripping & Sealing</Link>
-                          <Link href="/service/carpet-cleaning">Carpet Cleaning</Link>
-                          <Link href="/service/pressure-washing">Pressure Washing</Link>
+                          <Link href="/service/office-cleaning">
+                            Office Cleaning
+                          </Link>
+                          <Link href="/service/stripping-and-sealing">
+                            Stripping & Sealing
+                          </Link>
+                          <Link href="/service/carpet-cleaning">
+                            Carpet Cleaning
+                          </Link>
+                          <Link href="/service/pressure-washing">
+                            Pressure Washing
+                          </Link>
                         </li>
                       </ul>
                     </li>

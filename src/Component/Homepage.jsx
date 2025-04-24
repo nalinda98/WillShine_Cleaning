@@ -77,7 +77,7 @@ const Homepage = () => {
         </section> */}
         {/* About Us Area End Here */}
         <HomeService />
-        <CertificateSection/>
+        <CertificateSection />
 
         {/* Call To Action Area Start Here */}
         {/* <section className="action-wrap-layout1">
@@ -109,7 +109,7 @@ const Homepage = () => {
         </section> */}
         {/* Call To Action Area End Here */}
         {/* About Us Area Start Here */}
-        <Estimate/>
+        <Estimate />
         {/* About Us Area End Here */}
         {/* Banner Area Start Here */}
         {/* <section
@@ -595,7 +595,13 @@ const Homepage = () => {
                 <div className="blog-box-layout1 bg-assh">
                   <div className="item-img">
                     <a href="single-blog1.html">
-                      <Image src="/img/blog/blog5.jpg" alt="blog-thumb" />
+                      <div>
+                        <Image
+                          fill={true}
+                          src="/img/blog/blog5.jpg"
+                          alt="blog-thumb"
+                        />
+                      </div>
                     </a>
                   </div>
                   <div className="item-content">
