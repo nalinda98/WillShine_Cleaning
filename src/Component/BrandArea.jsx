@@ -5,6 +5,12 @@ const BrandArea = () => {
     <div>
       <section className="brand-wrap-layout1">
         <div className="container">
+          <div className="heading-layout1 text-center mb-5">
+            <h2>Certifications & Partners You Can Trust</h2>
+            <p>
+              We’re proud to be certified, insured, and trusted by industry-leading organizations, ensuring safety, quality, and professionalism in every service.
+            </p>
+          </div>
           <div
             className="rc-carousel nav-control-layout1"
             data-loop="true"

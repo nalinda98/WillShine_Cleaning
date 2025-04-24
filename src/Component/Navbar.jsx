@@ -1,8 +1,24 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      setIsSticky(offset > 100); // You can adjust this threshold
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(()=>{
+    console.log(isSticky)
+  },[isSticky])
   return (
     <header className="header">
       <div id="header-topbar" className="bg-assh-2 pd-y-10">
@@ -42,14 +58,12 @@ const Navbar = () => {
             <div className="col-lg-3">
               <div className="logo-area">
                 <a href="index.html" className="temp-logo">
-                  <div>
-                    <Image
-                      fill={true}
-                      src="/img/logo-dark2.png"
-                      alt="logo"
-                      className="img-fluid"
-                    />
-                  </div>
+                  <img
+                    // fill={true}
+                    src="/img/logo-dark2.png"
+                    alt="logo"
+                    className="img-fluid"
+                  />
                 </a>
               </div>
             </div>
@@ -102,32 +116,31 @@ const Navbar = () => {
                 <nav id="dropdown" className="template-main-menu">
                   <ul>
                     <li>
-                      <Link href="/">Home</Link>
+                      <a href="/">Home</a>
                     </li>
                     <li>
-                      <Link href="/about">About</Link>
+                      <a href="/about">About</a>
                     </li>
                     <li>
-                      <Link href="/service">Services</Link>
+                      <a href="/service/office-cleaning">Office Cleaning</a>
+                    </li>
+                    <li>
+                      <a href="/service">Services</a>
                       <ul className="dropdown-menu-col-1">
                         <li>
-                          <Link href="/service/office-cleaning">
-                            Office Cleaning
-                          </Link>
-                          <Link href="/service/stripping-and-sealing">
+                          <a href="/service/office-cleaning">Office Cleaning</a>
+                          <a href="/service/stripping-and-sealing">
                             Stripping & Sealing
-                          </Link>
-                          <Link href="/service/carpet-cleaning">
-                            Carpet Cleaning
-                          </Link>
-                          <Link href="/service/pressure-washing">
+                          </a>
+                          <a href="/service/carpet-cleaning">Carpet Cleaning</a>
+                          <a href="/service/pressure-washing">
                             Pressure Washing
-                          </Link>
+                          </a>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <Link href="/blog">Blogs</Link>
+                      <a href="/blog">Blogs</a>
                       {/* <ul className="dropdown-menu-col-1">
                         <li>
                           <a href="blog1.html">Blog 1</a>
@@ -148,10 +161,10 @@ const Navbar = () => {
                 <div className="header-action-layout1">
                   <ul>
                     <li className="header-action-btn">
-                      <Link href="#" className="item-btn">
+                      <a href="#" className="item-btn">
                         <i className="fas fa-bell" />
                         Get A Quote
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>

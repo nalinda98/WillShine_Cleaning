@@ -11,7 +11,7 @@ const AboutContent = () => {
                 <div className="top-left-item">
                   <div className="item-tagline">Know About Us</div>
                   <h2 className="item-title">
-                    Professional Office Cleaning Service Provider in Australia
+                    Trusted Office Cleaning Experts in Western Australia
                   </h2>
                 </div>
               </div>
@@ -21,12 +21,12 @@ const AboutContent = () => {
                 <div className="top-right-item">
                   <p>
                     Blossom Property Services is proudly Western Australia owned
-                    and operated, specializing in office cleaning and hygiene
-                    services. With years of industry expertise, we use proven
-                    techniques to deliver superior results at competitive
-                    prices. Our regular post-service supervision ensures
-                    consistent quality, so you can enjoy a spotless and healthy
-                    workspace every day.
+                    and operated, delivering exceptional office cleaning and
+                    hygiene services. Backed by years of industry experience,
+                    our professional team uses proven methods to achieve
+                    outstanding results. We prioritize quality through regular
+                    supervision, creating clean, healthy environments that
+                    promote productivity and peace of mind.
                   </p>
                 </div>
               </div>
@@ -53,17 +53,17 @@ const AboutContent = () => {
                     <li>
                       <h3>100% Cleaning Satisfaction</h3>
                       <p>
-                        We are committed to delivering spotless results with
-                        every service, ensuring complete satisfaction for every
-                        client, every time.
+                        Your satisfaction is our priority. We ensure each space
+                        is thoroughly cleaned, leaving nothing less than a
+                        spotless finish with every visit.
                       </p>
                     </li>
                     <li>
                       <h3>Daily & Monthly Cleaning Options</h3>
                       <p>
-                        Choose from flexible cleaning plans tailored to your
-                        needs—whether you require daily attention or scheduled
-                        monthly maintenance.
+                        Whether your office needs daily upkeep or periodic deep
+                        cleaning, our flexible plans are designed to suit your
+                        schedule and requirements.
                       </p>
                     </li>
                   </ul>
@@ -75,13 +75,12 @@ const AboutContent = () => {
               <div className="about-box-layout7">
                 <div className="feature-list">
                   <ul>
-
-                  <li>
+                    <li>
                       <h3>Thorough Supervision After Work Completion</h3>
                       <p>
-                        Our supervisors inspect every job upon completion to
-                        maintain high standards and ensure no detail is
-                        overlooked.
+                        Every job is reviewed by our experienced supervisors to
+                        guarantee quality control and maintain our high
+                        standards—no spot left unchecked.
                       </p>
                     </li>
                   </ul>

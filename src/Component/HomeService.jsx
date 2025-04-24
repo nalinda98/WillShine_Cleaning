@@ -11,100 +11,130 @@ const HomeService = () => {
         <div className="heading-layout1">
           <h2>Our Cleaning Services</h2>
           <p>
-            Blossom Property Services offers top-quality residential, commercial, and end-of-lease cleaning services across Sydney.
+            Blossom Property Services offers top-quality residential,
+            commercial, and end-of-lease cleaning services across Sydney.
           </p>
         </div>
         <div className="row">
-          <div className="col-lg-4 col-md-6 col-12">
+          <div className="col-lg-3 col-md-6 col-12">
             <div className="service-box-layout1">
               <div className="item-img">
-                <img src="img/service/service.jpg" alt="Residential" />
+                <img src="img/service/service1.jpg" alt="Office Cleaning" />
               </div>
               <div className="item-middle-content">
                 <div className="item-icon">
                   <div className="home-icon">
-                    <i className="fas fa-home" />
+                    <i className="fas fa-briefcase" />
                   </div>
                 </div>
               </div>
               <div className="item-content">
                 <h3 className="item-title">
-                  <Link href="/single-service1">Residential Cleaning</Link>
+                  <a href="/service/office-cleaning">Office Cleaning</a>
                 </h3>
                 <div className="serivce-list">
                   <ul>
-                    <li>General House Cleaning</li>
-                    <li>Kitchen & Bathrooms</li>
-                    <li>Windows</li>
+                    <li>Desk & Cubicle Cleaning</li>
+                    <li>Breakroom Sanitation</li>
+                    <li>Restroom Detailing</li>
+                    <li>Trash Removal</li>
                     <li>Vacuuming & Mopping</li>
-                    <li>Dusting</li>
-                    <li>Move-in/out Cleaning</li>
+                    <li>Window Cleaning</li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-6 col-12">
+          <div className="col-lg-3 col-md-6 col-12">
             <div className="service-box-layout1">
               <div className="item-img">
-                <img src="img/service/service1.jpg" alt="Commercial" />
+                <img src="img/service/service1.jpg" alt="Stripping & Sealing" />
               </div>
               <div className="item-middle-content">
                 <div className="item-icon">
                   <div className="home-icon">
-                    <i className="far fa-building" />
+                    <i className="fas fa-layer-group" />
                   </div>
                 </div>
               </div>
               <div className="item-content">
                 <h3 className="item-title">
-                  <Link href="/single-service2">Commercial Cleaning</Link>
+                  <a href="/service/stripping-and-sealing">Stripping & Sealing</a>
                 </h3>
                 <div className="serivce-list">
                   <ul>
-                    <li>Office & Retail Spaces</li>
-                    <li>Workstations & Desks</li>
-                    <li>Washrooms</li>
-                    <li>Common Areas</li>
-                    <li>Carpets & Floors</li>
-                    <li>Windows & Glass</li>
+                    <li>Floor Wax Removal</li>
+                    <li>Surface Buffing</li>
+                    <li>Sealer Application</li>
+                    <li>Slip-Resistant Finish</li>
+                    <li>Stain Protection</li>
+                    <li>Shine Restoration</li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="col-lg-4 d-block d-md-none d-lg-block col-12">
+          <div className="col-lg-3 d-block d-md-none d-lg-block col-12">
             <div className="service-box-layout1">
               <div className="item-img">
-                <img src="img/service/service2.jpg" alt="End of Lease" />
+                <img src="img/service/service1.jpg" alt="Carpet Cleaning" />
               </div>
               <div className="item-middle-content">
                 <div className="item-icon">
                   <div className="home-icon">
-                    <i className="fas fa-key" />
+                    <i className="fas fa-shower" />
                   </div>
                 </div>
               </div>
               <div className="item-content">
                 <h3 className="item-title">
-                  <Link href="/single-service3">End of Lease Cleaning</Link>
+                  <a href="/service/carpet-cleaning">Carpet Cleaning</a>
                 </h3>
                 <div className="serivce-list">
                   <ul>
-                    <li>Deep Clean for Bond Return</li>
-                    <li>Full Kitchen & Bathroom</li>
-                    <li>Wall & Skirting Wipe</li>
-                    <li>Floor to Ceiling Cleaning</li>
-                    <li>Spotless Windows</li>
-                    <li>Professional Results</li>
+                    <li>Steam Cleaning</li>
+                    <li>Stain Removal</li>
+                    <li>Odor Neutralizing</li>
+                    <li>Dry Carpet Options</li>
+                    <li>High-Traffic Area Focus</li>
+                    <li>Allergy-Friendly Methods</li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
 
+          <div className="col-lg-3 d-block d-md-none d-lg-block col-12">
+            <div className="service-box-layout1">
+              <div className="item-img">
+                <img src="img/service/service1.jpg" alt="Pressure Washing" />
+              </div>
+              <div className="item-middle-content">
+                <div className="item-icon">
+                  <div className="home-icon">
+                    <i className="fas fa-water" />
+                  </div>
+                </div>
+              </div>
+              <div className="item-content">
+                <h3 className="item-title">
+                  <a href="/service/pressure-washing">Pressure Washing</a>
+                </h3>
+                <div className="serivce-list">
+                  <ul>
+                    <li>Driveways & Pathways</li>
+                    <li>Building Facades</li>
+                    <li>Decks & Patios</li>
+                    <li>Moss & Algae Removal</li>
+                    <li>Graffiti Cleanup</li>
+                    <li>Eco-Friendly Options</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

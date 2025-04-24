@@ -8,7 +8,9 @@ const AboutProcess = () => {
           <div className="heading-layout1">
             <h2>How It Works</h2>
             <p>
-              Enjoy a spotless workspace with our seamless and professional 4-step cleaning process designed to meet your unique requirements.
+              Our streamlined process ensures your workspace is cleaned
+              professionally, efficiently, and with attention to every
+              detail—from first contact to ongoing quality assurance.
             </p>
           </div>
           <div className="row">
@@ -23,7 +25,9 @@ const AboutProcess = () => {
                 <div className="item-content">
                   <h3 className="item-title">Contact Us</h3>
                   <p>
-                    Reach out via email, phone, or our website form. We'll respond within 4 hours to schedule your free assessment.
+                    Get in touch via phone or our website. Our team will arrange
+                    a free site assessment at your convenience—no contracts
+                    required.
                   </p>
                 </div>
               </div>
@@ -40,7 +44,8 @@ const AboutProcess = () => {
                 <div className="item-content">
                   <h3 className="item-title">Site Assessment</h3>
                   <p>
-                    We visit your office to assess cleaning needs, identify special requirements, and evaluate the workspace thoroughly.
+                    We assess your workspace and listen to your needs to develop
+                    a comprehensive understanding of what’s required.
                   </p>
                 </div>
               </div>
@@ -57,7 +62,9 @@ const AboutProcess = () => {
                 <div className="item-content">
                   <h3 className="item-title">Customized Plan</h3>
                   <p>
-                    Based on our assessment, we develop a personalized cleaning schedule tailored to your office’s workflow and needs.
+                    We tailor a cleaning solution to your business, offering
+                    flexible scheduling and eco-friendly products where
+                    requested.
                   </p>
                 </div>
               </div>
@@ -74,7 +81,9 @@ const AboutProcess = () => {
                 <div className="item-content">
                   <h3 className="item-title">Quality Assurance</h3>
                   <p>
-                    We ensure high standards through regular inspections and adapt our services based on your feedback and evolving needs.
+                    Every job is thoroughly inspected by supervisors to ensure
+                    excellence, with ongoing communication and adjustments as
+                    needed.
                   </p>
                 </div>
               </div>
@@ -87,4 +96,3 @@ const AboutProcess = () => {
 };
 
 export default AboutProcess;
-              

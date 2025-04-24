@@ -9,19 +9,16 @@ const MiddleBanner = () => {
             <div className="col-lg-6 order-lg-2">
               <div className="banner-box-layout2">
                 <h2 className="item-title">
-                  Together <span>We'll Explore</span> New Things
+                  Experience <span>Spotless Results</span> Every Time
                 </h2>
                 <p>
-                  Chen an unknown printer took a galley of type and scrambled it
-                  to make a type specimen book. It has survived not only five
-                  centuries, but also the leap into electronic typesetting,
-                  remaining essentially.
+                  At Blossom Property Services, we go beyond cleaning — we create healthier, more productive environments. Backed by certified professionals and thorough quality checks, our service is one you can trust.
                 </p>
                 <a
                   href="#"
                   className="btn-fill-sm btn-slide-hover bg-accent text-primarytext"
                 >
-                  Request an Estimate
+                  Request a Free Assessment
                   <i className="fas fa-angle-right" />
                 </a>
               </div>

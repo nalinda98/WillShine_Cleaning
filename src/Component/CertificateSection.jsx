@@ -8,8 +8,10 @@ const CertificateSection = () => {
           <div className="heading-layout1">
             <h2>Certifications You Can Trust</h2>
             <p>
-              Perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium dol oremque laudantium, totam remeaque ipsa
+              Our team is fully certified, trained, and insured to meet the
+              highest industry standards. With recognized accreditations, we
+              guarantee safety, reliability, and consistent excellence in every
+              service we provide.
             </p>
           </div>
           <div

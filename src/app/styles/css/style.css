@@ -825,6 +825,7 @@ h6 {
 }
 .slider-area .slide-1 h1.slider-big-text,
 .slider-area .slide-2 h1.slider-big-text,
+.slider-area .slide-4 h1.slider-big-text,
 .slider-area .slide-3 h1.slider-big-text {
   font-size: 48px;
   font-weight: 700;
@@ -836,12 +837,14 @@ h6 {
 }
 .slider-area .slide-1 h1.slider-big-text span,
 .slider-area .slide-2 h1.slider-big-text span,
+.slider-area .slide-4 h1.slider-big-text span,
 .slider-area .slide-3 h1.slider-big-text span {
   display: block;
 }
 @media only screen and (max-width: 1199px) {
   .slider-area .slide-1 h1.slider-big-text,
   .slider-area .slide-2 h1.slider-big-text,
+  .slider-area .slide-4 h1.slider-big-text,
   .slider-area .slide-3 h1.slider-big-text {
     font-size: 40px;
     margin-bottom: 15px;
@@ -850,6 +853,7 @@ h6 {
 @media only screen and (max-width: 991px) {
   .slider-area .slide-1 h1.slider-big-text,
   .slider-area .slide-2 h1.slider-big-text,
+  .slider-area .slide-4 h1.slider-big-text,
   .slider-area .slide-3 h1.slider-big-text {
     font-size: 30px;
     margin-bottom: 5px;
@@ -858,6 +862,7 @@ h6 {
 @media only screen and (max-width: 767px) {
   .slider-area .slide-1 h1.slider-big-text,
   .slider-area .slide-2 h1.slider-big-text,
+  .slider-area .slide-4 h1.slider-big-text,
   .slider-area .slide-3 h1.slider-big-text {
     font-size: 28px;
     text-align: center;
@@ -866,6 +871,7 @@ h6 {
 @media only screen and (max-width: 575px) {
   .slider-area .slide-1 h1.slider-big-text,
   .slider-area .slide-2 h1.slider-big-text,
+  .slider-area .slide-4 h1.slider-big-text,
   .slider-area .slide-3 h1.slider-big-text {
     font-size: 26px;
   }
@@ -873,17 +879,20 @@ h6 {
 @media only screen and (max-width: 479px) {
   .slider-area .slide-1 h1.slider-big-text,
   .slider-area .slide-2 h1.slider-big-text,
+  .slider-area .slide-4 h1.slider-big-text,
   .slider-area .slide-3 h1.slider-big-text {
     font-size: 22px;
   }
 }
 .slider-area .slide-1 h1.slider-big-text.text-light,
 .slider-area .slide-2 h1.slider-big-text.text-light,
+.slider-area .slide-4 h1.slider-big-text.text-light,
 .slider-area .slide-3 h1.slider-big-text.text-light {
   color: #ffffff;
 }
 .slider-area .slide-1 div.slider-sub-text,
 .slider-area .slide-2 div.slider-sub-text,
+.slider-area .slide-4 div.slider-sub-text,
 .slider-area .slide-3 div.slider-sub-text {
   font-size: 24px;
   color: #287ff9;
@@ -892,6 +901,7 @@ h6 {
 @media only screen and (max-width: 1199px) {
   .slider-area .slide-1 div.slider-sub-text,
   .slider-area .slide-2 div.slider-sub-text,
+  .slider-area .slide-4 div.slider-sub-text,
   .slider-area .slide-3 div.slider-sub-text {
     margin-bottom: 15px;
     font-size: 22px;
@@ -900,6 +910,7 @@ h6 {
 @media only screen and (max-width: 991px) {
   .slider-area .slide-1 div.slider-sub-text,
   .slider-area .slide-2 div.slider-sub-text,
+  .slider-area .slide-4 div.slider-sub-text,
   .slider-area .slide-3 div.slider-sub-text {
     font-size: 20px;
     margin-bottom: 5px;
@@ -908,6 +919,7 @@ h6 {
 @media only screen and (max-width: 767px) {
   .slider-area .slide-1 div.slider-sub-text,
   .slider-area .slide-2 div.slider-sub-text,
+  .slider-area .slide-4 div.slider-sub-text,
   .slider-area .slide-3 div.slider-sub-text {
     text-align: center;
   }
@@ -915,17 +927,20 @@ h6 {
 @media only screen and (max-width: 575px) {
   .slider-area .slide-1 div.slider-sub-text,
   .slider-area .slide-2 div.slider-sub-text,
+  .slider-area .slide-4 div.slider-sub-text,
   .slider-area .slide-3 div.slider-sub-text {
     display: none;
   }
 }
 .slider-area .slide-1 div.slider-sub-text.text-light,
 .slider-area .slide-2 div.slider-sub-text.text-light,
+.slider-area .slide-4 div.slider-sub-text.text-light,
 .slider-area .slide-3 div.slider-sub-text.text-light {
   color: #ffffff;
 }
 .slider-area .slide-1 div.slider-paragraph,
 .slider-area .slide-2 div.slider-paragraph,
+.slider-area .slide-4 div.slider-paragraph,
 .slider-area .slide-3 div.slider-paragraph {
   color: #444444;
   margin-bottom: 20px;
@@ -934,6 +949,7 @@ h6 {
 @media only screen and (max-width: 1199px) {
   .slider-area .slide-1 div.slider-paragraph,
   .slider-area .slide-2 div.slider-paragraph,
+  .slider-area .slide-4 div.slider-paragraph,
   .slider-area .slide-3 div.slider-paragraph {
     width: 50%;
   }
@@ -941,6 +957,7 @@ h6 {
 @media only screen and (max-width: 991px) {
   .slider-area .slide-1 div.slider-paragraph,
   .slider-area .slide-2 div.slider-paragraph,
+  .slider-area .slide-4 div.slider-paragraph,
   .slider-area .slide-3 div.slider-paragraph {
     width: 65%;
   }
@@ -948,6 +965,7 @@ h6 {
 @media only screen and (max-width: 767px) {
   .slider-area .slide-1 div.slider-paragraph,
   .slider-area .slide-2 div.slider-paragraph,
+  .slider-area .slide-4 div.slider-paragraph,
   .slider-area .slide-3 div.slider-paragraph {
     width: 100%;
     text-align: center;
@@ -957,34 +975,42 @@ h6 {
 @media only screen and (max-width: 575px) {
   .slider-area .slide-1 div.slider-paragraph,
   .slider-area .slide-2 div.slider-paragraph,
+  .slider-area .slide-4 div.slider-paragraph,
   .slider-area .slide-3 div.slider-paragraph {
     display: none;
   }
 }
 .slider-area .slide-1 div.slider-paragraph.text-light,
 .slider-area .slide-2 div.slider-paragraph.text-light,
+.slider-area .slide-4 div.slider-paragraph.text-light,
 .slider-area .slide-3 div.slider-paragraph.text-light {
   color: #ffffff;
 }
 .slider-area .slide-1 .slider-big-text.padding-right,
 .slider-area .slide-2 .slider-big-text.padding-right,
+.slider-area .slide-4 .slider-big-text.padding-right,
 .slider-area .slide-3 .slider-big-text.padding-right,
 .slider-area .slide-1 .slider-sub-text.padding-right,
 .slider-area .slide-2 .slider-sub-text.padding-right,
+.slider-area .slide-4 .slider-sub-text.padding-right,
 .slider-area .slide-3 .slider-sub-text.padding-right,
 .slider-area .slide-1 .slider-paragraph.padding-right,
 .slider-area .slide-2 .slider-paragraph.padding-right,
+.slider-area .slide-4 .slider-paragraph.padding-right,
 .slider-area .slide-3 .slider-paragraph.padding-right {
   padding-right: 60%;
 }
 .slider-area .slide-1 .slider-big-text.padding-left,
 .slider-area .slide-2 .slider-big-text.padding-left,
+.slider-area .slide-4 .slider-big-text.padding-left,
 .slider-area .slide-3 .slider-big-text.padding-left,
 .slider-area .slide-1 .slider-sub-text.padding-left,
 .slider-area .slide-2 .slider-sub-text.padding-left,
+.slider-area .slide-4 .slider-sub-text.padding-left,
 .slider-area .slide-3 .slider-sub-text.padding-left,
 .slider-area .slide-1 .slider-paragraph.padding-left,
 .slider-area .slide-2 .slider-paragraph.padding-left,
+.slider-area .slide-4 .slider-paragraph.padding-left,
 .slider-area .slide-3 .slider-paragraph.padding-left {
   padding-left: 60%;
 }
@@ -1040,16 +1066,19 @@ h6 {
 }
 .slider-layout1 .slide-1 h1.slider-big-text,
 .slider-layout1 .slide-2 h1.slider-big-text,
+.slider-layout1 .slide-4 h1.slider-big-text,
 .slider-layout1 .slide-3 h1.slider-big-text {
   animation: fadeInLeft 2000ms ease-in-out;
 }
 .slider-layout1 .slide-1 div.slider-sub-text,
 .slider-layout1 .slide-2 div.slider-sub-text,
+.slider-layout1 .slide-4 div.slider-sub-text,
 .slider-layout1 .slide-3 div.slider-sub-text {
   animation: fadeInUp 1500ms ease-in-out;
 }
 .slider-layout1 .slide-1 div.slider-paragraph,
 .slider-layout1 .slide-2 div.slider-paragraph,
+.slider-layout1 .slide-4 div.slider-paragraph,
 .slider-layout1 .slide-3 div.slider-paragraph {
   animation: fadeInUp 1500ms ease-in-out;
 }
@@ -1058,22 +1087,26 @@ h6 {
 }
 .slider-layout2 .slide-1 h1.slider-big-text,
 .slider-layout2 .slide-2 h1.slider-big-text,
+.slider-layout2 .slide-4 h1.slider-big-text,
 .slider-layout2 .slide-3 h1.slider-big-text {
   animation: fadeInLeft 2000ms ease-in-out;
 }
 .slider-layout2 .slide-1 div.slider-sub-text,
 .slider-layout2 .slide-2 div.slider-sub-text,
+.slider-layout2 .slide-4 div.slider-sub-text,
 .slider-layout2 .slide-3 div.slider-sub-text {
   animation: fadeInUp 1500ms ease-in-out;
 }
 .slider-layout2 .slide-1 div.slider-paragraph,
 .slider-layout2 .slide-2 div.slider-paragraph,
+.slider-layout2 .slide-4 div.slider-paragraph,
 .slider-layout2 .slide-3 div.slider-paragraph {
   animation: fadeInUp 1500ms ease-in-out;
 }
 @media only screen and (max-width: 1199px) {
   .slider-layout2 .slide-1 div.slider-paragraph,
   .slider-layout2 .slide-2 div.slider-paragraph,
+  .slider-layout2 .slide-4 div.slider-paragraph,
   .slider-layout2 .slide-3 div.slider-paragraph {
     display: none;
   }
@@ -2758,6 +2791,9 @@ nav.template-main-menu > ul > li:hover .template-mega-menu {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+
+
+
 .header-topbar-layout1 .header-top-left .social-icon a:last-child {
   padding-right: 0;
   margin-right: 0;

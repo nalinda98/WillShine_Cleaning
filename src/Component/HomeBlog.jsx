@@ -17,13 +17,7 @@ const HomeBlog = () => {
             <div className="blog-box-layout1 bg-assh">
               <div className="item-img">
                 <a href="single-blog1.html">
-                  <div>
-                    <Image
-                      fill={true}
-                      src="/img/blog/blog5.jpg"
-                      alt="blog-thumb"
-                    />
-                  </div>
+                  <img src="/img/blog/blog5.jpg" alt="blog-thumb" />
                 </a>
               </div>
               <div className="item-content">

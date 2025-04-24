@@ -1,14 +1,19 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 
-const Banner = ({
-    title,
-    path
-}) => {
+const Banner = ({ title, path }) => {
+  useEffect(() => {
+    // Manually set background-image if needed
+    const section = document.querySelector(".inner-page-banner.bg-common");
+    if (section && section.dataset.bgImage) {
+      section.style.backgroundImage = `url(${section.dataset.bgImage})`;
+    }
+  }, []);
   return (
     <div>
       <section
         className="inner-page-banner bg-common"
-        data-bg-image="img/figure/breadcumb.jpg"
+        data-bg-image="/img/figure/breadcumb.jpg"
       >
         <div className="container">
           <div className="row">
