@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -41,8 +42,8 @@ const Navbar = () => {
             <div className="col-lg-3">
               <div className="logo-area">
                 <a href="index.html" className="temp-logo">
-                  <img
-                    src="img/logo-dark2.png"
+                  <Image
+                    src="/img/logo-dark2.png"
                     alt="logo"
                     className="img-fluid"
                   />
@@ -98,22 +99,24 @@ const Navbar = () => {
                 <nav id="dropdown" className="template-main-menu">
                   <ul>
                     <li>
-                      <a href="/">Home</a>
+                      <Link href="/">Home</Link>
                     </li>
                     <li>
-                      <a href="/about">About</a>
+                      <Link href="/about">About</Link>
                     </li>
                     <li>
-                      <a href="/service">Services</a>
+                      <Link href="/service">Services</Link>
                       <ul className="dropdown-menu-col-1">
                         <li>
-                          <a href="service1.html">Service 1</a>
-                          <a href="service1.html">Service 1</a>
+                          <Link href="/service/office-cleaning">Office Cleaning</Link>
+                          <Link href="/service/stripping-and-sealing">Stripping & Sealing</Link>
+                          <Link href="/service/carpet-cleaning">Carpet Cleaning</Link>
+                          <Link href="/service/pressure-washing">Pressure Washing</Link>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <a href="/blog">Blogs</a>
+                      <Link href="/blog">Blogs</Link>
                       {/* <ul className="dropdown-menu-col-1">
                         <li>
                           <a href="blog1.html">Blog 1</a>
@@ -125,7 +128,7 @@ const Navbar = () => {
                     </li>
 
                     <li>
-                      <a href="/contact">Contact</a>
+                      <Link href="/contact">Contact</Link>
                     </li>
                   </ul>
                 </nav>
@@ -134,10 +137,10 @@ const Navbar = () => {
                 <div className="header-action-layout1">
                   <ul>
                     <li className="header-action-btn">
-                      <a href="#" className="item-btn">
+                      <Link href="#" className="item-btn">
                         <i className="fas fa-bell" />
                         Get A Quote
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

@@ -4,6 +4,7 @@ import HomePageSlider from "./HomePageSlider";
 import HomeService from "./HomeService";
 import CertificateSection from "./CertificateSection";
 import Estimate from "./Estimate";
+import Image from "next/image";
 
 const Homepage = () => {
   return (
@@ -594,7 +595,7 @@ const Homepage = () => {
                 <div className="blog-box-layout1 bg-assh">
                   <div className="item-img">
                     <a href="single-blog1.html">
-                      <img src="img/blog/blog5.jpg" alt="blog-thumb" />
+                      <Image src="/img/blog/blog5.jpg" alt="blog-thumb" />
                     </a>
                   </div>
                   <div className="item-content">

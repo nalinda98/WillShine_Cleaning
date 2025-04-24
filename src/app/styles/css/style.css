@@ -1569,6 +1569,8 @@ h6 {
   background: #0d0121 url('/img/preloader.gif') no-repeat scroll center center;
   height: 100%;
   left: 0;
+  /* opacity: 0%; */
+  display: none;
   overflow: visible;
   position: fixed;
   top: 0;
