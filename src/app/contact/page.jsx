@@ -1,21 +1,65 @@
-import React from "react";
+"use client";
+
+import React, { useRef, useState } from "react";
+import emailjs from "emailjs-com";
 import Banner from "../../Component/Banner";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
+  const form = useRef();
+  const [captcha, setCaptcha] = useState(null);
+
+  const onChange = (value) => {
+    setCaptcha(value);
+  };
+
+  const onExpired = () => {
+    setCaptcha(null);
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    if (!captcha) {
+      alert("Please complete the reCAPTCHA");
+      return;
+    }
+
+    emailjs
+      .sendForm(
+        "service_gva54x5", // Replace with your actual service ID
+        "template_c6fun0t", // Replace with your actual template ID
+        form.current,
+        "rtOHcdoMrBTsp_x3V" // Replace with your actual public key
+      )
+      .then(
+        (result) => {
+          alert("Message sent successfully!");
+          e.target.reset();
+          setCaptcha(null); // Reset captcha after success
+        },
+        (error) => {
+          alert("Failed to send message. Please try again later.");
+          console.error(error.text);
+        }
+      );
+  };
+
   return (
     <>
-      <Banner title={"Contact Us"} path={"Contact"}/>
+      <Banner title={"Contact Us"} path={"Contact"} />
       <section className="section-padding-12-10">
         <div className="container">
           <div className="row">
             <div className="col-lg-8">
+              {/* Map and Contact Info */}
               <div className="contact-box-layout1">
                 <div className="google-map-area">
-                  <div
-                    id="googleMap"
-                    className="google-map"
-                    style={{ width: "100%", height: 420, borderRadius: 4 }}
-                  />
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7876773206926!2d79.84965516585271!3d6.915969728264701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2590063a37d6f%3A0x58a1ca8eafe50533!2sBuildZone%20IT!5e0!3m2!1sen!2slk!4v1702493493184!5m2!1sen!2slk"
+                    style={{ border: 0, width: "100%", height: "420px" }}
+                    allowFullScreen
+                  ></iframe>
                 </div>
                 <div className="contact-info">
                   <div className="media media-none-lg media-none--sm">
@@ -60,7 +104,11 @@ const Contact = () => {
                 <div className="heading-layout4">
                   <h4>Have you Any Question?</h4>
                 </div>
-                <form className="contact-form-box" id="contact-form">
+                <form
+                  className="contact-form-box"
+                  ref={form}
+                  onSubmit={sendEmail}
+                >
                   <div className="row">
                     <div className="col-12 form-group">
                       <div className="form-icon">
@@ -68,13 +116,11 @@ const Contact = () => {
                       </div>
                       <input
                         type="text"
+                        name="name"
                         placeholder="Name"
                         className="form-control"
-                        name="name"
-                        data-error="Name field is required"
-                        required=""
+                        required
                       />
-                      <div className="help-block with-errors" />
                     </div>
                     <div className="col-12 form-group">
                       <div className="form-icon">
@@ -82,13 +128,11 @@ const Contact = () => {
                       </div>
                       <input
                         type="email"
+                        name="email"
                         placeholder="E-mail Address"
                         className="form-control"
-                        name="email"
-                        data-error="email field is required"
-                        required=""
+                        required
                       />
-                      <div className="help-block with-errors" />
                     </div>
                     <div className="col-12 form-group">
                       <div className="form-icon">
@@ -96,13 +140,11 @@ const Contact = () => {
                       </div>
                       <input
                         type="text"
+                        name="phone"
                         placeholder="Phone"
                         className="form-control"
-                        name="phone"
-                        data-error="Phone field is required"
-                        required=""
+                        required
                       />
-                      <div className="help-block with-errors" />
                     </div>
                     <div className="col-12 form-group">
                       <div className="form-icon">
@@ -110,30 +152,30 @@ const Contact = () => {
                       </div>
                       <input
                         type="text"
+                        name="subject"
                         placeholder="Subject"
                         className="form-control"
-                        name="phone"
-                        data-error="Phone field is required"
-                        required=""
+                        required
                       />
-                      <div className="help-block with-errors" />
                     </div>
                     <div className="col-12 form-group">
                       <div className="form-icon">
                         <i className="far fa-comments" />
                       </div>
                       <textarea
-                        placeholder="Address"
-                        className="textarea form-control"
                         name="message"
-                        id="form-message"
+                        placeholder="Message"
+                        className="textarea form-control"
                         rows={4}
-                        cols={20}
-                        data-error="Message field is required"
-                        required=""
-                        defaultValue={""}
+                        required
                       />
-                      <div className="help-block with-errors" />
+                    </div>
+                    <div className="col-12 form-group">
+                      <ReCAPTCHA
+                        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                        onChange={onChange}
+                        onExpired={onExpired}
+                      />
                     </div>
                     <div className="col-12 form-group">
                       <button

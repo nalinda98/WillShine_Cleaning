@@ -73,6 +73,10 @@ export default function RootLayout({ children }) {
           <Script src="js/select2.min.js"></Script>
           <Script src="js/jquery.datetimepicker.full.min.js"></Script>
           <Script src="js/main.js"></Script>
+          <Script
+            src={`https://www.google.com/recaptcha/api.js?render=your_site_key`}
+            strategy="beforeInteractive"
+          />
         </div>
       </body>
     </html>

@@ -106,64 +106,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="footer-middle-box">
-            <div className="row">
-              <div className="col-lg-5 col-12">
-                <div className="footer-newsletter">
-                  <h3 className="item-title">
-                    Sign up for news and special offers
-                  </h3>
-                  <div className="input-group stylish-input-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Search Keywords ..."
-                    />
-                    <span className="input-group-addon">
-                      <button type="submit">Submit</button>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-7 col-12">
-                <div className="footer-social">
-                  <h4 className="item-title">Follow Us On :</h4>
-                  <ul className="social-icon">
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-facebook-f"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-linkedin-in"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-google-plus-g"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-pinterest"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-vimeo-v"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
           <div className="footer-bottom-box">
             <div className="row">
               <div className="col-md-6">
