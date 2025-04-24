@@ -11,8 +11,7 @@ const AboutContent = () => {
                 <div className="top-left-item">
                   <div className="item-tagline">Know About Us</div>
                   <h2 className="item-title">
-                    Affordable Pricing Plan, Expert and Quality Services We
-                    Provide.
+                    Professional Office Cleaning Service Provider in Australia
                   </h2>
                 </div>
               </div>
@@ -21,12 +20,13 @@ const AboutContent = () => {
               <div className="about-box-layout7">
                 <div className="top-right-item">
                   <p>
-                    Chen an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only
-                    five centuries, but also the leap into electronic
-                    typesetting, remaining essentially unchanged.Chen an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book. It has survived not only five centuries.
+                    Blossom Property Services is proudly Western Australia owned
+                    and operated, specializing in office cleaning and hygiene
+                    services. With years of industry expertise, we use proven
+                    techniques to deliver superior results at competitive
+                    prices. Our regular post-service supervision ensures
+                    consistent quality, so you can enjoy a spotless and healthy
+                    workspace every day.
                   </p>
                 </div>
               </div>
@@ -51,39 +51,37 @@ const AboutContent = () => {
                 <div className="feature-list">
                   <ul>
                     <li>
-                      <h3>Customer Focused Reviews</h3>
+                      <h3>100% Cleaning Satisfaction</h3>
                       <p>
-                        Aorem ipsum dolor sit amet consectetur adipisicing elit
-                        sed do eiusmod tempor incididunt ut labore et dolore.
+                        We are committed to delivering spotless results with
+                        every service, ensuring complete satisfaction for every
+                        client, every time.
                       </p>
                     </li>
                     <li>
-                      <h3>Quality Work</h3>
+                      <h3>Daily & Monthly Cleaning Options</h3>
                       <p>
-                        Aorem ipsum dolor sit amet consectetur adipisicing elit
-                        sed do eiusmod tempor incididunt ut labore et dolore.
+                        Choose from flexible cleaning plans tailored to your
+                        needs—whether you require daily attention or scheduled
+                        monthly maintenance.
                       </p>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
+
             <div className="col-lg-6">
               <div className="about-box-layout7">
                 <div className="feature-list">
                   <ul>
-                    <li>
-                      <h3>We Are Committed</h3>
+
+                  <li>
+                      <h3>Thorough Supervision After Work Completion</h3>
                       <p>
-                        Aorem ipsum dolor sit amet consectetur adipisicing elit
-                        sed do eiusmod tempor incididunt ut labore et dolore.
-                      </p>
-                    </li>
-                    <li>
-                      <h3>100% Customer Satisfaction</h3>
-                      <p>
-                        Aorem ipsum dolor sit amet consectetur adipisicing elit
-                        sed do eiusmod tempor incididunt ut labore et dolore.
+                        Our supervisors inspect every job upon completion to
+                        maintain high standards and ensure no detail is
+                        overlooked.
                       </p>
                     </li>
                   </ul>

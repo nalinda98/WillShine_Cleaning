@@ -1,6 +1,8 @@
 import React from "react";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div>
       <footer className="footer-wrap-layout1 section-shape1">
@@ -96,15 +98,15 @@ const Footer = () => {
                         <a href="#">Affiliate Portal</a>
                       </li>
                     </ul>
-                    <a href="contact.html" className="contact-btn">
+                    {/* <a href="contact.html" className="contact-btn">
                       <i className="far fa-envelope"></i>HAVE ANY QUESTION
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="footer-middle-box">
+          {/* <div className="footer-middle-box">
             <div className="row">
               <div className="col-lg-5 col-12">
                 <div className="footer-newsletter">
@@ -161,20 +163,23 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="footer-bottom-box">
             <div className="row">
               <div className="col-md-6">
                 <div className="copyright">
-                  Copyright 2019 clenix. All Rights Reserved.
+                  All rights reserved | This website is Designed & Developed by <a style={{
+                    color:"white",
+                    fontWeight:"bold"
+                  }} href="https://buildzoneit.com/">BuildZone IT</a>
                 </div>
               </div>
               <div className="col-md-6">
                 <div className="footer-bottom-menu">
                   <ul>
-                    <li>
+                    {/* <li>
                       <a href="#">Sitemap</a>
-                    </li>
+                    </li> */}
                     <li>
                       <a href="#">Terms of Service</a>
                     </li>

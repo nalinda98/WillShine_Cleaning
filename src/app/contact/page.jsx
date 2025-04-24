@@ -25,8 +25,7 @@ const Contact = () => {
                     <div className="media-body space-md">
                       <h4>Phone:</h4>
                       <ul>
-                        <li>+8123 456 788 99,</li>
-                        <li>+8123 (456) 788 99</li>
+                        <li>0433 691 812</li>
                       </ul>
                     </div>
                   </div>
@@ -37,8 +36,7 @@ const Contact = () => {
                     <div className="media-body space-md">
                       <h4>E-mail:</h4>
                       <ul>
-                        <li>info@roofing.com</li>
-                        <li>info@roofing.com</li>
+                        <li>blossompropertyservices@gmail.com</li>
                       </ul>
                     </div>
                   </div>

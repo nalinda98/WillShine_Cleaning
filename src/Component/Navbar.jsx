@@ -21,23 +21,12 @@ const Navbar = () => {
               <div className="header-topbar-layout2">
                 <ul className="header-top-right">
                   <li className="social-icon">
-                    <a href="#">
-                      <i className="fab fa-facebook-f" />
+                    <a href="tel:0433691812">
+                      <i className="fas fa-envelope" />{" "}
                     </a>
-                    <a href="#">
-                      <i className="fab fa-twitter" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-google-plus-g" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-pinterest" />
-                    </a>
-                    <a href="#">
-                      <i className="fab fa-snapchat-ghost" />
+                    <a href="mailto:blossompropertyservices@gmail.com">
+                      <i className="fas fa-phone" />
+                      {/* blossompropertyservices@gmail.com */}
                     </a>
                   </li>
                 </ul>
@@ -70,7 +59,9 @@ const Navbar = () => {
                     <div className="item-content">
                       <div className="item-title">Opening Hours</div>
                       <div className="item-subtitle">
-                        Mon - Fri: 09.00am - 10.00pm
+                        Mon - Fri: 09.00am - 5.00pm
+                        <br />
+                        Saturday: 10.00am - 6.00pm
                       </div>
                     </div>
                   </li>
@@ -80,7 +71,7 @@ const Navbar = () => {
                     </div>
                     <div className="item-content">
                       <div className="item-title">E-mail Us</div>
-                      <div className="item-subtitle">info@cleanix.com</div>
+                      <div className="item-subtitle">info@blossom.com</div>
                     </div>
                   </li>
                   <li>
@@ -89,7 +80,7 @@ const Navbar = () => {
                     </div>
                     <div className="item-content">
                       <div className="item-title">Quick Contact</div>
-                      <div className="item-subtitle">+ 985 8844 000</div>
+                      <div className="item-subtitle">043 369 1812</div>
                     </div>
                   </li>
                 </ul>
@@ -107,189 +98,34 @@ const Navbar = () => {
                 <nav id="dropdown" className="template-main-menu">
                   <ul>
                     <li>
-                      <a href="#">Home</a>
+                      <a href="/">Home</a>
+                    </li>
+                    <li>
+                      <a href="/about">About</a>
+                    </li>
+                    <li>
+                      <a href="/service">Services</a>
                       <ul className="dropdown-menu-col-1">
                         <li>
-                          <a href="index.html">Home Page 1</a>
-                        </li>
-                        <li>
-                          <a href="index2.html">Home Page 2</a>
-                        </li>
-                        <li>
-                          <a href="index3.html">Home Page 3</a>
-                        </li>
-                        <li>
-                          <a href="index4.html">Home Page 4</a>
+                          <a href="service1.html">Service 1</a>
+                          <a href="service1.html">Service 1</a>
                         </li>
                       </ul>
                     </li>
                     <li>
-                      <a href="#">About</a>
-                      <ul className="dropdown-menu-col-1">
-                        <li>
-                          <a href="about1.html">About 1</a>
-                        </li>
-                        <li>
-                          <a href="about2.html">About 2</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">Services</a>
-                      <ul className="dropdown-menu-col-1">
-                        <li>
-                          <a href="service1.html">Services 1</a>
-                        </li>
-                        <li>
-                          <a href="service2.html">Services 2</a>
-                        </li>
-                        <li>
-                          <a href="single-service1.html">Single Services 1</a>
-                        </li>
-                        <li>
-                          <a href="single-service2.html">Single Services 2</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="#">Blog</a>
-                      <ul className="dropdown-menu-col-1">
+                      <a href="/blog">Blogs</a>
+                      {/* <ul className="dropdown-menu-col-1">
                         <li>
                           <a href="blog1.html">Blog 1</a>
                         </li>
                         <li>
                           <a href="blog2.html">Blog 2</a>
                         </li>
-                        <li>
-                          <a href="single-blog1.html">Blog Details</a>
-                        </li>
-                      </ul>
+                      </ul> */}
                     </li>
-                    <li className="position-static hide-on-mobile-menu">
-                      <a href="#">Pages</a>
-                      <div className="template-mega-menu">
-                        <div className="container">
-                          <div className="bg-white mega-menu-small">
-                            <div className="row">
-                              <div className="col-3">
-                                <div className="menu-ctg-title">Pages</div>
-                                <ul className="sub-menu">
-                                  <li>
-                                    <a href="project1.html">
-                                      <i className="fas fa-handshake" />
-                                      Project
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="single-project1.html">
-                                      <i className="fas fa-handshake" />
-                                      Project Details
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="pricing-table.html">
-                                      <i className="far fa-money-bill-alt" />
-                                      Pricing Table
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div className="col-3">
-                                <div className="menu-ctg-title">Pages</div>
-                                <ul className="sub-menu">
-                                  <li>
-                                    <a href="team1.html">
-                                      <i className="fas fa-user-tie" />
-                                      Team 1
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="team2.html">
-                                      <i className="fas fa-user-tie" />
-                                      Team 2
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="single-team.html">
-                                      <i className="fas fa-user-tie" />
-                                      Single Team
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div className="col-3">
-                                <div className="menu-ctg-title">Pages</div>
-                                <ul className="sub-menu">
-                                  <li>
-                                    <a href="shop.html">
-                                      <i className="fas fa-cart-plus" />
-                                      Shop
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="single-product.html">
-                                      <i className="fas fa-cart-plus" />
-                                      Product Details
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="calculate-form.html">
-                                      <i className="fas fa-calculator" />
-                                      Calculation Form
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div className="col-3">
-                                <div className="menu-ctg-title">Pages</div>
-                                <ul className="sub-menu">
-                                  <li>
-                                    <a href="faq.html">
-                                      <i className="fas fa-chalkboard-teacher" />
-                                      Faq Page
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="404.html">
-                                      <i className="fas fa-exclamation-triangle" />
-                                      404 Error
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a href="coming-soon.html">
-                                      <i className="fas fa-spinner" />
-                                      Coming Soon
-                                    </a>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li className="hide-on-desktop-menu">
-                      <a href="#">Pages</a>
-                      <ul>
-                        <li>
-                          <a href="about1.html">About</a>
-                        </li>
-                        <li>
-                          <a href="service1.html">Services</a>
-                        </li>
-                        <li>
-                          <a href="project1.html">Project</a>
-                        </li>
-                        <li>
-                          <a href="404.html">404 Error</a>
-                        </li>
-                        <li>
-                          <a href="contact.html">Contact</a>
-                        </li>
-                      </ul>
-                    </li>
+
                     <li>
-                      <a href="contact.html">Contact</a>
+                      <a href="/contact">Contact</a>
                     </li>
                   </ul>
                 </nav>
