@@ -11,7 +11,7 @@ const HomeService = () => {
         <div className="heading-layout1">
           <h2>Our Cleaning Services</h2>
           <p>
-            Blossom Property Services offers top-quality residential,
+            Blossom Cleaning Services offers top-quality residential,
             commercial, and end-of-lease cleaning services across Sydney.
           </p>
         </div>

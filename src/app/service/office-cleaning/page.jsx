@@ -1,4 +1,5 @@
 import Banner from "@/Component/Banner";
+import FAQ from "@/Component/FAQ";
 import React from "react";
 
 const SingleService = () => {
@@ -23,7 +24,7 @@ const SingleService = () => {
                   galley of type and scrambled it to make a type specimen book.
                 </p>
                 <div className="main-img">
-                  <img src="img/service/service11.jpg" alt="Kitchen Cleaning" />
+                  <img src="/img/service/service11.jpg" alt="Kitchen Cleaning" />
                 </div>
                 <div className="service-content">
                   <p>
@@ -82,7 +83,7 @@ const SingleService = () => {
                     <div className="row">
                       <div className="col-lg-6">
                         <div className="item-img">
-                          <img src="img/service/service10.jpg" alt="thumb" />
+                          <img src="/img/service/service10.jpg" alt="thumb" />
                         </div>
                       </div>
                       <div className="col-lg-6">
@@ -107,129 +108,7 @@ const SingleService = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="service-faq">
-                    <h3 className="item-title">Frequently Ask Questions</h3>
-                    <p>
-                      Ahen an unknown printer took a galley of type and
-                      scrambled it to make a type specimen book areIt hasear
-                      survived not only five centuries, but also the leap into
-                      electronic typesetting, remaining essentiall yellow aw
-                      unchangedh the release o type.Ahen an unknown printer took
-                      a galley of type scram.
-                    </p>
-                    <div className="faq-box">
-                      <div id="accordion" className="accordion">
-                        <div className="card">
-                          <div className="card-header" id="headingOne">
-                            <h5
-                              className="heading-title"
-                              data-toggle="collapse"
-                              data-target="#collapseOne"
-                              aria-expanded="true"
-                              aria-controls="collapseOne"
-                            >
-                              Modern Equipment We Use
-                            </h5>
-                          </div>
-                          <div
-                            id="collapseOne"
-                            className="collapse show"
-                            aria-labelledby="headingOne"
-                            data-parent="#accordion"
-                          >
-                            <div className="card-body">
-                              Ahen an unknown printer took a galley of type and
-                              scrambled it to make a type specimen book areIt
-                              hasear survived not only five centuries, but also
-                              the leap into electronic typesetting, remaining
-                              essentiall yellow aw unchangedh.
-                            </div>
-                          </div>
-                        </div>
-                        <div className="card">
-                          <div className="card-header" id="headingTwo">
-                            <h5
-                              className="heading-title collapsed"
-                              data-toggle="collapse"
-                              data-target="#collapseTwo"
-                              aria-expanded="false"
-                              aria-controls="collapseTwo"
-                            >
-                              Qualified Workers
-                            </h5>
-                          </div>
-                          <div
-                            id="collapseTwo"
-                            className="collapse"
-                            aria-labelledby="headingTwo"
-                            data-parent="#accordion"
-                          >
-                            <div className="card-body">
-                              Ahen an unknown printer took a galley of type and
-                              scrambled it to make a type specimen book areIt
-                              hasear survived not only five centuries, but also
-                              the leap into electronic typesetting, remaining
-                              essentiall yellow aw unchangedh.
-                            </div>
-                          </div>
-                        </div>
-                        <div className="card">
-                          <div className="card-header" id="headingThree">
-                            <h5
-                              className="heading-title collapsed"
-                              data-toggle="collapse"
-                              data-target="#collapseThree"
-                              aria-expanded="false"
-                              aria-controls="collapseThree"
-                            >
-                              Modern Equipment We Use
-                            </h5>
-                          </div>
-                          <div
-                            id="collapseThree"
-                            className="collapse"
-                            aria-labelledby="headingThree"
-                            data-parent="#accordion"
-                          >
-                            <div className="card-body">
-                              Ahen an unknown printer took a galley of type and
-                              scrambled it to make a type specimen book areIt
-                              hasear survived not only five centuries, but also
-                              the leap into electronic typesetting, remaining
-                              essentiall yellow aw unchangedh.
-                            </div>
-                          </div>
-                        </div>
-                        <div className="card">
-                          <div className="card-header" id="headingFour">
-                            <h5
-                              className="heading-title collapsed"
-                              data-toggle="collapse"
-                              data-target="#collapseFour"
-                              aria-expanded="false"
-                              aria-controls="collapseFour"
-                            >
-                              Modern Equipment We Use
-                            </h5>
-                          </div>
-                          <div
-                            id="collapseFour"
-                            className="collapse"
-                            aria-labelledby="headingFour"
-                            data-parent="#accordion"
-                          >
-                            <div className="card-body">
-                              Ahen an unknown printer took a galley of type and
-                              scrambled it to make a type specimen book areIt
-                              hasear survived not only five centuries, but also
-                              the leap into electronic typesetting, remaining
-                              essentiall yellow aw unchangedh.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <FAQ />
                 </div>
               </div>
             </div>
@@ -272,7 +151,7 @@ const SingleService = () => {
                   </a>
                 </div>
               </div>
-              <div className="widget widget-download">
+              {/* <div className="widget widget-download">
                 <div className="heading-layout4">
                   <h4>Download Now</h4>
                 </div>
@@ -298,7 +177,7 @@ const SingleService = () => {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
               <div className="widget widget-contact-form">
                 <div className="heading-layout4">
                   <h4>Have you Any Question?</h4>
@@ -392,7 +271,7 @@ const SingleService = () => {
               </div>
               <div className="widget widget-banner">
                 <div className="item-img">
-                  <img src="img/figure/widget-banner.png" alt="banner" />
+                  <img src="/img/figure/widget-banner.png" alt="banner" />
                 </div>
                 <div className="item-content">
                   <h2 className="item-title">

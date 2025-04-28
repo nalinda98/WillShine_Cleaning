@@ -45,11 +45,13 @@ const Testominals = () => {
           >
             <div className="testimonial-box-layout1">
               <p>
-                Wimply dummy text of the printing and typesetting industryrem
-                Ipsum has been the industry&apos;s standard dummy text ever
-                since{" "}
+                Blossom Cleaning Services has been fantastic for our office
+                cleaning needs. Their team is always professional, punctual, and
+                thorough. Our office looks spotless after every visit, and we
+                love that they use eco-friendly products. Highly recommend them
+                for any business needing reliable cleaning services!{" "}
               </p>
-              <h3 className="item-title">Steven Joes</h3>
+              <h3 className="item-title">Optimum Roofing</h3>
               <div className="item-subtitle">CEO, RT</div>
               <ul className="item-rating">
                 <li>
@@ -74,11 +76,13 @@ const Testominals = () => {
             </div>
             <div className="testimonial-box-layout1">
               <p>
-                Wimply dummy text of the printing and typesetting industryrem
-                Ipsum has been the industry&apos;s standard dummy text ever
-                since{" "}
+                I’m extremely happy with the pressure washing service from
+                Blossom Cleaning Services. They arrived on time, worked
+                efficiently, and made my driveway and exterior look brand new.
+                Great results, fair pricing, and excellent customer service.
+                Highly recommend!{" "}
               </p>
-              <h3 className="item-title">Mike Tyson</h3>
+              <h3 className="item-title">Tanya Regan</h3>
               <div className="item-subtitle">CEO, RT</div>
               <ul className="item-rating">
                 <li>
@@ -103,11 +107,10 @@ const Testominals = () => {
             </div>
             <div className="testimonial-box-layout1">
               <p>
-                Wimply dummy text of the printing and typesetting industryrem
-                Ipsum has been the industry&apos;s standard dummy text ever
-                since{" "}
+                Blossom Property Services is fantastic! Always reliable,
+                thorough, and professional. Highly recommend!{" "}
               </p>
-              <h3 className="item-title">Bobby John</h3>
+              <h3 className="item-title">Jason</h3>
               <div className="item-subtitle">CEO, RT</div>
               <ul className="item-rating">
                 <li>

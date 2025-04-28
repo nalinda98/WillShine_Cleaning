@@ -28,9 +28,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Blossom Property Services",
+  title: "Blossom Cleaning Services",
   description:
-    "Blossom Property Services is a property management company that specializes in managing residential and commercial properties.",
+    "Blossom Cleaning Services is a property management company that specializes in managing residential and commercial properties.",
 };
 
 export default function RootLayout({ children }) {

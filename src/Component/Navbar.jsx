@@ -33,7 +33,7 @@ const Navbar = () => {
   }, [isSticky]);
   return (
     <header className="header">
-      <div id="header-topbar" ref={topbarRef}  className="bg-assh-2 pd-y-10">
+      <div id="header-topbar" ref={topbarRef} className="bg-assh-2 pd-y-10">
         <div className="container">
           <div className="row d-flex align-items-center">
             <div className="col-lg-6">
@@ -50,12 +50,20 @@ const Navbar = () => {
               <div className="header-topbar-layout2">
                 <ul className="header-top-right">
                   <li className="social-icon">
+                    <a href="https://www.facebook.com/blossompropertyservice">
+                      <i className="fab fa-facebook-f" />
+                    </a>
+                    <a href="https://www.instagram.com/blossompropertyservices/">
+                      <i className="fab fa-instagram" />
+                    </a>
+                    <a href="https://www.linkedin.com/company/blossom-property-services/">
+                      <i className="fab fa-linkedin-in" />
+                    </a>
                     <a href="tel:0433691812">
                       <i className="fas fa-envelope" />{" "}
                     </a>
                     <a href="mailto:blossompropertyservices@gmail.com">
                       <i className="fas fa-phone" />
-                      {/* blossompropertyservices@gmail.com */}
                     </a>
                   </li>
                 </ul>
@@ -64,7 +72,11 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div id="header-middlebar"  ref={middlebarRef} className="header-middlebar-layout1">
+      <div
+        id="header-middlebar"
+        ref={middlebarRef}
+        className="header-middlebar-layout1"
+      >
         <div className="container">
           <div className="row d-flex align-items-center">
             <div className="col-lg-3">
@@ -90,8 +102,8 @@ const Navbar = () => {
                       <div className="item-title">Opening Hours</div>
                       <div className="item-subtitle">
                         Mon - Fri: 09.00am - 5.00pm
-                        <br />
-                        Saturday: 10.00am - 6.00pm
+                        {/* <br />
+                        Saturday: 10.00am - 6.00pm */}
                       </div>
                     </div>
                   </li>
@@ -119,8 +131,12 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div id="rt-sticky-placeholder" ref={placeholderRef}/>
-      <div id="header-menu" ref={menuRef} className={`header-menu menu-layout3 ${isSticky ? "rt-sticky" : ""}`}>
+      <div id="rt-sticky-placeholder" ref={placeholderRef} />
+      <div
+        id="header-menu"
+        ref={menuRef}
+        className={`header-menu menu-layout3 ${isSticky ? "rt-sticky" : ""}`}
+      >
         <div className="container">
           <div className="bg-Primary border-radius-4 pl-4">
             <div className="row d-flex align-items-center">
