@@ -141,7 +141,7 @@ const SingleService = () => {
                     </li>
                     <li>
                       <div className="item-title">E-mail</div>
-                      <div className="item-subtitle">info@clenix.com</div>
+                      <div className="item-subtitle">info@blossom.com</div>
                     </li>
                   </ul>
                   <a

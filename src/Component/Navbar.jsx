@@ -40,8 +40,9 @@ const Navbar = () => {
               <div className="header-topbar-layout2">
                 <div className="header-top-left">
                   <div className="item-location">
-                    <i className="fas fa-map-marker-alt" />
-                    59 Street, B4 Appartment, Australia
+                    <b>
+                    Blossom Cleaning Services
+                      </b>{/* <i className="fas fa-map-marker-alt" /> */}
                   </div>
                 </div>
               </div>
@@ -85,6 +86,7 @@ const Navbar = () => {
                   <img
                     // fill={true}
                     src="/img/logo-dark2.png"
+                    style={{  height: "80px", width: "auto" }}
                     alt="logo"
                     className="img-fluid"
                   />

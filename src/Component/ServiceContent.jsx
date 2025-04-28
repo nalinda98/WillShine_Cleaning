@@ -12,37 +12,7 @@ const ServiceContent = () => {
             <div className="col-xl-4 col-md-6">
               <div className="service-box-layout2 white-shadow">
                 <div className="item-img">
-                  <img src="img/service/service8.jpg" alt="thumb" />
-                </div>
-                <div className="item-content">
-                  <div className="item-icon">
-                    <div className="icon-bg">
-                      <i className="flaticon-dishwasher" />
-                    </div>
-                  </div>
-                  <h3 className="item-title">
-                    <a href="single-service1.html">Kitchen Cleaning</a>
-                  </h3>
-                  <div className="hover-content">
-                    <p>
-                      Sorem ipsum dolor sit amet consecte tur adipisicing
-                      eiusmod area.
-                    </p>
-                    <a
-                      href="#"
-                      className="btn-fill-xs bg-accent text-primarytext"
-                    >
-                      Read More
-                      <i className="fas fa-angle-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="service-box-layout2 white-shadow">
-                <div className="item-img">
-                  <img src="img/service/service7.jpg" alt="thumb" />
+                  <img src="img/service/service7.jpg" alt="Office Cleaning" />
                 </div>
                 <div className="item-content">
                   <div className="item-icon">
@@ -55,11 +25,11 @@ const ServiceContent = () => {
                   </h3>
                   <div className="hover-content">
                     <p>
-                      Sorem ipsum dolor sit amet consecte tur adipisicing
-                      eiusmod area.
+                      We provide thorough office cleaning to keep your workspace
+                      fresh, clean, and productive.
                     </p>
                     <a
-                      href="#"
+                      href="/service/office-cleaning"
                       className="btn-fill-xs bg-accent text-primarytext"
                     >
                       Read More
@@ -69,10 +39,45 @@ const ServiceContent = () => {
                 </div>
               </div>
             </div>
+
             <div className="col-xl-4 col-md-6">
               <div className="service-box-layout2 white-shadow">
                 <div className="item-img">
-                  <img src="img/service/service3.jpg" alt="thumb" />
+                  <img
+                    src="img/service/service4.jpg"
+                    alt="Stripping and Sealing"
+                  />
+                </div>
+                <div className="item-content">
+                  <div className="item-icon">
+                    <div className="icon-bg">
+                      <i className="flaticon-vacuum" />
+                    </div>
+                  </div>
+                  <h3 className="item-title">
+                    <a href="single-service2.html">Stripping & Sealing</a>
+                  </h3>
+                  <div className="hover-content">
+                    <p>
+                      Restore the look of your floors with our professional
+                      stripping and sealing services.
+                    </p>
+                    <a
+                      href="/service/stripping-and-sealing"
+                      className="btn-fill-xs bg-accent text-primarytext"
+                    >
+                      Read More
+                      <i className="fas fa-angle-right" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-xl-4 col-md-6">
+              <div className="service-box-layout2 white-shadow">
+                <div className="item-img">
+                  <img src="img/service/service3.jpg" alt="Carpet Cleaning" />
                 </div>
                 <div className="item-content">
                   <div className="item-icon">
@@ -81,15 +86,15 @@ const ServiceContent = () => {
                     </div>
                   </div>
                   <h3 className="item-title">
-                    <a href="single-service1.html">Window Cleaning</a>
+                    <a href="single-service3.html">Carpet Cleaning</a>
                   </h3>
                   <div className="hover-content">
                     <p>
-                      Sorem ipsum dolor sit amet consecte tur adipisicing
-                      eiusmod area.
+                      Deep carpet cleaning to remove dirt, stains, and
+                      allergens, leaving your carpets fresh and vibrant.
                     </p>
                     <a
-                      href="#"
+                      href="/service/carpet-cleaning"
                       className="btn-fill-xs bg-accent text-primarytext"
                     >
                       Read More
@@ -99,177 +104,28 @@ const ServiceContent = () => {
                 </div>
               </div>
             </div>
+
             <div className="col-xl-4 col-md-6">
               <div className="service-box-layout2 white-shadow">
                 <div className="item-img">
-                  <img src="img/service/service4.jpg" alt="thumb" />
+                  <img src="img/service/service8.jpg" alt="Pressure Washing" />
                 </div>
                 <div className="item-content">
                   <div className="item-icon">
                     <div className="icon-bg">
-                      <i className="flaticon-vacuum" />
+                      <i className="flaticon-dishwasher" />
                     </div>
                   </div>
                   <h3 className="item-title">
-                    <a href="single-service1.html">Floor Cleaning</a>
+                    <a href="single-service4.html">Pressure Washing</a>
                   </h3>
                   <div className="hover-content">
                     <p>
-                      Sorem ipsum dolor sit amet consecte tur adipisicing
-                      eiusmod area.
+                      High-pressure cleaning to remove grime, mold, and dirt
+                      from outdoor surfaces.
                     </p>
                     <a
-                      href="#"
-                      className="btn-fill-xs bg-accent text-primarytext"
-                    >
-                      Read More
-                      <i className="fas fa-angle-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="service-box-layout2 white-shadow">
-                <div className="item-img">
-                  <img src="img/service/service5.jpg" alt="thumb" />
-                </div>
-                <div className="item-content">
-                  <div className="item-icon">
-                    <div className="icon-bg">
-                      <i className="flaticon-shower" />
-                    </div>
-                  </div>
-                  <h3 className="item-title">
-                    <a href="single-service1.html">Plumbing Service</a>
-                  </h3>
-                  <div className="hover-content">
-                    <p>
-                      Sorem ipsum dolor sit amet consecte tur adipisicing
-                      eiusmod area.
-                    </p>
-                    <a
-                      href="#"
-                      className="btn-fill-xs bg-accent text-primarytext"
-                    >
-                      Read More
-                      <i className="fas fa-angle-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="service-box-layout2 white-shadow">
-                <div className="item-img">
-                  <img src="img/service/service6.jpg" alt="thumb" />
-                </div>
-                <div className="item-content">
-                  <div className="item-icon">
-                    <div className="icon-bg">
-                      <i className="flaticon-sports-car" />
-                    </div>
-                  </div>
-                  <h3 className="item-title">
-                    <a href="single-service1.html">Car Wash</a>
-                  </h3>
-                  <div className="hover-content">
-                    <p>
-                      Sorem ipsum dolor sit amet consecte tur adipisicing
-                      eiusmod area.
-                    </p>
-                    <a
-                      href="#"
-                      className="btn-fill-xs bg-accent text-primarytext"
-                    >
-                      Read More
-                      <i className="fas fa-angle-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="service-box-layout2 white-shadow">
-                <div className="item-img">
-                  <img src="img/service/service7.jpg" alt="thumb" />
-                </div>
-                <div className="item-content">
-                  <div className="item-icon">
-                    <div className="icon-bg">
-                      <i className="flaticon-vacuum" />
-                    </div>
-                  </div>
-                  <h3 className="item-title">
-                    <a href="single-service1.html">Floor Cleaning</a>
-                  </h3>
-                  <div className="hover-content">
-                    <p>
-                      Sorem ipsum dolor sit amet consecte tur adipisicing
-                      eiusmod area.
-                    </p>
-                    <a
-                      href="#"
-                      className="btn-fill-xs bg-accent text-primarytext"
-                    >
-                      Read More
-                      <i className="fas fa-angle-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="service-box-layout2 white-shadow">
-                <div className="item-img">
-                  <img src="img/service/service8.jpg" alt="thumb" />
-                </div>
-                <div className="item-content">
-                  <div className="item-icon">
-                    <div className="icon-bg">
-                      <i className="flaticon-shower" />
-                    </div>
-                  </div>
-                  <h3 className="item-title">
-                    <a href="single-service1.html">Plumbing Service</a>
-                  </h3>
-                  <div className="hover-content">
-                    <p>
-                      Sorem ipsum dolor sit amet consecte tur adipisicing
-                      eiusmod area.
-                    </p>
-                    <a
-                      href="#"
-                      className="btn-fill-xs bg-accent text-primarytext"
-                    >
-                      Read More
-                      <i className="fas fa-angle-right" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="service-box-layout2 white-shadow">
-                <div className="item-img">
-                  <img src="img/service/service4.jpg" alt="thumb" />
-                </div>
-                <div className="item-content">
-                  <div className="item-icon">
-                    <div className="icon-bg">
-                      <i className="flaticon-sports-car" />
-                    </div>
-                  </div>
-                  <h3 className="item-title">
-                    <a href="single-service1.html">Car Wash</a>
-                  </h3>
-                  <div className="hover-content">
-                    <p>
-                      Sorem ipsum dolor sit amet consecte tur adipisicing
-                      eiusmod area.
-                    </p>
-                    <a
-                      href="#"
+                      href="/service/pressure-washing"
                       className="btn-fill-xs bg-accent text-primarytext"
                     >
                       Read More
