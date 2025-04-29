@@ -85,7 +85,7 @@ const Navbar = () => {
                 <a href="index.html" className="temp-logo">
                   <img
                     // fill={true}
-                    src="/img/logo-dark2.png"
+                    src="/img/horizontal_logo_without_background.png"
                     style={{  height: "80px", width: "auto" }}
                     alt="logo"
                     className="img-fluid"

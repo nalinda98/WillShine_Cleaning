@@ -6,35 +6,33 @@ const SingleService = () => {
   return (
     <div>
       <Banner
-        title={"Kitchen Cleaning Service"}
-        path={"Services > Kitchen Cleaning"}
+        title={"Office Cleaning Service"}
+        path={"Services > Office Cleaning"}
       />
       <section className="section-padding-12">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 order-lg-2">
               <div className="single-service-box-layout1">
-                <h2 className="service-title">Kitchen Cleaning Service </h2>
+                <h2 className="service-title">Office Cleaning Service</h2>
                 <p>
-                  Ahen an unknown printer took a galley of type and scrambled it
-                  to make a type specimen book areIt hasear survived not only
-                  five centuries, but also the leap into electronic typesetting,
-                  remaining essentiall yellow aw unchangedh the release of
-                  Letraset sheets containing.Ahen an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
+                  A clean and organized workspace can boost productivity, reduce stress, and create a professional environment. But who has the time for deep cleaning every day? The good news is, with a few simple hacks, you can keep your office spotless without breaking a sweat. Here are ten office cleaning hacks that will transform your workspace overnight!
                 </p>
                 <div className="main-img">
-                  <img src="/img/service/service11.jpg" alt="Kitchen Cleaning" />
+                  <img src="/img/service/service11.jpg" alt="Office Cleaning" />
                 </div>
                 <div className="service-content">
                   <p>
-                    Ahen an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book areIt hasear survived not
-                    only five centuries, but also the leap into electronic
-                    typesetting, remaining essentiall yellow aw unchangedh the
-                    release of Letraset sheets containing and more recently with
-                    desktop.Ahen an unknown printer took a galley of type and
-                    scrambled it to make a type.
+                    1. <b>Declutter First, Clean Later:</b> Use a “three-box method” (Keep, Recycle, Trash) and invest in desk organizers.<br/>
+                    2. <b>Use Microfiber Cloths for Dusting:</b> Lightly dampen the cloth to capture more dust.<br/>
+                    3. <b>Disinfect Your Keyboard and Mouse:</b> Cotton swabs dipped in isopropyl alcohol work wonders.<br/>
+                    4. <b>Freshen Up Office Air Naturally:</b> Add small plants or place baking soda to absorb odors.<br/>
+                    5. <b>Use Coffee Filters for Screen Cleaning:</b> Gently wipe your monitor with a dry coffee filter.<br/>
+                    6. <b>Keep Your Office Chair Clean:</b> Use a lint roller and mild soap solution for fabric chairs.<br/>
+                    7. <b>Organize Cables with Binder Clips:</b> Attach binder clips to your desk to manage cables easily.<br/>
+                    8. <b>Use Lemon for a Fresh-Smelling Office:</b> Lemon juice mixed with water works as a natural surface cleaner.<br/>
+                    9. <b>Clean Office Windows with Vinegar:</b> Mix vinegar and water for a streak-free shine.<br/>
+                    10. <b>Keep a Desk Cleaning Kit:</b> Include wipes, microfiber cloths, mini brush, and hand sanitizer.
                   </p>
                   <div className="why-choose">
                     <div className="row">
@@ -44,11 +42,9 @@ const SingleService = () => {
                             <i className="far fa-check-circle" />
                           </div>
                           <div className="media-body space-md">
-                            <h3 className="item-title">Quality We Ensure</h3>
+                            <h3 className="item-title">Customized Cleaning Plans</h3>
                             <p>
-                              Aorem ipsum dolor sit amet consectetur adipisicing
-                              elit sed doeiusmod tempor incididunt ut labore et
-                              dolore.
+                              Blossom Property Services tailors cleaning schedules and tasks to your office's specific needs, ensuring optimal results without disruption.
                             </p>
                           </div>
                         </div>
@@ -59,11 +55,9 @@ const SingleService = () => {
                             <i className="far fa-check-circle" />
                           </div>
                           <div className="media-body space-md">
-                            <h3 className="item-title">Experienced Workers</h3>
+                            <h3 className="item-title">Eco-Friendly Products</h3>
                             <p>
-                              Aorem ipsum dolor sit amet consectetur adipisicing
-                              elit sed doeiusmod tempor incididunt ut labore et
-                              dolore.
+                              We use safe, non-toxic, and eco-friendly cleaning supplies, protecting both employees and the environment while delivering excellent cleanliness.
                             </p>
                           </div>
                         </div>
@@ -71,13 +65,7 @@ const SingleService = () => {
                     </div>
                   </div>
                   <p>
-                    Ahen an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book areIt hasear survived not
-                    only five centuries, but also the leap into electronic
-                    typesetting, remaining essentiall yellow aw unchangedh the
-                    release o type.Ahen an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book areIt hasear
-                    survived not only five centuries.
+                    While these office cleaning hacks can help maintain your workspace daily, nothing beats a professional touch. Blossom Property Services specializes in delivering expert office cleaning solutions, offering a healthier, more productive working environment with trained cleaning professionals.
                   </p>
                   <div className="service-more-content">
                     <div className="row">
@@ -89,20 +77,17 @@ const SingleService = () => {
                       <div className="col-lg-6">
                         <div className="item-content">
                           <h3 className="item-title">
-                            Experienced People can help you more.
+                            Why Choose Blossom Property Services?
                           </h3>
                           <p>
-                            Ahen an unknown printer took a galley of type andty
-                            scrambled it to make a type specimen book areIter
-                            hasear survived not only five centuries, but also
-                            the leap into electronic type.
+                            Blossom Property Services stands out because we specialize only in office cleaning. Our vision: "Office Cleaning – It’s All We Do, and We Do It Best!" Our dedication ensures your workspace shines.
                           </p>
                           <ul className="item-feature">
-                            <li>Gas Silendar Clean</li>
-                            <li>Frozen Pipe Clean</li>
-                            <li>Water Pipe Clean</li>
-                            <li>Toilet Clean</li>
-                            <li>Toilet Clean</li>
+                            <li>Trained Cleaning Professionals</li>
+                            <li>Affordable & Reliable Service</li>
+                            <li>Flexible Scheduling</li>
+                            <li>Eco-Friendly Cleaning Solutions</li>
+                            <li>Guaranteed Customer Satisfaction</li>
                           </ul>
                         </div>
                       </div>
@@ -151,33 +136,7 @@ const SingleService = () => {
                   </a>
                 </div>
               </div>
-              {/* <div className="widget widget-download">
-                <div className="heading-layout4">
-                  <h4>Download Now</h4>
-                </div>
-                <div className="download-list">
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <i className="far fa-file-pdf text-lightred" />
-                        Download Pdf File
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="far fa-file-word text-lightprimary" />
-                        Download Doc File
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-youtube text-red" />
-                        Video Download
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div> */}
+
               <div className="widget widget-contact-form">
                 <div className="heading-layout4">
                   <h4>Have you Any Question?</h4>
@@ -234,8 +193,8 @@ const SingleService = () => {
                         type="text"
                         placeholder="Subject"
                         className="form-control"
-                        name="phone"
-                        data-error="Phone field is required"
+                        name="subject"
+                        data-error="Subject field is required"
                         required=""
                       />
                       <div className="help-block with-errors" />
@@ -245,7 +204,7 @@ const SingleService = () => {
                         <i className="far fa-comments" />
                       </div>
                       <textarea
-                        placeholder="Address"
+                        placeholder="Message"
                         className="textarea form-control"
                         name="message"
                         id="form-message"
@@ -269,6 +228,7 @@ const SingleService = () => {
                   <div className="form-response" />
                 </form>
               </div>
+
               <div className="widget widget-banner">
                 <div className="item-img">
                   <img src="/img/figure/widget-banner.png" alt="banner" />
@@ -286,6 +246,7 @@ const SingleService = () => {
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
         </div>

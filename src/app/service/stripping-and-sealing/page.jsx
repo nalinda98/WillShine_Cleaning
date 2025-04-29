@@ -5,36 +5,36 @@ import React from "react";
 const SingleService = () => {
   return (
     <div>
-      <Banner
-        title={"Kitchen Cleaning Service"}
-        path={"Services > Kitchen Cleaning"}
-      />
+      <Banner title={"Strip & Seal Service"} path={"Services > Strip & Seal"} />
       <section className="section-padding-12">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 order-lg-2">
               <div className="single-service-box-layout1">
-                <h2 className="service-title">Kitchen Cleaning Service </h2>
+                <h2 className="service-title">Strip & Seal Service</h2>
                 <p>
-                  Ahen an unknown printer took a galley of type and scrambled it
-                  to make a type specimen book areIt hasear survived not only
-                  five centuries, but also the leap into electronic typesetting,
-                  remaining essentiall yellow aw unchangedh the release of
-                  Letraset sheets containing.Ahen an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
+                  Strip & seal is the most effective method to revive your tile,
+                  marble, and vinyl floors. Over time, heavy traffic and
+                  continuous use can wear down any floor, causing it to lose its
+                  original condition. Without proper treatment, this
+                  deterioration could lead to costly replacements. However,
+                  periodic strip and seal processes can maintain your floors’
+                  original condition for many years.
                 </p>
                 <div className="main-img">
-                  <img src="/img/service/service11.jpg" alt="Kitchen Cleaning" />
+                  <img src="/img/service/service11.jpg" alt="Strip & Seal" />
                 </div>
                 <div className="service-content">
                   <p>
-                    Ahen an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book areIt hasear survived not
-                    only five centuries, but also the leap into electronic
-                    typesetting, remaining essentiall yellow aw unchangedh the
-                    release of Letraset sheets containing and more recently with
-                    desktop.Ahen an unknown printer took a galley of type and
-                    scrambled it to make a type.
+                    In simple terms, the process involves stripping away layers
+                    of grime, cleaning film, or worn sealant from your flooring
+                    and resealing the surface. Depending on your floor’s
+                    condition and the last time it was treated, the process may
+                    vary. If your floors haven’t been stripped and sealed in
+                    over two years, they may require special attention,
+                    including removing multiple layers of old sealant. We offer
+                    instant consultations to assess your floor and determine the
+                    necessary treatment.
                   </p>
                   <div className="why-choose">
                     <div className="row">
@@ -44,11 +44,11 @@ const SingleService = () => {
                             <i className="far fa-check-circle" />
                           </div>
                           <div className="media-body space-md">
-                            <h3 className="item-title">Quality We Ensure</h3>
+                            <h3 className="item-title">Restore Floor Beauty</h3>
                             <p>
-                              Aorem ipsum dolor sit amet consectetur adipisicing
-                              elit sed doeiusmod tempor incididunt ut labore et
-                              dolore.
+                              Our strip and seal service brings your floors back
+                              to life, restoring their original shine and
+                              extending their lifespan with professional care.
                             </p>
                           </div>
                         </div>
@@ -59,11 +59,11 @@ const SingleService = () => {
                             <i className="far fa-check-circle" />
                           </div>
                           <div className="media-body space-md">
-                            <h3 className="item-title">Experienced Workers</h3>
+                            <h3 className="item-title">Tailored Treatments</h3>
                             <p>
-                              Aorem ipsum dolor sit amet consectetur adipisicing
-                              elit sed doeiusmod tempor incididunt ut labore et
-                              dolore.
+                              Every floor is unique. We assess and customize our
+                              strip & seal approach based on the specific
+                              material and condition of your floors.
                             </p>
                           </div>
                         </div>
@@ -71,13 +71,10 @@ const SingleService = () => {
                     </div>
                   </div>
                   <p>
-                    Ahen an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book areIt hasear survived not
-                    only five centuries, but also the leap into electronic
-                    typesetting, remaining essentiall yellow aw unchangedh the
-                    release o type.Ahen an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book areIt hasear
-                    survived not only five centuries.
+                    Maintaining your floors through strip & seal is a
+                    cost-effective alternative to full replacements. With our
+                    professional care, your floors will continue to impress
+                    guests and staff alike.
                   </p>
                   <div className="service-more-content">
                     <div className="row">
@@ -89,20 +86,20 @@ const SingleService = () => {
                       <div className="col-lg-6">
                         <div className="item-content">
                           <h3 className="item-title">
-                            Experienced People can help you more.
+                            Why Strip & Seal Matters
                           </h3>
                           <p>
-                            Ahen an unknown printer took a galley of type andty
-                            scrambled it to make a type specimen book areIter
-                            hasear survived not only five centuries, but also
-                            the leap into electronic type.
+                            Strip and seal isn’t just about looks — it protects
+                            your investment. Regular treatment prevents
+                            long-term wear and enhances durability, keeping your
+                            floors in peak condition year after year.
                           </p>
                           <ul className="item-feature">
-                            <li>Gas Silendar Clean</li>
-                            <li>Frozen Pipe Clean</li>
-                            <li>Water Pipe Clean</li>
-                            <li>Toilet Clean</li>
-                            <li>Toilet Clean</li>
+                            <li>Revives worn-out floors</li>
+                            <li>Protects against future damage</li>
+                            <li>Cost-effective alternative to replacement</li>
+                            <li>Enhances overall cleanliness and hygiene</li>
+                            <li>Professional-grade materials and techniques</li>
                           </ul>
                         </div>
                       </div>
@@ -151,33 +148,7 @@ const SingleService = () => {
                   </a>
                 </div>
               </div>
-              {/* <div className="widget widget-download">
-                <div className="heading-layout4">
-                  <h4>Download Now</h4>
-                </div>
-                <div className="download-list">
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <i className="far fa-file-pdf text-lightred" />
-                        Download Pdf File
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="far fa-file-word text-lightprimary" />
-                        Download Doc File
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-youtube text-red" />
-                        Video Download
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div> */}
+
               <div className="widget widget-contact-form">
                 <div className="heading-layout4">
                   <h4>Have you Any Question?</h4>
@@ -234,8 +205,8 @@ const SingleService = () => {
                         type="text"
                         placeholder="Subject"
                         className="form-control"
-                        name="phone"
-                        data-error="Phone field is required"
+                        name="subject"
+                        data-error="Subject field is required"
                         required=""
                       />
                       <div className="help-block with-errors" />
@@ -245,7 +216,7 @@ const SingleService = () => {
                         <i className="far fa-comments" />
                       </div>
                       <textarea
-                        placeholder="Address"
+                        placeholder="Message"
                         className="textarea form-control"
                         name="message"
                         id="form-message"
@@ -269,6 +240,7 @@ const SingleService = () => {
                   <div className="form-response" />
                 </form>
               </div>
+
               <div className="widget widget-banner">
                 <div className="item-img">
                   <img src="/img/figure/widget-banner.png" alt="banner" />
