@@ -24,7 +24,7 @@ const SingleService = () => {
                   galley of type and scrambled it to make a type specimen book.
                 </p>
                 <div className="main-img">
-                  <img src="/img/service/service11.jpg" alt="Kitchen Cleaning" />
+                  <img src="/img/service/carpet-cleaning11.jpg" alt="Kitchen Cleaning" />
                 </div>
                 <div className="service-content">
                   <p>

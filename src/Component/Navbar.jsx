@@ -40,9 +40,8 @@ const Navbar = () => {
               <div className="header-topbar-layout2">
                 <div className="header-top-left">
                   <div className="item-location">
-                    <b>
-                    Blossom Cleaning Services
-                      </b>{/* <i className="fas fa-map-marker-alt" /> */}
+                    <b>Blossom Cleaning Services</b>
+                    {/* <i className="fas fa-map-marker-alt" /> */}
                   </div>
                 </div>
               </div>
@@ -86,7 +85,7 @@ const Navbar = () => {
                   <img
                     // fill={true}
                     src="/img/logo-dark2.png"
-                    style={{  height: "80px", width: "auto" }}
+                    style={{ height: "50px", width: "auto" }}
                     alt="logo"
                     className="img-fluid"
                   />
@@ -171,14 +170,17 @@ const Navbar = () => {
                     </li>
                     <li>
                       <a href="/blog">Blogs</a>
-                      {/* <ul className="dropdown-menu-col-1">
+                      <ul className="dropdown-menu-col-1">
                         <li>
-                          <a href="blog1.html">Blog 1</a>
+                          <a href="/blog/cleaning-hacks">Cleaning Hacks</a>
                         </li>
                         <li>
-                          <a href="blog2.html">Blog 2</a>
+                          <a href="/blog/why-choose-local-company">Why Choose Local Company</a>
                         </li>
-                      </ul> */}
+                        <li>
+                          <a href="/blog/cleaning-perth">Cleaning Perth</a>
+                        </li>
+                      </ul>
                     </li>
 
                     <li>
