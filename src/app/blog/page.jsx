@@ -1,0 +1,13 @@
+import Banner from "../../Component/Banner";
+import BlogContent from "../../Component/BlogContent";
+
+const Blog = () => {
+  return (
+    <div>
+      <Banner title={"Our Latest Blog"} path={"Blogs"} />
+      <BlogContent />
+    </div>
+  );
+};
+
+export default Blog;
