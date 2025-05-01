@@ -22,7 +22,7 @@ const SingleService = () => {
                   original condition for many years.
                 </p>
                 <div className="main-img">
-                  <img src="/img/service/service11.jpg" alt="Strip & Seal" />
+                  <img src="/img/service/stripping.webp" alt="Kitchen Cleaning" />
                 </div>
                 <div className="service-content">
                   <p>

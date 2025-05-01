@@ -19,7 +19,7 @@ const SingleService = () => {
                   A clean and organized workspace can boost productivity, reduce stress, and create a professional environment. But who has the time for deep cleaning every day? The good news is, with a few simple hacks, you can keep your office spotless without breaking a sweat. Here are ten office cleaning hacks that will transform your workspace overnight!
                 </p>
                 <div className="main-img">
-                  <img src="/img/service/service11.jpg" alt="Office Cleaning" />
+                  <img src="/img/service/officeClean.jpg" alt="Kitchen Cleaning" />
                 </div>
                 <div className="service-content">
                   <p>

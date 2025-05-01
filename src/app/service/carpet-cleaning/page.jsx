@@ -22,7 +22,7 @@ const SingleService = () => {
                   solutions ensure a safe and effective clean for every space.
                 </p>
                 <div className="main-img">
-                  <img src="/img/service/service11.jpg" alt="Carpet Cleaning" />
+                  <img src="/img/service/carpet-cleaning11.jpg" alt="Kitchen Cleaning" />
                 </div>
                 <div className="service-content">
                   <p>

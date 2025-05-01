@@ -1,72 +1,6 @@
 import React from "react";
 import BlogSidebar from "./BlogSidebar";
-
-const blogPosts = [
-  {
-    img: "/img/blog/blog3.jpg",
-    date: "24 July, 2019",
-    title: "What is Best domin Name For Business",
-    author: "Mark Wily",
-    likes: 6,
-    comments: 2,
-  },
-  {
-    img: "/img/blog/blog4.jpg",
-    date: "24 July, 2019",
-    title: "What is Best domin Name For Business",
-    author: "Mark Wily",
-    likes: 6,
-    comments: 2,
-  },
-  {
-    img: "/img/blog/blog5.jpg",
-    date: "24 July, 2019",
-    title: "What is Best domin Name For Business",
-    author: "Mark Wily",
-    likes: 6,
-    comments: 2,
-  },
-  {
-    img: "/img/blog/blog6.jpg",
-    date: "24 July, 2019",
-    title: "What is Best domin Name For Business",
-    author: "Mark Wily",
-    likes: 6,
-    comments: 2,
-  },
-  {
-    img: "/img/blog/blog7.jpg",
-    date: "24 July, 2019",
-    title: "What is Best domin Name For Business",
-    author: "Mark Wily",
-    likes: 6,
-    comments: 2,
-  },
-  {
-    img: "/img/blog/blog8.jpg",
-    date: "24 July, 2019",
-    title: "What is Best domin Name For Business",
-    author: "Mark Wily",
-    likes: 6,
-    comments: 2,
-  },
-  {
-    img: "/img/blog/blog1.jpg",
-    date: "24 July, 2019",
-    title: "What is Best domin Name For Business",
-    author: "Mark Wily",
-    likes: 6,
-    comments: 2,
-  },
-  {
-    img: "/img/blog/blog2.jpg",
-    date: "24 July, 2019",
-    title: "What is Best domin Name For Business",
-    author: "Mark Wily",
-    likes: 6,
-    comments: 2,
-  },
-];
+import BlogPost from "./BlogPost";
 
 const BlogContent = () => {
   return (
@@ -74,10 +8,10 @@ const BlogContent = () => {
       <section className="section-padding-12">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8">
+            <div className="col-lg-12">
               <div className="row">
-                {blogPosts.map((post, index) => (
-                  <div key={index} className="col-md-6 col-12">
+                {BlogPost.map((post, index) => (
+                  <div key={index} className="col-md-4 col-12">
                     <div className="blog-box-layout1">
                       <div className="item-img">
                         <a href={`/blog/${index + 1}`}>
@@ -104,7 +38,7 @@ const BlogContent = () => {
               </div>
 
               {/* Pagination */}
-              <div className="pagination-layout1 text-center pt-5">
+              {/* <div className="pagination-layout1 text-center pt-5">
                 <ul>
                   <li>
                     <a href="/blog/1" className="nav-item active">
@@ -127,12 +61,12 @@ const BlogContent = () => {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
 
-            <div className="col-lg-4 sidebar-break-md sidebar-widget-area">
+            {/* <div className="col-lg-4 sidebar-break-md sidebar-widget-area">
               <BlogSidebar />
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

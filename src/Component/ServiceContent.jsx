@@ -12,7 +12,7 @@ const ServiceContent = () => {
             <div className="col-xl-4 col-md-6">
               <div className="service-box-layout2 white-shadow">
                 <div className="item-img">
-                  <img src="img/service/service7.jpg" alt="Office Cleaning" />
+                  <img src="img/service/officeClean1.jpg" alt="Office Cleaning" />
                 </div>
                 <div className="item-content">
                   <div className="item-icon">
@@ -44,7 +44,7 @@ const ServiceContent = () => {
               <div className="service-box-layout2 white-shadow">
                 <div className="item-img">
                   <img
-                    src="img/service/service4.jpg"
+                    src="img/service/stripping (1).png"
                     alt="Stripping and Sealing"
                   />
                 </div>
@@ -77,7 +77,7 @@ const ServiceContent = () => {
             <div className="col-xl-4 col-md-6">
               <div className="service-box-layout2 white-shadow">
                 <div className="item-img">
-                  <img src="img/service/service3.jpg" alt="Carpet Cleaning" />
+                  <img src="img/service/carpet1.jpg" alt="Carpet Cleaning" />
                 </div>
                 <div className="item-content">
                   <div className="item-icon">
@@ -108,7 +108,7 @@ const ServiceContent = () => {
             <div className="col-xl-4 col-md-6">
               <div className="service-box-layout2 white-shadow">
                 <div className="item-img">
-                  <img src="img/service/service8.jpg" alt="Pressure Washing" />
+                  <img src="img/service/pressure (1).png" alt="Pressure Washing" />
                 </div>
                 <div className="item-content">
                   <div className="item-icon">

@@ -24,10 +24,7 @@ const SingleService = () => {
                   — we’re not satisfied until you are!
                 </p>
                 <div className="main-img">
-                  <img
-                    src="/img/service/service11.jpg"
-                    alt="Pressure Washing"
-                  />
+                  <img src="/img/service/pressure.webp" alt="Kitchen Cleaning" />
                 </div>
                 <div className="service-content">
                   <div className="why-choose mt-4">
