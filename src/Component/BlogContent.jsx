@@ -14,7 +14,7 @@ const BlogContent = () => {
                   <div key={index} className="col-md-4 col-12">
                     <div className="blog-box-layout1">
                       <div className="item-img">
-                        <a href={`/blog/${index + 1}`}>
+                        <a href={post.path}>
                           <img src={post.img} alt="blog-thumb" />
                         </a>
                       </div>
@@ -23,14 +23,13 @@ const BlogContent = () => {
                           <i className="fas fa-calendar-alt" /> {post.date}
                         </div>
                         <h3 className="item-title">
-                          <a href={`/blog/${index + 1}`}>{post.title}</a>
+                          <a href={post.path}>{post.title}</a>
                         </h3>
                         <div className="item-author">By {post.author}</div>
                         <p>
                           Aimply dummy text of the printing anden type setting
                           industrym Ipsum has been the industry's standard.
                         </p>
-                        
                       </div>
                     </div>
                   </div>
