@@ -130,7 +130,7 @@ const Footer = () => {
         <Modal.Body style={{ whiteSpace: "pre-wrap" }}>
           <strong>Who we are</strong>
           {"\n"}Suggested text: Our website address is:
-          https://blossompropertyservices.com.au.
+          https://willshinepropertyservices.com.au.
           {"\n\n"}
           <strong>Comments</strong>
           {"\n"}Suggested text: When visitors leave comments on the site we

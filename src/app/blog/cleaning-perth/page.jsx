@@ -24,7 +24,7 @@ const SingleBlog = () => {
                     24 July, 2019
                   </div>
                   <h2>
-                    Office Cleaning Services in Perth – Blossom Property
+                    Office Cleaning Services in Perth – Willshine Property
                     Services
                   </h2>
                   <div className="entry-meta">
@@ -36,7 +36,7 @@ const SingleBlog = () => {
                     </ul>
                   </div>
                   <p>
-                    At Blossom Property Services, we understand the importance
+                    At Willshine Property Services, we understand the importance
                     of maintaining a clean and productive work environment. A
                     well-kept office not only enhances the appearance of your
                     workplace but also improves employee health, satisfaction,
@@ -47,7 +47,7 @@ const SingleBlog = () => {
                   </p>
 
                   <h4>
-                    Why Choose Blossom Property Services for Office Cleaning?
+                    Why Choose Willshine Property Services for Office Cleaning?
                   </h4>
                   <ul>
                     <li>
@@ -99,13 +99,13 @@ const SingleBlog = () => {
 
                   <p>
                     If you’re looking for reliable, professional office cleaning
-                    services in Perth, contact Blossom Property Services today.
+                    services in Perth, contact Willshine Property Services today.
                     Let us help you maintain a clean and productive office
                     environment.
                   </p>
                   <p>
                     <strong>
-                      For more information or to request a quote, visit Blossom
+                      For more information or to request a quote, visit Willshine
                       Property Services or call us at 0433691812.
                     </strong>
                   </p>

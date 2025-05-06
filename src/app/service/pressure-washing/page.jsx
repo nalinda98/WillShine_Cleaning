@@ -3,13 +3,57 @@ import ContactForm from "@/Component/ContactForm";
 import FAQ from "@/Component/FAQ";
 import PricingTable from "@/Component/PricingTable";
 import RelatedBlogs from "@/Component/RelatedBlogs";
+import Testimonial from "@/Component/Testimonial";
 import React from "react";
 
 const SingleService = () => {
+  const pressureWashingFaqs = [
+    {
+      question: "How often should I pressure wash my home or driveway?",
+      answer:
+        "We recommend pressure washing your driveway and exterior surfaces at least once a year. However, if you notice heavy buildup of dirt, mold, or algae, more frequent cleaning may be needed to maintain appearance and safety.",
+    },
+    {
+      question: "Is pressure washing safe for all surfaces?",
+      answer:
+        "Yes! We adjust the pressure and techniques based on the surface we’re cleaning. From concrete to siding, we use the proper methods to ensure thorough cleaning without causing any damage.",
+    },
+    {
+      question: "Do I need to be home during the service?",
+      answer:
+        "Not necessarily. As long as we have access to the areas being cleaned and a water source, you do not have to be home. We’ll keep you updated and ensure everything is left spotless!",
+    },
+    {
+      question: "What surfaces can you pressure wash?",
+      answer:
+        "We clean driveways, sidewalks, patios, decks, fences, and more. If you’re unsure about a specific surface, just ask — we’re happy to help!",
+    },
+    {
+      question: "How long does pressure washing take?",
+      answer:
+        "It depends on the size and condition of the area, but most residential jobs are completed within a few hours. We’ll give you an accurate time estimate before we start.",
+    },
+    {
+      question: "Is your cleaning process eco-friendly?",
+      answer:
+        "Absolutely! We use environmentally safe cleaning solutions whenever possible to protect your property, your family, and the environment.",
+    },
+    {
+      question: "How should I prepare my home or driveway before you arrive?",
+      answer:
+        "Please move any vehicles, furniture, or fragile items from the areas to be cleaned. We’ll handle the rest!",
+    },
+    {
+      question: "Do you offer free estimates?",
+      answer:
+        "Yes, we offer free, no-obligation estimates for all our services. Contact us today to schedule yours!",
+    },
+  ];
+
   return (
     <div>
       <Banner
-        title={"Blossom Pressure Washing Service"}
+        title={"Willshine Pressure Washing Service"}
         path={"/service"}
         pathName={"Services"}
         path2={"/service/pressure-washing"}
@@ -20,9 +64,9 @@ const SingleService = () => {
           <div className="row">
             <div className="col-lg-8 order-lg-1">
               <div className="single-service-box-layout1">
-                <h2 className="service-title">Pressure Washing Services</h2>
-                <p>
-                  At Blossom Cleaning Services, we specialize in high-quality
+                <h2 className="service-title">Willshine Pressure Washing Services</h2>
+                <p style={{ textAlign: "justify" }}>
+                  At Willshine Cleaning Services, we specialize in high-quality
                   pressure washing to bring new life to your home or business.
                   Whether it’s driveways, patios, siding, or walkways, our team
                   is committed to delivering outstanding results with care and
@@ -38,7 +82,7 @@ const SingleService = () => {
                 <div className="service-content">
                   <div className="why-choose mt-4">
                     <h3 className="item-title mb-3">
-                      Why Choose Blossom Pressure Cleaning Services
+                      Why Choose Willshine Pressure Cleaning Services
                     </h3>
                     <div className="row">
                       <div className="col-lg-6">
@@ -50,7 +94,7 @@ const SingleService = () => {
                             <h4 className="item-title">
                               Quality Work Every Time
                             </h4>
-                            <p>
+                            <p style={{ textAlign: "justify" }}>
                               We take pride in delivering top-notch pressure
                               cleaning results that make your property shine. No
                               shortcuts — just great work you can trust.
@@ -67,7 +111,7 @@ const SingleService = () => {
                             <h4 className="item-title">
                               Customer Service First
                             </h4>
-                            <p>
+                            <p style={{ textAlign: "justify" }}>
                               Your satisfaction is our priority. We listen,
                               care, and go the extra mile to make sure you’re
                               happy with every job.
@@ -84,7 +128,7 @@ const SingleService = () => {
                             <h4 className="item-title">
                               Experienced and Reliable Team
                             </h4>
-                            <p>
+                            <p style={{ textAlign: "justify" }}>
                               Our trained professionals use the best techniques
                               to safely and effectively clean your surfaces,
                               arriving on time and ready to work.
@@ -101,7 +145,7 @@ const SingleService = () => {
                             <h4 className="item-title">
                               Eco-Friendly Solutions
                             </h4>
-                            <p>
+                            <p style={{ textAlign: "justify" }}>
                               We use safe, environmentally friendly cleaning
                               products whenever possible to protect your home,
                               family, and the planet.
@@ -109,14 +153,14 @@ const SingleService = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="col-lg-12 mt-4">
+                      <div className="col-lg-6 mt-4">
                         <div className="media">
                           <div className="item-icon">
                             <i className="far fa-check-circle" />
                           </div>
                           <div className="media-body space-md">
                             <h4 className="item-title">Competitive Pricing</h4>
-                            <p>
+                            <p style={{ textAlign: "justify" }}>
                               High-quality service doesn’t have to break the
                               bank. We offer fair, transparent pricing with no
                               hidden fees.
@@ -141,7 +185,7 @@ const SingleService = () => {
                             }}
                           >
                             <img
-                              src="/img/service/driveway-placeholder.jpg"
+                              src="/img/service/Driveway.webp"
                               alt="Driveway Cleaning"
                               style={{
                                 width: "100%",
@@ -174,7 +218,7 @@ const SingleService = () => {
                             }}
                           >
                             <img
-                              src="/img/service/patio-placeholder.jpg"
+                              src="/img/service/Patio.webp"
                               alt="Patio & Deck Cleaning"
                               style={{
                                 width: "100%",
@@ -207,7 +251,7 @@ const SingleService = () => {
                             }}
                           >
                             <img
-                              src="/img/service/pool-placeholder.jpg"
+                              src="/img/service/pool.webp"
                               alt="Pool Area Cleaning"
                               style={{
                                 width: "100%",
@@ -267,8 +311,8 @@ const SingleService = () => {
                       },
                     }}
                   />
-
-                  <FAQ />
+                  <Testimonial />
+                  <FAQ faqs={pressureWashingFaqs} />
                 </div>
               </div>
             </div>

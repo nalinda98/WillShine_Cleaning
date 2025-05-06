@@ -4,7 +4,7 @@ const Testimonial = () => {
   return (
     <div>
       <section
-        className="section-padding-md-4 bg-Primary bg-common"
+        className="section-padding-md-4  bg-common"
         data-bg-image="img/figure/bg-shape.png"
       >
         <div className="container">
