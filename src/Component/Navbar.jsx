@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -40,7 +39,7 @@ const Navbar = () => {
               <div className="header-topbar-layout2">
                 <div className="header-top-left">
                   <div className="item-location">
-                    <b>Blossom Cleaning Services</b>
+                    <b>Wilshine Cleaning Services</b>
                     {/* <i className="fas fa-map-marker-alt" /> */}
                   </div>
                 </div>
@@ -50,19 +49,19 @@ const Navbar = () => {
               <div className="header-topbar-layout2">
                 <ul className="header-top-right">
                   <li className="social-icon">
-                    <a href="https://www.facebook.com/blossompropertyservice">
+                    <a href="https://www.facebook.com/wilshinepropertyservice">
                       <i className="fab fa-facebook-f" />
                     </a>
-                    <a href="https://www.instagram.com/blossompropertyservices/">
+                    <a href="https://www.instagram.com/wilshinepropertyservices/">
                       <i className="fab fa-instagram" />
                     </a>
-                    <a href="https://www.linkedin.com/company/blossom-property-services/">
+                    <a href="https://www.linkedin.com/company/wilshine-property-services/">
                       <i className="fab fa-linkedin-in" />
                     </a>
                     <a href="tel:0433691812">
                       <i className="fas fa-envelope" />{" "}
                     </a>
-                    <a href="mailto:blossompropertyservices@gmail.com">
+                    <a href="mailto:wilshinepropertyservices@gmail.com">
                       <i className="fas fa-phone" />
                     </a>
                   </li>
@@ -83,9 +82,8 @@ const Navbar = () => {
               <div className="logo-area">
                 <a href="index.html" className="temp-logo">
                   <img
-                    // fill={true}
-                    src="/img/logo-dark2.png"
-                    style={{ height: "50px", width: "auto" }}
+                    src="/img/horizontal_logo_without_background.png"
+                    style={{ height: "80px", width: "auto" }}
                     alt="logo"
                     className="img-fluid"
                   />
@@ -114,7 +112,7 @@ const Navbar = () => {
                     </div>
                     <div className="item-content">
                       <div className="item-title">E-mail Us</div>
-                      <div className="item-subtitle">info@blossom.com</div>
+                      <div className="item-subtitle">info@wilshine.com.au</div>
                     </div>
                   </li>
                   <li>
@@ -175,7 +173,9 @@ const Navbar = () => {
                           <a href="/blog/cleaning-hacks">Cleaning Hacks</a>
                         </li>
                         <li>
-                          <a href="/blog/why-choose-local-company">Why Choose Local Company</a>
+                          <a href="/blog/why-choose-local-company">
+                            Why Choose Local Company
+                          </a>
                         </li>
                         <li>
                           <a href="/blog/cleaning-perth">Cleaning Perth</a>
@@ -193,10 +193,10 @@ const Navbar = () => {
                 <div className="header-action-layout1">
                   <ul>
                     <li className="header-action-btn">
-                      <a href="#" className="item-btn">
+                      <Link href="/#estimate-section" className="item-btn">
                         <i className="fas fa-bell" />
                         Get A Quote
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

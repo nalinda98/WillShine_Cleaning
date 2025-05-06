@@ -1,5 +1,5 @@
 import React from "react";
-import BlogPost from "./BlogPost";
+import BlogPost from "../utils/BlogPost";
 
 const RecentPost = () => {
   return (

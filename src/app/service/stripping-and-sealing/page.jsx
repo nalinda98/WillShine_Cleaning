@@ -1,40 +1,75 @@
 import Banner from "@/Component/Banner";
+import ContactForm from "@/Component/ContactForm";
 import FAQ from "@/Component/FAQ";
+import PricingTable from "@/Component/PricingTable";
+import RelatedBlogs from "@/Component/RelatedBlogs";
 import React from "react";
 
 const SingleService = () => {
+  const stripAndSealFaqs = [
+    {
+      question: "How often do I need to strip & seal my floors?",
+      answer:
+        "The frequency depends on your floor's purpose, traffic levels, and type. For floors that require a consistently clean and glossy appearance or experience high traffic, we recommend strip and seal treatments every quarter or twice a year. For maintaining fair conditions with average traffic, annual treatments are suitable.",
+    },
+    {
+      question: "How much does strip & seal cost?",
+      answer:
+        "Costs vary based on floor conditions, type, and specific requirements, making it impractical to provide a general quote. Rest assured, we prioritize competitive pricing without compromising on quality.",
+    },
+    {
+      question: "How long before I can reuse the floor?",
+      answer:
+        "Ideally, floors should dry for 24 hours or overnight before reuse. However, we strive to minimize downtime while ensuring adequate drying time.",
+    },
+    {
+      question: "How can I request a free quote?",
+      answer:
+        "Simply fill out the following details, and we'll contact you within 24 hours to schedule a free site visit and provide a quote.",
+    },
+  ];
+  
   return (
     <div>
       <Banner
-        title={"Kitchen Cleaning Service"}
-        path={"Services > Kitchen Cleaning"}
+        title={"Strip & Seal Service"}
+        path={"/service"}
+        pathName={"Services"}
+        path2={"/service/stripping-and-sealing"}
+        path2Name={"Stripping & Sealing"}
       />
       <section className="section-padding-12">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8 order-lg-2">
+            <div className="col-lg-8 order-lg-1">
               <div className="single-service-box-layout1">
-                <h2 className="service-title">Kitchen Cleaning Service </h2>
+                <h2 className="service-title">Strip & Seal Service</h2>
                 <p>
-                  Ahen an unknown printer took a galley of type and scrambled it
-                  to make a type specimen book areIt hasear survived not only
-                  five centuries, but also the leap into electronic typesetting,
-                  remaining essentiall yellow aw unchangedh the release of
-                  Letraset sheets containing.Ahen an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
+                  Strip & seal is the most effective method to revive your tile,
+                  marble, and vinyl floors. Over time, heavy traffic and
+                  continuous use can wear down any floor, causing it to lose its
+                  original condition. Without proper treatment, this
+                  deterioration could lead to costly replacements. However,
+                  periodic strip and seal processes can maintain your floors’
+                  original condition for many years.
                 </p>
                 <div className="main-img">
-                  <img src="/img/service/stripping.webp" alt="Kitchen Cleaning" />
+                  <img
+                    src="/img/service/stripping.webp"
+                    alt="Kitchen Cleaning"
+                  />
                 </div>
                 <div className="service-content">
                   <p>
-                    Ahen an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book areIt hasear survived not
-                    only five centuries, but also the leap into electronic
-                    typesetting, remaining essentiall yellow aw unchangedh the
-                    release of Letraset sheets containing and more recently with
-                    desktop.Ahen an unknown printer took a galley of type and
-                    scrambled it to make a type.
+                    In simple terms, the process involves stripping away layers
+                    of grime, cleaning film, or worn sealant from your flooring
+                    and resealing the surface. Depending on your floor’s
+                    condition and the last time it was treated, the process may
+                    vary. If your floors haven’t been stripped and sealed in
+                    over two years, they may require special attention,
+                    including removing multiple layers of old sealant. We offer
+                    instant consultations to assess your floor and determine the
+                    necessary treatment.
                   </p>
                   <div className="why-choose">
                     <div className="row">
@@ -44,11 +79,11 @@ const SingleService = () => {
                             <i className="far fa-check-circle" />
                           </div>
                           <div className="media-body space-md">
-                            <h3 className="item-title">Quality We Ensure</h3>
+                            <h3 className="item-title">Restore Floor Beauty</h3>
                             <p>
-                              Aorem ipsum dolor sit amet consectetur adipisicing
-                              elit sed doeiusmod tempor incididunt ut labore et
-                              dolore.
+                              Our strip and seal service brings your floors back
+                              to life, restoring their original shine and
+                              extending their lifespan with professional care.
                             </p>
                           </div>
                         </div>
@@ -59,11 +94,11 @@ const SingleService = () => {
                             <i className="far fa-check-circle" />
                           </div>
                           <div className="media-body space-md">
-                            <h3 className="item-title">Experienced Workers</h3>
+                            <h3 className="item-title">Tailored Treatments</h3>
                             <p>
-                              Aorem ipsum dolor sit amet consectetur adipisicing
-                              elit sed doeiusmod tempor incididunt ut labore et
-                              dolore.
+                              Every floor is unique. We assess and customize our
+                              strip & seal approach based on the specific
+                              material and condition of your floors.
                             </p>
                           </div>
                         </div>
@@ -71,13 +106,10 @@ const SingleService = () => {
                     </div>
                   </div>
                   <p>
-                    Ahen an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book areIt hasear survived not
-                    only five centuries, but also the leap into electronic
-                    typesetting, remaining essentiall yellow aw unchangedh the
-                    release o type.Ahen an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book areIt hasear
-                    survived not only five centuries.
+                    Maintaining your floors through strip & seal is a
+                    cost-effective alternative to full replacements. With our
+                    professional care, your floors will continue to impress
+                    guests and staff alike.
                   </p>
                   <div className="service-more-content">
                     <div className="row">
@@ -89,203 +121,70 @@ const SingleService = () => {
                       <div className="col-lg-6">
                         <div className="item-content">
                           <h3 className="item-title">
-                            Experienced People can help you more.
+                            Why Strip & Seal Matters
                           </h3>
                           <p>
-                            Ahen an unknown printer took a galley of type andty
-                            scrambled it to make a type specimen book areIter
-                            hasear survived not only five centuries, but also
-                            the leap into electronic type.
+                            Strip and seal isn’t just about looks — it protects
+                            your investment. Regular treatment prevents
+                            long-term wear and enhances durability, keeping your
+                            floors in peak condition year after year.
                           </p>
                           <ul className="item-feature">
-                            <li>Gas Silendar Clean</li>
-                            <li>Frozen Pipe Clean</li>
-                            <li>Water Pipe Clean</li>
-                            <li>Toilet Clean</li>
-                            <li>Toilet Clean</li>
+                            <li>Revives worn-out floors</li>
+                            <li>Protects against future damage</li>
+                            <li>Cost-effective alternative to replacement</li>
+                            <li>Enhances overall cleanliness and hygiene</li>
+                            <li>Professional-grade materials and techniques</li>
                           </ul>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <FAQ />
+                  {/* <PricingTable
+                    details={{
+                      pack01: {
+                        title: "Basic",
+                        price: "$99",
+                        features: [
+                          "Surfaces Hand Wiped",
+                          "Floors Cleaned",
+                          "General Dusting",
+                          "Cobwebs Removed",
+                          "Doors Cleaned",
+                        ],
+                      },
+                      pack02: {
+                        title: "Standard",
+                        price: "$199",
+                        features: [
+                          "Surfaces Hand Wiped",
+                          "Floors Cleaned",
+                          "General Dusting",
+                          "Cobwebs Removed",
+                          "Doors Cleaned",
+                        ],
+                      },
+                      pack03: {
+                        title: "Premium",
+                        price: "$299",
+                        features: [
+                          "Surfaces Hand Wiped",
+                          "Floors Cleaned",
+                          "General Dusting",
+                          "Cobwebs Removed",
+                          "Doors Cleaned",
+                        ],
+                      },
+                    }}
+                  /> */}
+
+                  <FAQ faqs={stripAndSealFaqs} />
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 order-lg-1 sidebar-break-md sidebar-widget-area">
-              <div className="widget widget-service-info">
-                <div className="heading-layout4">
-                  <h4>Service Information</h4>
-                </div>
-                <div className="service-info">
-                  <ul>
-                    <li className="active">
-                      <div className="service-price">$150.00</div>
-                    </li>
-                    <li>
-                      <div className="item-title">Cleaning Hours</div>
-                      <div className="item-subtitle">1-3 Hours</div>
-                    </li>
-                    <li>
-                      <div className="item-title">Number of Cleaners</div>
-                      <div className="item-subtitle">02 Cleaner</div>
-                    </li>
-                    <li>
-                      <div className="item-title">Visiting Hours</div>
-                      <div className="item-subtitle">09.00am - 06.00pm</div>
-                    </li>
-                    <li>
-                      <div className="item-title">Contact</div>
-                      <div className="item-subtitle">+88 9504200</div>
-                    </li>
-                    <li>
-                      <div className="item-title">E-mail</div>
-                      <div className="item-subtitle">info@blossom.com</div>
-                    </li>
-                  </ul>
-                  <a
-                    href="#"
-                    className="fw-btn-fill bg-accent text-primarytext mt-1"
-                  >
-                    Book Now
-                  </a>
-                </div>
-              </div>
-              {/* <div className="widget widget-download">
-                <div className="heading-layout4">
-                  <h4>Download Now</h4>
-                </div>
-                <div className="download-list">
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <i className="far fa-file-pdf text-lightred" />
-                        Download Pdf File
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="far fa-file-word text-lightprimary" />
-                        Download Doc File
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-youtube text-red" />
-                        Video Download
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div> */}
-              <div className="widget widget-contact-form">
-                <div className="heading-layout4">
-                  <h4>Have you Any Question?</h4>
-                </div>
-                <form className="contact-form-box" id="contact-form">
-                  <div className="row">
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="fas fa-user" />
-                      </div>
-                      <input
-                        type="text"
-                        placeholder="Name"
-                        className="form-control"
-                        name="name"
-                        data-error="Name field is required"
-                        required=""
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="far fa-envelope" />
-                      </div>
-                      <input
-                        type="email"
-                        placeholder="E-mail Address"
-                        className="form-control"
-                        name="email"
-                        data-error="email field is required"
-                        required=""
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="fas fa-phone-volume" />
-                      </div>
-                      <input
-                        type="text"
-                        placeholder="Phone"
-                        className="form-control"
-                        name="phone"
-                        data-error="Phone field is required"
-                        required=""
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="fas fa-question" />
-                      </div>
-                      <input
-                        type="text"
-                        placeholder="Subject"
-                        className="form-control"
-                        name="phone"
-                        data-error="Phone field is required"
-                        required=""
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="far fa-comments" />
-                      </div>
-                      <textarea
-                        placeholder="Address"
-                        className="textarea form-control"
-                        name="message"
-                        id="form-message"
-                        rows={4}
-                        cols={20}
-                        data-error="Message field is required"
-                        required=""
-                        defaultValue={""}
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <button
-                        type="submit"
-                        className="fw-btn-fill bg-accent text-primarytext"
-                      >
-                        Send Message
-                      </button>
-                    </div>
-                  </div>
-                  <div className="form-response" />
-                </form>
-              </div>
-              <div className="widget widget-banner">
-                <div className="item-img">
-                  <img src="/img/figure/widget-banner.png" alt="banner" />
-                </div>
-                <div className="item-content">
-                  <h2 className="item-title">
-                    <span>30</span>% Discount
-                  </h2>
-                  <div className="item-subtitle">Promotion Offer 16 Days</div>
-                  <a
-                    href="#"
-                    className="fw-btn-fill bg-accent text-primarytext"
-                  >
-                    Contact With US
-                  </a>
-                </div>
-              </div>
+            <div className="col-lg-4 order-lg-2 sidebar-break-md sidebar-widget-area">
+              <RelatedBlogs category={"stripping-and-sealing"} />
+              <ContactForm />
             </div>
           </div>
         </div>

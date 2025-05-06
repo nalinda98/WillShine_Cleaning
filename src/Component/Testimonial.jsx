@@ -4,7 +4,7 @@ const Testimonial = () => {
   return (
     <div>
       <section
-        className="section-padding-md-4 bg-Primary bg-common"
+        className="section-padding-md-4  bg-common"
         data-bg-image="img/figure/bg-shape.png"
       >
         <div className="container">
@@ -45,10 +45,12 @@ const Testimonial = () => {
           >
             <div className="testimonial-box-layout1">
               <p>
-                Wimply dummy text of the printing and typesetting industryrem
-                Ipsum has been the industry's standard dummy text ever since{" "}
+                &quot;Wilshine Cleaning Services did an amazing job on my
+                driveway and patio! They were professional, on time, and the
+                results were better than I expected. Highly recommend them if
+                you want quality work and great customer service!&quot;{" "}
               </p>
-              <h3 className="item-title">Steven Joes</h3>
+              <h3 className="item-title">Jessica T.</h3>
               <div className="item-subtitle">CEO, RT</div>
               <ul className="item-rating">
                 <li>
@@ -73,10 +75,12 @@ const Testimonial = () => {
             </div>
             <div className="testimonial-box-layout1">
               <p>
-                Wimply dummy text of the printing and typesetting industryrem
-                Ipsum has been the industry's standard dummy text ever since{" "}
+                &quot;From start to finish, Wilshine Cleaning made the whole
+                process easy and stress-free. They truly care about their
+                customers and it shows in their work. My house looks brand new
+                again!&quot;
               </p>
-              <h3 className="item-title">Mike Tyson</h3>
+              <h3 className="item-title">Daniel R.</h3>
               <div className="item-subtitle">CEO, RT</div>
               <ul className="item-rating">
                 <li>
@@ -101,10 +105,41 @@ const Testimonial = () => {
             </div>
             <div className="testimonial-box-layout1">
               <p>
-                Wimply dummy text of the printing and typesetting industryrem
-                Ipsum has been the industry's standard dummy text ever since{" "}
+                &quot;Excellent service! The team was very friendly, explained
+                everything clearly, and went above and beyond to make sure I was
+                happy with the results. Will definitely be using them
+                again!&quot;
               </p>
-              <h3 className="item-title">Bobby John</h3>
+              <h3 className="item-title">Maria P.</h3>
+              <div className="item-subtitle">CEO, RT</div>
+              <ul className="item-rating">
+                <li>
+                  <i className="fas fa-star"></i>
+                </li>
+                <li>
+                  <i className="fas fa-star"></i>
+                </li>
+                <li>
+                  <i className="fas fa-star"></i>
+                </li>
+                <li>
+                  <i className="fas fa-star"></i>
+                </li>
+                <li>
+                  <i className="fas fa-star"></i>
+                </li>
+              </ul>
+              <div className="item-quote">
+                <i className="fas fa-quote-right"></i>
+              </div>
+            </div>
+            <div className="testimonial-box-layout1">
+              <p>
+                &quot;I’m blown away by how clean our sidewalks and siding look
+                after Wilshine Pressure Cleaning worked their magic. Affordable,
+                reliable, and the quality was outstanding!&quot;
+              </p>
+              <h3 className="item-title">Tyler H.</h3>
               <div className="item-subtitle">CEO, RT</div>
               <ul className="item-rating">
                 <li>

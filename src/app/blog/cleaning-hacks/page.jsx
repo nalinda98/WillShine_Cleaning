@@ -5,7 +5,13 @@ import React from "react";
 const SingleBlog = () => {
   return (
     <div>
-      <Banner title={"Cleaning Hacks"} path={"Blogs > Blog Details"} />
+      <Banner
+        title={"Cleaning Hacks"}
+        pathName={"Blog"}
+        path={"/blog"}
+        path2={"/blog/cleaning-hacks"}
+        path2Name={"Cleaning Hacks"}
+      />
       <section className="section-padding-12">
         <div className="container">
           <div className="row">
@@ -26,7 +32,7 @@ const SingleBlog = () => {
                     <ul>
                       <li className="item-author">
                         <img src="/img/figure/author.png" alt="author" />
-                        By Mark Wily
+                        By Chathura Sanka
                       </li>
                     </ul>
                   </div>
@@ -151,15 +157,15 @@ const SingleBlog = () => {
                     everything in a small container for easy access.
                   </p>
 
-                  <h3>How Blossom Property Services Can Help</h3>
+                  <h3>How Wilshine Cleaning Services Can Help</h3>
                   <p>
                     While these hacks help maintain a clean office, sometimes
-                    you need a professional touch. Blossom Property Services
+                    you need a professional touch. Wilshine Cleaning Services
                     offers expert office cleaning solutions tailored to your
                     needs.
                   </p>
 
-                  <h4>Why Choose Blossom Property Services?</h4>
+                  <h4>Why Choose Wilshine Cleaning Services?</h4>
                   <ul>
                     <li>
                       Customized Cleaning Plans – Tailored services to fit your
@@ -179,7 +185,7 @@ const SingleBlog = () => {
                     </li>
                   </ul>
                   <p>
-                    A clean office is just a call away with Blossom Property
+                    A clean office is just a call away with Wilshine Property
                     Services!
                   </p>
 
@@ -188,7 +194,7 @@ const SingleBlog = () => {
                     A clean office is a productive office! With these ten simple
                     cleaning hacks, you can maintain a fresh, organized
                     workspace overnight. But for deeper cleaning and long-term
-                    maintenance, professional services like Blossom Property
+                    maintenance, professional services like Wilshine Property
                     Services can make all the difference. Ready to transform
                     your workspace? Start implementing these hacks today!
                   </p>
@@ -227,7 +233,7 @@ const SingleBlog = () => {
                       </strong>{" "}
                       Professional office cleaning services ensure deep
                       cleaning, better hygiene, and a consistently fresh
-                      workspace without the hassle. Blossom Property Services
+                      workspace without the hassle. Wilshine Cleaning Services
                       specializes in office cleaning. Our vision: ‘Office
                       Cleaning – It’s All We Do, and We Do It Best!’ We live by
                       this commitment every day.
@@ -237,37 +243,52 @@ const SingleBlog = () => {
 
                 <div className="blog-social-area">
                   <div className="row">
-                    <div className=" d-flex ">
+                    <div className="d-flex">
                       <div className="single-post-social">
                         <h5 className="item-title">Share :</h5>
                         <ul>
                           <li>
-                            <a href="#">
+                            <a
+                              href="https://www.facebook.com/sharer/sharer.php?u=https://wilshinecleaning.com.au/blog/cleaning-hacks"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <i className="fab fa-facebook-f" />
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a
+                              href="https://twitter.com/intent/tweet?url=https://wilshinecleaning.com.au/blog/cleaning-hacks"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <i className="fab fa-twitter" />
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a
+                              href="https://www.linkedin.com/shareArticle?mini=true&url=https://wilshinecleaning.com.au/blog/cleaning-hacks"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <i className="fab fa-linkedin-in" />
                             </a>
                           </li>
                           <li>
-                            <a href="#">
-                              <i className="fab fa-google-plus-g" />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
+                            <a
+                              href="https://pinterest.com/pin/create/button/?url=https://wilshinecleaning.com.au/blog/cleaning-hacks"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <i className="fab fa-pinterest" />
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a
+                              href="https://vimeo.com/share?url=https://wilshinecleaning.com.au/blog/cleaning-hacks"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <i className="fab fa-vimeo-v" />
                             </a>
                           </li>
@@ -276,7 +297,6 @@ const SingleBlog = () => {
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
             <div className="col-lg-4 sidebar-break-md sidebar-widget-area">

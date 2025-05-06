@@ -5,7 +5,13 @@ import React from "react";
 const SingleBlog = () => {
   return (
     <div>
-      <Banner title={"Cleaning Perth"} path={"Blogs > Blog Details"} />
+      <Banner
+        title={"Cleaning Perth"}
+        pathName={"Blog"}
+        path={"/blog"}
+        path2={"/blog/cleaning-perth"}
+        path2Name={"Cleaning Perth"}
+      />
       <section className="section-padding-12">
         <div className="container">
           <div className="row">
@@ -20,19 +26,19 @@ const SingleBlog = () => {
                     24 July, 2019
                   </div>
                   <h2>
-                    Office Cleaning Services in Perth – Blossom Property
+                    Office Cleaning Services in Perth – Wilshine Property
                     Services
                   </h2>
                   <div className="entry-meta">
                     <ul>
                       <li className="item-author">
                         <img src="/img/figure/author.png" alt="author" />
-                        By Mark Wily
+                        By Chathura Sanka
                       </li>
                     </ul>
                   </div>
                   <p>
-                    At Blossom Property Services, we understand the importance
+                    At Wilshine Cleaning Services, we understand the importance
                     of maintaining a clean and productive work environment. A
                     well-kept office not only enhances the appearance of your
                     workplace but also improves employee health, satisfaction,
@@ -43,7 +49,7 @@ const SingleBlog = () => {
                   </p>
 
                   <h4>
-                    Why Choose Blossom Property Services for Office Cleaning?
+                    Why Choose Wilshine Cleaning Services for Office Cleaning?
                   </h4>
                   <ul>
                     <li>
@@ -95,51 +101,66 @@ const SingleBlog = () => {
 
                   <p>
                     If you’re looking for reliable, professional office cleaning
-                    services in Perth, contact Blossom Property Services today.
+                    services in Perth, contact Wilshine Cleaning Services today.
                     Let us help you maintain a clean and productive office
                     environment.
                   </p>
                   <p>
                     <strong>
-                      For more information or to request a quote, visit Blossom
-                      Property Services or call us at 0433691812.
+                      For more information or to request a quote, visit Wilshine
+                      Cleaning Services or call us at 0433691812.
                     </strong>
                   </p>
                 </div>
 
                 <div className="blog-social-area">
                   <div className="row">
-                    <div className=" d-flex ">
+                    <div className="d-flex">
                       <div className="single-post-social">
                         <h5 className="item-title">Share :</h5>
                         <ul>
                           <li>
-                            <a href="#">
+                            <a
+                              href="https://www.facebook.com/sharer/sharer.php?u=https://wilshinecleaning.com.au/blog/cleaning-perth"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <i className="fab fa-facebook-f" />
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a
+                              href="https://twitter.com/intent/tweet?url=https://wilshinecleaning.com.au/blog/cleaning-perth"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <i className="fab fa-twitter" />
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a
+                              href="https://www.linkedin.com/shareArticle?mini=true&url=https://wilshinecleaning.com.au/blog/cleaning-perth"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <i className="fab fa-linkedin-in" />
                             </a>
                           </li>
                           <li>
-                            <a href="#">
-                              <i className="fab fa-google-plus-g" />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
+                            <a
+                              href="https://pinterest.com/pin/create/button/?url=https://wilshinecleaning.com.au/blog/cleaning-perth"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <i className="fab fa-pinterest" />
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a
+                              href="https://vimeo.com/share?url=https://wilshinecleaning.com.au/blog/cleaning-perth"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <i className="fab fa-vimeo-v" />
                             </a>
                           </li>
@@ -148,7 +169,6 @@ const SingleBlog = () => {
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
             <div className="col-lg-4 sidebar-break-md sidebar-widget-area">

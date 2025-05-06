@@ -1,40 +1,46 @@
 import Banner from "@/Component/Banner";
+import ContactForm from "@/Component/ContactForm";
 import FAQ from "@/Component/FAQ";
+import HowItWork from "@/Component/HowItWork";
+import PricingTable from "@/Component/PricingTable";
+import RelatedBlogs from "@/Component/RelatedBlogs";
 import React from "react";
 
 const SingleService = () => {
   return (
     <div>
       <Banner
-        title={"Kitchen Cleaning Service"}
-        path={"Services > Kitchen Cleaning"}
+        title={"Professional Carpet Cleaning"}
+        path={"/service"}
+        pathName={"Services"}
+        path2={"/service/carpet-cleaning"}
+        path2Name={"Carpet Cleaning"}
       />
       <section className="section-padding-12">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8 order-lg-2">
+            <div className="col-lg-8 order-lg-1">
               <div className="single-service-box-layout1">
-                <h2 className="service-title">Kitchen Cleaning Service </h2>
+                <h2 className="service-title">Professional Carpet Cleaning</h2>
                 <p>
-                  Ahen an unknown printer took a galley of type and scrambled it
-                  to make a type specimen book areIt hasear survived not only
-                  five centuries, but also the leap into electronic typesetting,
-                  remaining essentiall yellow aw unchangedh the release of
-                  Letraset sheets containing.Ahen an unknown printer took a
-                  galley of type and scrambled it to make a type specimen book.
+                  At Blossom Cleaning Services, we provide top-notch carpet
+                  cleaning that leaves your carpets looking fresh and
+                  revitalized. Our advanced equipment and non-toxic cleaning
+                  solutions ensure a safe and effective clean.
                 </p>
                 <div className="main-img">
-                  <img src="/img/service/carpet-cleaning11.jpg" alt="Kitchen Cleaning" />
+                  <img
+                    src="/img/service/carpet-cleaning11.jpg"
+                    alt="Carpet Cleaning"
+                  />
                 </div>
                 <div className="service-content">
                   <p>
-                    Ahen an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book areIt hasear survived not
-                    only five centuries, but also the leap into electronic
-                    typesetting, remaining essentiall yellow aw unchangedh the
-                    release of Letraset sheets containing and more recently with
-                    desktop.Ahen an unknown printer took a galley of type and
-                    scrambled it to make a type.
+                    Our team is fully trained, insured, and committed to
+                    delivering exceptional service tailored to your specific
+                    needs. Whether it’s a cosy home, a busy office, or a
+                    high-traffic commercial space, we offer flexible scheduling
+                    and meticulous attention to detail.
                   </p>
                   <div className="why-choose">
                     <div className="row">
@@ -44,11 +50,12 @@ const SingleService = () => {
                             <i className="far fa-check-circle" />
                           </div>
                           <div className="media-body space-md">
-                            <h3 className="item-title">Quality We Ensure</h3>
+                            <h3 className="item-title">
+                              Remove Allergens & Dust Mites
+                            </h3>
                             <p>
-                              Aorem ipsum dolor sit amet consectetur adipisicing
-                              elit sed doeiusmod tempor incididunt ut labore et
-                              dolore.
+                              Thorough cleaning eliminates trapped contaminants,
+                              improving indoor health.
                             </p>
                           </div>
                         </div>
@@ -59,233 +66,84 @@ const SingleService = () => {
                             <i className="far fa-check-circle" />
                           </div>
                           <div className="media-body space-md">
-                            <h3 className="item-title">Experienced Workers</h3>
+                            <h3 className="item-title">Improve Air Quality</h3>
                             <p>
-                              Aorem ipsum dolor sit amet consectetur adipisicing
-                              elit sed doeiusmod tempor incididunt ut labore et
-                              dolore.
+                              Fresh carpets contribute to a cleaner and fresher
+                              environment.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-lg-6 mt-4">
+                        <div className="media">
+                          <div className="item-icon">
+                            <i className="far fa-check-circle" />
+                          </div>
+                          <div className="media-body space-md">
+                            <h3 className="item-title">
+                              Reduce the Risk of Mould
+                            </h3>
+                            <p>
+                              Fast-drying professional methods help prevent
+                              mould and mildew growth.
                             </p>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+
                   <p>
-                    Ahen an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book areIt hasear survived not
-                    only five centuries, but also the leap into electronic
-                    typesetting, remaining essentiall yellow aw unchangedh the
-                    release o type.Ahen an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book areIt hasear
-                    survived not only five centuries.
+                    Trust Blossom Cleaning Services to create a healthier and
+                    more inviting environment for your family, employees, and
+                    clients.
                   </p>
-                  <div className="service-more-content">
-                    <div className="row">
-                      <div className="col-lg-6">
-                        <div className="item-img">
-                          <img src="/img/service/service10.jpg" alt="thumb" />
-                        </div>
-                      </div>
-                      <div className="col-lg-6">
-                        <div className="item-content">
-                          <h3 className="item-title">
-                            Experienced People can help you more.
-                          </h3>
-                          <p>
-                            Ahen an unknown printer took a galley of type andty
-                            scrambled it to make a type specimen book areIter
-                            hasear survived not only five centuries, but also
-                            the leap into electronic type.
-                          </p>
-                          <ul className="item-feature">
-                            <li>Gas Silendar Clean</li>
-                            <li>Frozen Pipe Clean</li>
-                            <li>Water Pipe Clean</li>
-                            <li>Toilet Clean</li>
-                            <li>Toilet Clean</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <FAQ />
+
+                  <PricingTable
+                    details={{
+                      pack01: {
+                        title: "Basic",
+                        price: "$100",
+                        unit: "Start From",
+                        features: [
+                          "1 Bedroom - $100",
+                          "2 Bedroom - $120",
+                          "3 Bedroom - $150",
+                          "4 Bedroom - $175",
+                        ],
+                      },
+                      pack02: {
+                        title: "Standard",
+                        price: "$110",
+                        unit: "Start From",
+                        features: [
+                          "1 Bedroom - $110",
+                          "2 Bedroom - $130",
+                          "3 Bedroom - $165",
+                          "4 Bedroom - $180",
+                        ],
+                      },
+                      pack03: {
+                        title: "Premium",
+                        price: "$3.00",
+                        unit: "per sqm",
+                        features: [
+                          "Upto 100sqm - $3/sqm",
+                          "101-200sqm - $2.75/sqm",
+                          "201-300sqm - $2.50/sqm",
+                          "Over 300sqm - $2.25/sqm",
+                        ],
+                      },
+                    }}
+                  />
+                  <HowItWork />
+                  {/* <FAQ faqs={pressureWashingFaqs} /> */}
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 order-lg-1 sidebar-break-md sidebar-widget-area">
-              <div className="widget widget-service-info">
-                <div className="heading-layout4">
-                  <h4>Service Information</h4>
-                </div>
-                <div className="service-info">
-                  <ul>
-                    <li className="active">
-                      <div className="service-price">$150.00</div>
-                    </li>
-                    <li>
-                      <div className="item-title">Cleaning Hours</div>
-                      <div className="item-subtitle">1-3 Hours</div>
-                    </li>
-                    <li>
-                      <div className="item-title">Number of Cleaners</div>
-                      <div className="item-subtitle">02 Cleaner</div>
-                    </li>
-                    <li>
-                      <div className="item-title">Visiting Hours</div>
-                      <div className="item-subtitle">09.00am - 06.00pm</div>
-                    </li>
-                    <li>
-                      <div className="item-title">Contact</div>
-                      <div className="item-subtitle">+88 9504200</div>
-                    </li>
-                    <li>
-                      <div className="item-title">E-mail</div>
-                      <div className="item-subtitle">info@blossom.com</div>
-                    </li>
-                  </ul>
-                  <a
-                    href="#"
-                    className="fw-btn-fill bg-accent text-primarytext mt-1"
-                  >
-                    Book Now
-                  </a>
-                </div>
-              </div>
-              {/* <div className="widget widget-download">
-                <div className="heading-layout4">
-                  <h4>Download Now</h4>
-                </div>
-                <div className="download-list">
-                  <ul>
-                    <li>
-                      <a href="#">
-                        <i className="far fa-file-pdf text-lightred" />
-                        Download Pdf File
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="far fa-file-word text-lightprimary" />
-                        Download Doc File
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-youtube text-red" />
-                        Video Download
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div> */}
-              <div className="widget widget-contact-form">
-                <div className="heading-layout4">
-                  <h4>Have you Any Question?</h4>
-                </div>
-                <form className="contact-form-box" id="contact-form">
-                  <div className="row">
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="fas fa-user" />
-                      </div>
-                      <input
-                        type="text"
-                        placeholder="Name"
-                        className="form-control"
-                        name="name"
-                        data-error="Name field is required"
-                        required=""
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="far fa-envelope" />
-                      </div>
-                      <input
-                        type="email"
-                        placeholder="E-mail Address"
-                        className="form-control"
-                        name="email"
-                        data-error="email field is required"
-                        required=""
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="fas fa-phone-volume" />
-                      </div>
-                      <input
-                        type="text"
-                        placeholder="Phone"
-                        className="form-control"
-                        name="phone"
-                        data-error="Phone field is required"
-                        required=""
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="fas fa-question" />
-                      </div>
-                      <input
-                        type="text"
-                        placeholder="Subject"
-                        className="form-control"
-                        name="phone"
-                        data-error="Phone field is required"
-                        required=""
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="far fa-comments" />
-                      </div>
-                      <textarea
-                        placeholder="Address"
-                        className="textarea form-control"
-                        name="message"
-                        id="form-message"
-                        rows={4}
-                        cols={20}
-                        data-error="Message field is required"
-                        required=""
-                        defaultValue={""}
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <button
-                        type="submit"
-                        className="fw-btn-fill bg-accent text-primarytext"
-                      >
-                        Send Message
-                      </button>
-                    </div>
-                  </div>
-                  <div className="form-response" />
-                </form>
-              </div>
-              <div className="widget widget-banner">
-                <div className="item-img">
-                  <img src="/img/figure/widget-banner.png" alt="banner" />
-                </div>
-                <div className="item-content">
-                  <h2 className="item-title">
-                    <span>30</span>% Discount
-                  </h2>
-                  <div className="item-subtitle">Promotion Offer 16 Days</div>
-                  <a
-                    href="#"
-                    className="fw-btn-fill bg-accent text-primarytext"
-                  >
-                    Contact With US
-                  </a>
-                </div>
-              </div>
+            <div className="col-lg-4 order-lg-2 sidebar-break-md sidebar-widget-area">
+              <RelatedBlogs category={"carpet-cleaning"} />
+              <ContactForm />
             </div>
           </div>
         </div>

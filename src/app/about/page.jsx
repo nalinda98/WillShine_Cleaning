@@ -9,7 +9,13 @@ import BrandArea from "@/Component/BrandArea";
 const About = () => {
   return (
     <div>
-      <Banner path={"About"} title={"About Us"} />
+      <Banner
+        pathName={"About"}
+        title={"About Us"}
+        path={"/about"}
+        path2={""}
+        path2Name={""}
+      />
       <AboutContent />
       {/* <Team /> */}
       <AboutProcess />

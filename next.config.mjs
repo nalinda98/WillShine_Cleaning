@@ -6,8 +6,8 @@ const nextConfig = {
   images: {
     unoptimized: true, // Disable default image optimization (required for static export)
   },
-  assetPrefix: isProd ? "/Blossom_Property/" : "",
-  basePath: isProd ? "/Blossom_Property" : "",
+  assetPrefix: isProd ? "" : "",
+  basePath: isProd ? "" : "",
   distDir: "dist",
   // Ensure trailing slash is disabled for consistency with static exports
   trailingSlash: false,
