@@ -14,7 +14,6 @@ const SingleService = () => {
         pathName={"Services"}
         path2={"/service/carpet-cleaning"}
         path2Name={"Carpet Cleaning"}
-
       />
       <section className="section-padding-12">
         <div className="container">
@@ -104,35 +103,35 @@ const SingleService = () => {
                     details={{
                       pack01: {
                         title: "Basic",
-                        price: "$99",
+                        price: "$100",
+                        unit: "Start From",
                         features: [
-                          "Surfaces Hand Wiped",
-                          "Floors Cleaned",
-                          "General Dusting",
-                          "Cobwebs Removed",
-                          "Doors Cleaned",
+                          "1 Bedroom - $100",
+                          "2 Bedroom - $120",
+                          "3 Bedroom - $150",
+                          "4 Bedroom - $175",
                         ],
                       },
                       pack02: {
                         title: "Standard",
-                        price: "$199",
+                        price: "$110",
+                        unit: "Start From",
                         features: [
-                          "Surfaces Hand Wiped",
-                          "Floors Cleaned",
-                          "General Dusting",
-                          "Cobwebs Removed",
-                          "Doors Cleaned",
+                          "1 Bedroom - $110",
+                          "2 Bedroom - $130",
+                          "3 Bedroom - $165",
+                          "4 Bedroom - $180",
                         ],
                       },
                       pack03: {
                         title: "Premium",
-                        price: "$299",
+                        price: "$3.00",
+                        unit: "per sqm",
                         features: [
-                          "Surfaces Hand Wiped",
-                          "Floors Cleaned",
-                          "General Dusting",
-                          "Cobwebs Removed",
-                          "Doors Cleaned",
+                          "Upto 100sqm - $3/sqm",
+                          "101-200sqm - $2.75/sqm",
+                          "201-300sqm - $2.50/sqm",
+                          "Over 300sqm - $2.25/sqm",
                         ],
                       },
                     }}

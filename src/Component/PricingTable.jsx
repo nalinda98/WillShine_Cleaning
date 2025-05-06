@@ -24,7 +24,7 @@ const PricingTable = ({ details }) => {
                   </div>
                   <div className="item-price">
                     <div className="item-currency">{pack.price}</div>
-                    <div className="item-duration">/per mo</div>
+                    <div className="item-duration">/{pack.unit}</div>
                   </div>
                   <a href="#" className="btn-fill-xl bg-accent text-primarytext">
                     Get It Now
