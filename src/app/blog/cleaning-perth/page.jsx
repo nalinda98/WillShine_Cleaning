@@ -5,7 +5,11 @@ import React from "react";
 const SingleBlog = () => {
   return (
     <div>
-      <Banner title={"Cleaning Perth"} path={"Blogs > Blog Details"} />
+      <Banner title={"Cleaning Perth"} 
+        pathName={"Blog"}
+        path={"/blog"}
+        path2={"/blog/cleaning-perth"}
+        path2Name={"Cleaning Perth"} />
       <section className="section-padding-12">
         <div className="container">
           <div className="row">

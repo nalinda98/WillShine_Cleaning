@@ -5,7 +5,13 @@ import React from "react";
 const SingleBlog = () => {
   return (
     <div>
-      <Banner title={"Cleaning Hacks"} path={"Blogs > Blog Details"} />
+      <Banner
+        title={"Cleaning Hacks"}
+        pathName={"Blog"}
+        path={"/blog"}
+        path2={"/blog/cleaning-hacks"}
+        path2Name={"Cleaning Hacks"}
+      />
       <section className="section-padding-12">
         <div className="container">
           <div className="row">
@@ -276,7 +282,6 @@ const SingleBlog = () => {
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
             <div className="col-lg-4 sidebar-break-md sidebar-widget-area">

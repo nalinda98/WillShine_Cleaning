@@ -1,53 +1,18 @@
 "use client";
 
-import React, { useRef, useState } from "react";
-import emailjs from "emailjs-com";
 import Banner from "../../Component/Banner";
-import ReCAPTCHA from "react-google-recaptcha";
+import ContactForm from "@/Component/ContactForm";
 
 const Contact = () => {
-  const form = useRef();
-  const [captcha, setCaptcha] = useState(null);
-
-  const onChange = (value) => {
-    setCaptcha(value);
-  };
-
-  const onExpired = () => {
-    setCaptcha(null);
-  };
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    if (!captcha) {
-      alert("Please complete the reCAPTCHA");
-      return;
-    }
-
-    emailjs
-      .sendForm(
-        "service_gva54x5", // Replace with your actual service ID
-        "template_c6fun0t", // Replace with your actual template ID
-        form.current,
-        "rtOHcdoMrBTsp_x3V" // Replace with your actual public key
-      )
-      .then(
-        (result) => {
-          alert("Message sent successfully!");
-          e.target.reset();
-          setCaptcha(null); // Reset captcha after success
-        },
-        (error) => {
-          alert("Failed to send message. Please try again later.");
-          console.error(error.text);
-        }
-      );
-  };
-
   return (
     <>
-      <Banner title={"Contact Us"} path={"Contact"} />
+      <Banner
+        title={"Contact Us"}
+        path={"/contact"}
+        pathName={"Contact"}
+        path2={""}
+        path2Name={""}
+      />
       <section className="section-padding-12-10">
         <div className="container">
           <div className="row">
@@ -99,97 +64,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 sidebar-break-md sidebar-widget-area">
-              <div className="widget widget-contact-form">
-                <div className="heading-layout4">
-                  <h4>Have you Any Question?</h4>
-                </div>
-                <form
-                  className="contact-form-box"
-                  ref={form}
-                  onSubmit={sendEmail}
-                >
-                  <div className="row">
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="fas fa-user" />
-                      </div>
-                      <input
-                        type="text"
-                        name="name"
-                        placeholder="Name"
-                        className="form-control"
-                        required
-                      />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="far fa-envelope" />
-                      </div>
-                      <input
-                        type="email"
-                        name="email"
-                        placeholder="E-mail Address"
-                        className="form-control"
-                        required
-                      />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="fas fa-phone-volume" />
-                      </div>
-                      <input
-                        type="text"
-                        name="phone"
-                        placeholder="Phone"
-                        className="form-control"
-                        required
-                      />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="fas fa-question" />
-                      </div>
-                      <input
-                        type="text"
-                        name="subject"
-                        placeholder="Subject"
-                        className="form-control"
-                        required
-                      />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="far fa-comments" />
-                      </div>
-                      <textarea
-                        name="message"
-                        placeholder="Message"
-                        className="textarea form-control"
-                        rows={4}
-                        required
-                      />
-                    </div>
-                    <div className="col-12 form-group">
-                      <ReCAPTCHA
-                        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
-                        onChange={onChange}
-                        onExpired={onExpired}
-                      />
-                    </div>
-                    <div className="col-12 form-group">
-                      <button
-                        type="submit"
-                        className="fw-btn-fill bg-accent text-primarytext"
-                      >
-                        Send Message
-                      </button>
-                    </div>
-                  </div>
-                  <div className="form-response" />
-                </form>
-              </div>
-            </div>
+            <ContactForm />
           </div>
         </div>
       </section>

@@ -7,7 +7,10 @@ const SingleBlog = () => {
     <div>
       <Banner
         title={"Why Choose Local Company"}
-        path={"Blogs > Blog Details"}
+        pathName={"Blog"}
+        path={"/blog"}
+        path2={"/blog/why-choose-local-company"}
+        path2Name={"Why Choose Local Company"}
       />
       <section className="section-padding-12">
         <div className="container">

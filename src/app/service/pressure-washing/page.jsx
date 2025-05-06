@@ -1,5 +1,7 @@
 import Banner from "@/Component/Banner";
 import FAQ from "@/Component/FAQ";
+import PricingTable from "@/Component/PricingTable";
+import RelatedBlogs from "@/Component/RelatedBlogs";
 import React from "react";
 
 const SingleService = () => {
@@ -7,12 +9,14 @@ const SingleService = () => {
     <div>
       <Banner
         title={"Blossom Pressure Washing Service"}
-        path={"Services > Pressure Washing"}
+        path={"/service"}
+        pathName={"Services"}
+        path2={"/service/pressure-washing"}
+        path2Name={"Pressure Washing"}
       />
       <section className="section-padding-12">
         <div className="container">
           <div className="row">
-            
             <div className="col-lg-8 order-lg-1">
               <div className="single-service-box-layout1">
                 <h2 className="service-title">Pressure Washing Services</h2>
@@ -225,6 +229,43 @@ const SingleService = () => {
                       </div>
                     </div>
                   </div>
+                  <PricingTable
+                    details={{
+                      pack01: {
+                        title: "Basic",
+                        price: "$99",
+                        features: [
+                          "Surfaces Hand Wiped",
+                          "Floors Cleaned",
+                          "General Dusting",
+                          "Cobwebs Removed",
+                          "Doors Cleaned",
+                        ],
+                      },
+                      pack02: {
+                        title: "Standard",
+                        price: "$199",
+                        features: [
+                          "Surfaces Hand Wiped",
+                          "Floors Cleaned",
+                          "General Dusting",
+                          "Cobwebs Removed",
+                          "Doors Cleaned",
+                        ],
+                      },
+                      pack03: {
+                        title: "Premium",
+                        price: "$299",
+                        features: [
+                          "Surfaces Hand Wiped",
+                          "Floors Cleaned",
+                          "General Dusting",
+                          "Cobwebs Removed",
+                          "Doors Cleaned",
+                        ],
+                      },
+                    }}
+                  />
 
                   <FAQ />
                 </div>
@@ -233,141 +274,7 @@ const SingleService = () => {
 
             {/* SIDEBAR */}
             <div className="col-lg-4 order-lg-2 sidebar-break-md sidebar-widget-area">
-              <div className="widget widget-service-info">
-                <div className="heading-layout4">
-                  <h4>Service Information</h4>
-                </div>
-                <div className="service-info">
-                  <ul>
-                    <li className="active">
-                      <div className="service-price">$150.00</div>
-                    </li>
-                    <li>
-                      <div className="item-title">Cleaning Hours</div>
-                      <div className="item-subtitle">1-3 Hours</div>
-                    </li>
-                    <li>
-                      <div className="item-title">Number of Cleaners</div>
-                      <div className="item-subtitle">02 Cleaners</div>
-                    </li>
-                    <li>
-                      <div className="item-title">Visiting Hours</div>
-                      <div className="item-subtitle">09.00am - 06.00pm</div>
-                    </li>
-                    <li>
-                      <div className="item-title">Contact</div>
-                      <div className="item-subtitle">+88 9504200</div>
-                    </li>
-                    <li>
-                      <div className="item-title">E-mail</div>
-                      <div className="item-subtitle">info@blossom.com</div>
-                    </li>
-                  </ul>
-                  <a
-                    href="#"
-                    className="fw-btn-fill bg-accent text-primarytext mt-1"
-                  >
-                    Book Now
-                  </a>
-                </div>
-              </div>
-
-              <div className="widget widget-contact-form">
-                <div className="heading-layout4">
-                  <h4>Have you Any Question?</h4>
-                </div>
-                <form className="contact-form-box" id="contact-form">
-                  <div className="row">
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="fas fa-user" />
-                      </div>
-                      <input
-                        type="text"
-                        placeholder="Name"
-                        className="form-control"
-                        name="name"
-                        required=""
-                      />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="far fa-envelope" />
-                      </div>
-                      <input
-                        type="email"
-                        placeholder="E-mail Address"
-                        className="form-control"
-                        name="email"
-                        required=""
-                      />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="fas fa-phone-volume" />
-                      </div>
-                      <input
-                        type="text"
-                        placeholder="Phone"
-                        className="form-control"
-                        name="phone"
-                        required=""
-                      />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="fas fa-question" />
-                      </div>
-                      <input
-                        type="text"
-                        placeholder="Subject"
-                        className="form-control"
-                        name="subject"
-                        required=""
-                      />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="far fa-comments" />
-                      </div>
-                      <textarea
-                        placeholder="Message"
-                        className="textarea form-control"
-                        name="message"
-                        rows={4}
-                        required=""
-                      />
-                    </div>
-                    <div className="col-12 form-group">
-                      <button
-                        type="submit"
-                        className="fw-btn-fill bg-accent text-primarytext"
-                      >
-                        Send Message
-                      </button>
-                    </div>
-                  </div>
-                  <div className="form-response" />
-                </form>
-              </div>
-
-              <div className="widget widget-banner">
-                <div className="item-img">
-                  <img src="/img/figure/widget-banner.png" alt="banner" />
-                </div>
-                <div className="item-content">
-                  <h2 className="item-title">
-                    <span>30</span>% Discount
-                  </h2>
-                  <div className="item-subtitle">Promotion Offer 16 Days</div>
-                  <a
-                    href="#"
-                    className="fw-btn-fill bg-accent text-primarytext"
-                  >
-                    Contact With US
-                  </a>
-                </div>
-              </div>
+              <RelatedBlogs />
             </div>
             {/* END SIDEBAR */}
           </div>
