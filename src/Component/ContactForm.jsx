@@ -6,7 +6,7 @@ import emailjs from "emailjs-com";
 import { useRef, useState } from "react";
 
 const ContactForm = () => {
-    const form = useRef();
+  const form = useRef();
   const [captcha, setCaptcha] = useState(null);
 
   const onChange = (value) => {
@@ -45,7 +45,7 @@ const ContactForm = () => {
       );
   };
   return (
-    <div className="col-lg-4 sidebar-break-md sidebar-widget-area">
+    <div className="col-lg-12 sidebar-break-md sidebar-widget-area">
       <div className="widget widget-contact-form">
         <div className="heading-layout4">
           <h4>Have you Any Question?</h4>

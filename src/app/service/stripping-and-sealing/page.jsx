@@ -1,4 +1,5 @@
 import Banner from "@/Component/Banner";
+import ContactForm from "@/Component/ContactForm";
 import FAQ from "@/Component/FAQ";
 import PricingTable from "@/Component/PricingTable";
 import RelatedBlogs from "@/Component/RelatedBlogs";
@@ -160,6 +161,7 @@ const SingleService = () => {
             </div>
             <div className="col-lg-4 order-lg-2 sidebar-break-md sidebar-widget-area">
               <RelatedBlogs />
+              <ContactForm />
             </div>
           </div>
         </div>
