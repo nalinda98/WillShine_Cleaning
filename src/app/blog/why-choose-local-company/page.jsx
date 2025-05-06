@@ -29,7 +29,7 @@ const SingleBlog = () => {
                     <ul>
                       <li className="item-author">
                         <img src="/img/figure/author.png" alt="author" />
-                        By Mark Wily
+                        By Chathura Sanka
                       </li>
                     </ul>
                   </div>

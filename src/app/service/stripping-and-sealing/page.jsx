@@ -9,7 +9,7 @@ const SingleService = () => {
       <section className="section-padding-12">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8 order-lg-2">
+            <div className="col-lg-8 order-lg-1">
               <div className="single-service-box-layout1">
                 <h2 className="service-title">Strip & Seal Service</h2>
                 <p>
@@ -22,7 +22,10 @@ const SingleService = () => {
                   original condition for many years.
                 </p>
                 <div className="main-img">
-                  <img src="/img/service/stripping.webp" alt="Kitchen Cleaning" />
+                  <img
+                    src="/img/service/stripping.webp"
+                    alt="Kitchen Cleaning"
+                  />
                 </div>
                 <div className="service-content">
                   <p>
@@ -109,7 +112,7 @@ const SingleService = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 order-lg-1 sidebar-break-md sidebar-widget-area">
+            <div className="col-lg-4 order-lg-2 sidebar-break-md sidebar-widget-area">
               <div className="widget widget-service-info">
                 <div className="heading-layout4">
                   <h4>Service Information</h4>

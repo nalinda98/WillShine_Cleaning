@@ -12,7 +12,8 @@ const SingleService = () => {
       <section className="section-padding-12">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8 order-lg-2">
+            
+            <div className="col-lg-8 order-lg-1">
               <div className="single-service-box-layout1">
                 <h2 className="service-title">Pressure Washing Services</h2>
                 <p>
@@ -24,7 +25,10 @@ const SingleService = () => {
                   — we’re not satisfied until you are!
                 </p>
                 <div className="main-img">
-                  <img src="/img/service/pressure.webp" alt="Kitchen Cleaning" />
+                  <img
+                    src="/img/service/pressure.webp"
+                    alt="Kitchen Cleaning"
+                  />
                 </div>
                 <div className="service-content">
                   <div className="why-choose mt-4">
@@ -228,7 +232,7 @@ const SingleService = () => {
             </div>
 
             {/* SIDEBAR */}
-            <div className="col-lg-4 order-lg-1 sidebar-break-md sidebar-widget-area">
+            <div className="col-lg-4 order-lg-2 sidebar-break-md sidebar-widget-area">
               <div className="widget widget-service-info">
                 <div className="heading-layout4">
                   <h4>Service Information</h4>
