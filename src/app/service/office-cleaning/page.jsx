@@ -81,7 +81,7 @@ const SingleService = () => {
                               Customized Cleaning Plans
                             </h3>
                             <p>
-                              Willshine Property Services tailors cleaning
+                              Wilshine Property Services tailors cleaning
                               schedules and tasks to your office's specific
                               needs, ensuring optimal results without
                               disruption.
@@ -111,7 +111,7 @@ const SingleService = () => {
                   </div>
                   <p>
                     While these office cleaning hacks can help maintain your
-                    workspace daily, nothing beats a professional touch. Willshine
+                    workspace daily, nothing beats a professional touch. Wilshine
                     Property Services specializes in delivering expert office
                     cleaning solutions, offering a healthier, more productive
                     working environment with trained cleaning professionals.
@@ -126,10 +126,10 @@ const SingleService = () => {
                       <div className="col-lg-6">
                         <div className="item-content">
                           <h3 className="item-title">
-                            Why Choose Willshine Property Services?
+                            Why Choose Wilshine Property Services?
                           </h3>
                           <p>
-                            Willshine Property Services stands out because we
+                            Wilshine Property Services stands out because we
                             specialize only in office cleaning. Our vision:
                             "Office Cleaning – It’s All We Do, and We Do It
                             Best!" Our dedication ensures your workspace shines.

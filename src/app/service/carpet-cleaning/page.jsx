@@ -22,7 +22,7 @@ const SingleService = () => {
               <div className="single-service-box-layout1">
                 <h2 className="service-title">Professional Carpet Cleaning</h2>
                 <p>
-                  At Willshine Property Services, we provide top-notch carpet
+                  At Wilshine Property Services, we provide top-notch carpet
                   cleaning that leaves your carpets looking fresh and
                   revitalized. Our advanced equipment and non-toxic cleaning
                   solutions ensure a safe and effective clean for every space.
@@ -94,7 +94,7 @@ const SingleService = () => {
                   </div>
 
                   <p>
-                    Trust Willshine Property Services to create a healthier and
+                    Trust Wilshine Property Services to create a healthier and
                     more inviting environment for your family, employees, and
                     clients.
                   </p>

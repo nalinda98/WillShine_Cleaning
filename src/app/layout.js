@@ -28,9 +28,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Willshine Cleaning Services",
+  title: "Wilshine Cleaning Services",
   description:
-    "Willshine Cleaning Services is a property management company that specializes in managing residential and commercial properties.",
+    "Wilshine Cleaning Services is a property management company that specializes in managing residential and commercial properties.",
 };
 
 export default function RootLayout({ children }) {

@@ -20,7 +20,7 @@ const AboutContent = () => {
               <div className="about-box-layout7">
                 <div className="top-right-item">
                   <p>
-                    Willshine Cleaning Services is proudly Western Australia owned
+                    Wilshine Cleaning Services is proudly Western Australia owned
                     and operated, delivering exceptional office cleaning and
                     hygiene services. Backed by years of industry experience,
                     our professional team uses proven methods to achieve

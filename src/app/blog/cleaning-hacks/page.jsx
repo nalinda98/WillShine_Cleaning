@@ -157,15 +157,15 @@ const SingleBlog = () => {
                     everything in a small container for easy access.
                   </p>
 
-                  <h3>How Willshine Property Services Can Help</h3>
+                  <h3>How Wilshine Property Services Can Help</h3>
                   <p>
                     While these hacks help maintain a clean office, sometimes
-                    you need a professional touch. Willshine Property Services
+                    you need a professional touch. Wilshine Property Services
                     offers expert office cleaning solutions tailored to your
                     needs.
                   </p>
 
-                  <h4>Why Choose Willshine Property Services?</h4>
+                  <h4>Why Choose Wilshine Property Services?</h4>
                   <ul>
                     <li>
                       Customized Cleaning Plans – Tailored services to fit your
@@ -185,7 +185,7 @@ const SingleBlog = () => {
                     </li>
                   </ul>
                   <p>
-                    A clean office is just a call away with Willshine Property
+                    A clean office is just a call away with Wilshine Property
                     Services!
                   </p>
 
@@ -194,7 +194,7 @@ const SingleBlog = () => {
                     A clean office is a productive office! With these ten simple
                     cleaning hacks, you can maintain a fresh, organized
                     workspace overnight. But for deeper cleaning and long-term
-                    maintenance, professional services like Willshine Property
+                    maintenance, professional services like Wilshine Property
                     Services can make all the difference. Ready to transform
                     your workspace? Start implementing these hacks today!
                   </p>
@@ -233,7 +233,7 @@ const SingleBlog = () => {
                       </strong>{" "}
                       Professional office cleaning services ensure deep
                       cleaning, better hygiene, and a consistently fresh
-                      workspace without the hassle. Willshine Property Services
+                      workspace without the hassle. Wilshine Property Services
                       specializes in office cleaning. Our vision: ‘Office
                       Cleaning – It’s All We Do, and We Do It Best!’ We live by
                       this commitment every day.

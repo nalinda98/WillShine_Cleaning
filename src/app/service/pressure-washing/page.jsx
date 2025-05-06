@@ -53,7 +53,7 @@ const SingleService = () => {
   return (
     <div>
       <Banner
-        title={"Willshine Pressure Washing Service"}
+        title={"Wilshine Pressure Washing Service"}
         path={"/service"}
         pathName={"Services"}
         path2={"/service/pressure-washing"}
@@ -64,9 +64,9 @@ const SingleService = () => {
           <div className="row">
             <div className="col-lg-8 order-lg-1">
               <div className="single-service-box-layout1">
-                <h2 className="service-title">Willshine Pressure Washing Services</h2>
+                <h2 className="service-title">Wilshine Pressure Washing Services</h2>
                 <p style={{ textAlign: "justify" }}>
-                  At Willshine Cleaning Services, we specialize in high-quality
+                  At Wilshine Cleaning Services, we specialize in high-quality
                   pressure washing to bring new life to your home or business.
                   Whether it’s driveways, patios, siding, or walkways, our team
                   is committed to delivering outstanding results with care and
@@ -82,7 +82,7 @@ const SingleService = () => {
                 <div className="service-content">
                   <div className="why-choose mt-4">
                     <h3 className="item-title mb-3">
-                      Why Choose Willshine Pressure Cleaning Services
+                      Why Choose Wilshine Pressure Cleaning Services
                     </h3>
                     <div className="row">
                       <div className="col-lg-6">
@@ -194,11 +194,11 @@ const SingleService = () => {
                               }}
                             />
                           </div>
-                          <div className="card-body">
+                          <div className="mt-3">
                             <h5 className="card-title text-primary">
                               Driveway Cleaning
                             </h5>
-                            <p className="card-text">
+                            <p className="card-text" style={{ textAlign: "justify" }}>
                               Remove years of grime, oil stains, and dirt from
                               your driveway. We restore curb appeal with deep
                               power washing.
@@ -227,11 +227,11 @@ const SingleService = () => {
                               }}
                             />
                           </div>
-                          <div className="card-body">
+                          <div className="mt-3">
                             <h5 className="card-title text-primary">
                               Patio & Deck Cleaning
                             </h5>
-                            <p className="card-text">
+                            <p className="card-text" style={{ textAlign: "justify" }}>
                               Bring back the beauty of your patio or timber deck
                               with safe, effective cleaning that removes moss,
                               mildew, and discoloration.
@@ -260,11 +260,11 @@ const SingleService = () => {
                               }}
                             />
                           </div>
-                          <div className="card-body">
+                          <div className="mt-3">
                             <h5 className="card-title text-primary">
                               Pool Area Cleaning
                             </h5>
-                            <p className="card-text">
+                            <p className="card-text" style={{ textAlign: "justify" }}>
                               Keep your poolside clean and slip-free with our
                               specialized surface treatments and pressure
                               washing.
@@ -274,43 +274,7 @@ const SingleService = () => {
                       </div>
                     </div>
                   </div>
-                  <PricingTable
-                    details={{
-                      pack01: {
-                        title: "Basic",
-                        price: "$99",
-                        features: [
-                          "Surfaces Hand Wiped",
-                          "Floors Cleaned",
-                          "General Dusting",
-                          "Cobwebs Removed",
-                          "Doors Cleaned",
-                        ],
-                      },
-                      pack02: {
-                        title: "Standard",
-                        price: "$199",
-                        features: [
-                          "Surfaces Hand Wiped",
-                          "Floors Cleaned",
-                          "General Dusting",
-                          "Cobwebs Removed",
-                          "Doors Cleaned",
-                        ],
-                      },
-                      pack03: {
-                        title: "Premium",
-                        price: "$299",
-                        features: [
-                          "Surfaces Hand Wiped",
-                          "Floors Cleaned",
-                          "General Dusting",
-                          "Cobwebs Removed",
-                          "Doors Cleaned",
-                        ],
-                      },
-                    }}
-                  />
+                  
                   <Testimonial />
                   <FAQ faqs={pressureWashingFaqs} />
                 </div>

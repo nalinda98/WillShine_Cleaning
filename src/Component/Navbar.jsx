@@ -39,7 +39,7 @@ const Navbar = () => {
               <div className="header-topbar-layout2">
                 <div className="header-top-left">
                   <div className="item-location">
-                    <b>Willshine Cleaning Services</b>
+                    <b>Wilshine Cleaning Services</b>
                     {/* <i className="fas fa-map-marker-alt" /> */}
                   </div>
                 </div>
@@ -49,19 +49,19 @@ const Navbar = () => {
               <div className="header-topbar-layout2">
                 <ul className="header-top-right">
                   <li className="social-icon">
-                    <a href="https://www.facebook.com/willshinepropertyservice">
+                    <a href="https://www.facebook.com/wilshinepropertyservice">
                       <i className="fab fa-facebook-f" />
                     </a>
-                    <a href="https://www.instagram.com/willshinepropertyservices/">
+                    <a href="https://www.instagram.com/wilshinepropertyservices/">
                       <i className="fab fa-instagram" />
                     </a>
-                    <a href="https://www.linkedin.com/company/willshine-property-services/">
+                    <a href="https://www.linkedin.com/company/wilshine-property-services/">
                       <i className="fab fa-linkedin-in" />
                     </a>
                     <a href="tel:0433691812">
                       <i className="fas fa-envelope" />{" "}
                     </a>
-                    <a href="mailto:willshinepropertyservices@gmail.com">
+                    <a href="mailto:wilshinepropertyservices@gmail.com">
                       <i className="fas fa-phone" />
                     </a>
                   </li>
@@ -112,7 +112,7 @@ const Navbar = () => {
                     </div>
                     <div className="item-content">
                       <div className="item-title">E-mail Us</div>
-                      <div className="item-subtitle">info@willshine.com</div>
+                      <div className="item-subtitle">info@wilshine.com</div>
                     </div>
                   </li>
                   <li>
