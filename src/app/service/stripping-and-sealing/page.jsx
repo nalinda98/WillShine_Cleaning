@@ -6,6 +6,29 @@ import RelatedBlogs from "@/Component/RelatedBlogs";
 import React from "react";
 
 const SingleService = () => {
+  const stripAndSealFaqs = [
+    {
+      question: "How often do I need to strip & seal my floors?",
+      answer:
+        "The frequency depends on your floor's purpose, traffic levels, and type. For floors that require a consistently clean and glossy appearance or experience high traffic, we recommend strip and seal treatments every quarter or twice a year. For maintaining fair conditions with average traffic, annual treatments are suitable.",
+    },
+    {
+      question: "How much does strip & seal cost?",
+      answer:
+        "Costs vary based on floor conditions, type, and specific requirements, making it impractical to provide a general quote. Rest assured, we prioritize competitive pricing without compromising on quality.",
+    },
+    {
+      question: "How long before I can reuse the floor?",
+      answer:
+        "Ideally, floors should dry for 24 hours or overnight before reuse. However, we strive to minimize downtime while ensuring adequate drying time.",
+    },
+    {
+      question: "How can I request a free quote?",
+      answer:
+        "Simply fill out the following details, and we'll contact you within 24 hours to schedule a free site visit and provide a quote.",
+    },
+  ];
+  
   return (
     <div>
       <Banner
@@ -117,7 +140,7 @@ const SingleService = () => {
                       </div>
                     </div>
                   </div>
-                  <PricingTable
+                  {/* <PricingTable
                     details={{
                       pack01: {
                         title: "Basic",
@@ -153,14 +176,14 @@ const SingleService = () => {
                         ],
                       },
                     }}
-                  />
+                  /> */}
 
-                  <FAQ />
+                  <FAQ faqs={stripAndSealFaqs} />
                 </div>
               </div>
             </div>
             <div className="col-lg-4 order-lg-2 sidebar-break-md sidebar-widget-area">
-              <RelatedBlogs />
+              <RelatedBlogs category={"stripping-and-sealing"} />
               <ContactForm />
             </div>
           </div>

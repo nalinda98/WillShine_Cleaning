@@ -4,6 +4,7 @@ import FAQ from "@/Component/FAQ";
 import PricingTable from "@/Component/PricingTable";
 import RelatedBlogs from "@/Component/RelatedBlogs";
 import Testimonial from "@/Component/Testimonial";
+import Testominals from "@/Component/Testominals";
 import React from "react";
 
 const SingleService = () => {
@@ -275,7 +276,7 @@ const SingleService = () => {
                     </div>
                   </div>
                   
-                  <Testimonial />
+                  {/* <Testominals /> */}
                   <FAQ faqs={pressureWashingFaqs} />
                 </div>
               </div>
@@ -283,7 +284,7 @@ const SingleService = () => {
 
             {/* SIDEBAR */}
             <div className="col-lg-4 order-lg-2 sidebar-break-md sidebar-widget-area">
-              <RelatedBlogs />
+              <RelatedBlogs category={"pressure-washing"} />
               <ContactForm />
             </div>
             {/* END SIDEBAR */}

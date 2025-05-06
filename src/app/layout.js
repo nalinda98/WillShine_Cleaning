@@ -53,6 +53,16 @@ export default function RootLayout({ children }) {
                 name="viewport"
                 content="width=device-width, initial-scale=1, shrink-to-fit=no"
               />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:title"
+                content="Why Choose a Local Cleaning Company | Wilshine Cleaning"
+              />
+              <meta
+                name="twitter:description"
+                content="Discover why choosing a local Perth-based cleaning company like Wilshine Cleaning gives you better service, pricing, and results."
+              />
+              <meta name="twitter:image" content="/img/blog/why.png" />
               <link rel="manifest" href="/site.webmanifest.json" />
             </Head>
             <Navbar />

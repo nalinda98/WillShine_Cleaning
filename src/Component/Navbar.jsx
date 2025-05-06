@@ -112,7 +112,7 @@ const Navbar = () => {
                     </div>
                     <div className="item-content">
                       <div className="item-title">E-mail Us</div>
-                      <div className="item-subtitle">info@wilshine.com</div>
+                      <div className="item-subtitle">info@wilshine.com.au</div>
                     </div>
                   </li>
                   <li>

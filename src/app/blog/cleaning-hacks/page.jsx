@@ -157,15 +157,15 @@ const SingleBlog = () => {
                     everything in a small container for easy access.
                   </p>
 
-                  <h3>How Wilshine Property Services Can Help</h3>
+                  <h3>How Wilshine Cleaning Services Can Help</h3>
                   <p>
                     While these hacks help maintain a clean office, sometimes
-                    you need a professional touch. Wilshine Property Services
+                    you need a professional touch. Wilshine Cleaning Services
                     offers expert office cleaning solutions tailored to your
                     needs.
                   </p>
 
-                  <h4>Why Choose Wilshine Property Services?</h4>
+                  <h4>Why Choose Wilshine Cleaning Services?</h4>
                   <ul>
                     <li>
                       Customized Cleaning Plans – Tailored services to fit your
@@ -233,7 +233,7 @@ const SingleBlog = () => {
                       </strong>{" "}
                       Professional office cleaning services ensure deep
                       cleaning, better hygiene, and a consistently fresh
-                      workspace without the hassle. Wilshine Property Services
+                      workspace without the hassle. Wilshine Cleaning Services
                       specializes in office cleaning. Our vision: ‘Office
                       Cleaning – It’s All We Do, and We Do It Best!’ We live by
                       this commitment every day.
@@ -243,37 +243,52 @@ const SingleBlog = () => {
 
                 <div className="blog-social-area">
                   <div className="row">
-                    <div className=" d-flex ">
+                    <div className="d-flex">
                       <div className="single-post-social">
                         <h5 className="item-title">Share :</h5>
                         <ul>
                           <li>
-                            <a href="#">
+                            <a
+                              href="https://www.facebook.com/sharer/sharer.php?u=https://wilshinecleaning.com.au/blog/cleaning-hacks"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <i className="fab fa-facebook-f" />
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a
+                              href="https://twitter.com/intent/tweet?url=https://wilshinecleaning.com.au/blog/cleaning-hacks"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <i className="fab fa-twitter" />
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a
+                              href="https://www.linkedin.com/shareArticle?mini=true&url=https://wilshinecleaning.com.au/blog/cleaning-hacks"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <i className="fab fa-linkedin-in" />
                             </a>
                           </li>
                           <li>
-                            <a href="#">
-                              <i className="fab fa-google-plus-g" />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
+                            <a
+                              href="https://pinterest.com/pin/create/button/?url=https://wilshinecleaning.com.au/blog/cleaning-hacks"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <i className="fab fa-pinterest" />
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a
+                              href="https://vimeo.com/share?url=https://wilshinecleaning.com.au/blog/cleaning-hacks"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <i className="fab fa-vimeo-v" />
                             </a>
                           </li>

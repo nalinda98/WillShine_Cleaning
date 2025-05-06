@@ -1,6 +1,7 @@
 import Banner from "@/Component/Banner";
 import ContactForm from "@/Component/ContactForm";
 import FAQ from "@/Component/FAQ";
+import HowItWork from "@/Component/HowItWork";
 import PricingTable from "@/Component/PricingTable";
 import RelatedBlogs from "@/Component/RelatedBlogs";
 import React from "react";
@@ -22,15 +23,15 @@ const SingleService = () => {
               <div className="single-service-box-layout1">
                 <h2 className="service-title">Professional Carpet Cleaning</h2>
                 <p>
-                  At Wilshine Property Services, we provide top-notch carpet
+                  At Blossom Cleaning Services, we provide top-notch carpet
                   cleaning that leaves your carpets looking fresh and
                   revitalized. Our advanced equipment and non-toxic cleaning
-                  solutions ensure a safe and effective clean for every space.
+                  solutions ensure a safe and effective clean.
                 </p>
                 <div className="main-img">
                   <img
                     src="/img/service/carpet-cleaning11.jpg"
-                    alt="Kitchen Cleaning"
+                    alt="Carpet Cleaning"
                   />
                 </div>
                 <div className="service-content">
@@ -53,9 +54,8 @@ const SingleService = () => {
                               Remove Allergens & Dust Mites
                             </h3>
                             <p>
-                              Our deep cleaning eliminates trapped contaminants,
-                              promoting a healthier indoor environment for you
-                              and your family.
+                              Thorough cleaning eliminates trapped contaminants,
+                              improving indoor health.
                             </p>
                           </div>
                         </div>
@@ -68,9 +68,8 @@ const SingleService = () => {
                           <div className="media-body space-md">
                             <h3 className="item-title">Improve Air Quality</h3>
                             <p>
-                              Fresh carpets significantly enhance the overall
-                              air quality, creating a cleaner, fresher living
-                              and working space.
+                              Fresh carpets contribute to a cleaner and fresher
+                              environment.
                             </p>
                           </div>
                         </div>
@@ -81,11 +80,12 @@ const SingleService = () => {
                             <i className="far fa-check-circle" />
                           </div>
                           <div className="media-body space-md">
-                            <h3 className="item-title">Prevent Mould Growth</h3>
+                            <h3 className="item-title">
+                              Reduce the Risk of Mould
+                            </h3>
                             <p>
-                              Our fast-drying professional techniques help
-                              prevent mould and mildew, protecting your carpet
-                              and your health.
+                              Fast-drying professional methods help prevent
+                              mould and mildew growth.
                             </p>
                           </div>
                         </div>
@@ -94,7 +94,7 @@ const SingleService = () => {
                   </div>
 
                   <p>
-                    Trust Wilshine Property Services to create a healthier and
+                    Trust Blossom Cleaning Services to create a healthier and
                     more inviting environment for your family, employees, and
                     clients.
                   </p>
@@ -126,7 +126,7 @@ const SingleService = () => {
                       pack03: {
                         title: "Premium",
                         price: "$3.00",
-                        unit: "per sqm",                        
+                        unit: "per sqm",
                         features: [
                           "Upto 100sqm - $3/sqm",
                           "101-200sqm - $2.75/sqm",
@@ -136,49 +136,13 @@ const SingleService = () => {
                       },
                     }}
                   />
-
-                  <div className="service-more-content mt-5">
-                    <h3 className="item-title">How It Works</h3>
-                    <div className="row">
-                      <div className="col-lg-4">
-                        <div className="item-content">
-                          <h4>01. Contact Us</h4>
-                          <p>
-                            Reach out via our website, email, or phone. We'll
-                            visit your premises to assess the work and provide a
-                            free, instant quote.
-                          </p>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="item-content">
-                          <h4>02. Confirm & Schedule</h4>
-                          <p>
-                            Once you accept the quote, we’ll book a convenient
-                            date. We apply a dirt-neutralizing solution, scrub,
-                            and steam clean for a thorough deep clean.
-                          </p>
-                        </div>
-                      </div>
-                      <div className="col-lg-4">
-                        <div className="item-content">
-                          <h4>03. Satisfaction Guaranteed</h4>
-                          <p>
-                            After completing the job, we invite you to inspect
-                            our work to ensure you’re 100% satisfied before we
-                            leave.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <FAQ />
+                  <HowItWork />
+                  {/* <FAQ faqs={pressureWashingFaqs} /> */}
                 </div>
               </div>
             </div>
             <div className="col-lg-4 order-lg-2 sidebar-break-md sidebar-widget-area">
-              <RelatedBlogs />
+              <RelatedBlogs category={"carpet-cleaning"} />
               <ContactForm />
             </div>
           </div>

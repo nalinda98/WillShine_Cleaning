@@ -107,7 +107,7 @@ const Testominals = () => {
             </div>
             <div className="testimonial-box-layout1">
               <p>
-                Wilshine Property Services is fantastic! Always reliable,
+                Wilshine Cleaning Services is fantastic! Always reliable,
                 thorough, and professional. Highly recommend!{" "}
               </p>
               <h3 className="item-title">Jason</h3>
