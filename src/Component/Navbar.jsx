@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -84,7 +83,7 @@ const Navbar = () => {
                 <a href="index.html" className="temp-logo">
                   <img
                     src="/img/horizontal_logo_without_background.png"
-                    style={{  height: "80px", width: "auto" }}
+                    style={{ height: "80px", width: "auto" }}
                     alt="logo"
                     className="img-fluid"
                   />
@@ -174,7 +173,9 @@ const Navbar = () => {
                           <a href="/blog/cleaning-hacks">Cleaning Hacks</a>
                         </li>
                         <li>
-                          <a href="/blog/why-choose-local-company">Why Choose Local Company</a>
+                          <a href="/blog/why-choose-local-company">
+                            Why Choose Local Company
+                          </a>
                         </li>
                         <li>
                           <a href="/blog/cleaning-perth">Cleaning Perth</a>
@@ -192,10 +193,10 @@ const Navbar = () => {
                 <div className="header-action-layout1">
                   <ul>
                     <li className="header-action-btn">
-                      <a href="#" className="item-btn">
+                      <Link href="/#estimate-section" className="item-btn">
                         <i className="fas fa-bell" />
                         Get A Quote
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

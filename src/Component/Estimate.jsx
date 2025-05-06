@@ -2,7 +2,7 @@ import React from "react";
 
 const Estimate = () => {
   return (
-    <div>
+    <div id="estimate-section">
       <section className="section-padding-md-2 section-bubble">
         <div className="container">
           <div className="row">

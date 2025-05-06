@@ -14,6 +14,10 @@ const Banner = ({ title, path }) => {
       <section
         className="inner-page-banner bg-common"
         data-bg-image="/img/figure/breadcumb.jpg"
+        style={{
+          width: "100vw",
+          backgroundSize: "cover",
+        }}
       >
         <div className="container">
           <div className="row">
@@ -22,9 +26,9 @@ const Banner = ({ title, path }) => {
                 <h1>{title}</h1>
                 <ul>
                   <li>
-                    <a href="index.html">Home</a>
+                    <a href="/">Home</a>
                   </li>
-                  <li>{path}</li>
+                  <li>&nbsp;{path}</li>
                 </ul>
               </div>
             </div>
