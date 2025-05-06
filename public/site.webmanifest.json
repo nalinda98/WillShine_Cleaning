@@ -1,6 +1,6 @@
 {
-  "name": "Glossom Property Services",
-  "short_name": "Glossom",
+  "name": "WilShine Cleaning Services",
+  "short_name": "WilShine",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -19,5 +19,5 @@
   ],
   "theme_color": "#ffffff",
   "display_override": ["minimal-ui", "standalone"],
-  "description": "Glossom Property Services is a property management company that provides a range of services to landlords and tenants."
+  "description": "Wilshine Cleaning Services is a property management company that provides a range of services to landlords and tenants."
 }

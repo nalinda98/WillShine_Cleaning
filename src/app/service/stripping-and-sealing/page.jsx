@@ -1,15 +1,47 @@
 import Banner from "@/Component/Banner";
+import ContactForm from "@/Component/ContactForm";
 import FAQ from "@/Component/FAQ";
+import PricingTable from "@/Component/PricingTable";
+import RelatedBlogs from "@/Component/RelatedBlogs";
 import React from "react";
 
 const SingleService = () => {
+  const stripAndSealFaqs = [
+    {
+      question: "How often do I need to strip & seal my floors?",
+      answer:
+        "The frequency depends on your floor's purpose, traffic levels, and type. For floors that require a consistently clean and glossy appearance or experience high traffic, we recommend strip and seal treatments every quarter or twice a year. For maintaining fair conditions with average traffic, annual treatments are suitable.",
+    },
+    {
+      question: "How much does strip & seal cost?",
+      answer:
+        "Costs vary based on floor conditions, type, and specific requirements, making it impractical to provide a general quote. Rest assured, we prioritize competitive pricing without compromising on quality.",
+    },
+    {
+      question: "How long before I can reuse the floor?",
+      answer:
+        "Ideally, floors should dry for 24 hours or overnight before reuse. However, we strive to minimize downtime while ensuring adequate drying time.",
+    },
+    {
+      question: "How can I request a free quote?",
+      answer:
+        "Simply fill out the following details, and we'll contact you within 24 hours to schedule a free site visit and provide a quote.",
+    },
+  ];
+  
   return (
     <div>
-      <Banner title={"Strip & Seal Service"} path={"Services > Strip & Seal"} />
+      <Banner
+        title={"Strip & Seal Service"}
+        path={"/service"}
+        pathName={"Services"}
+        path2={"/service/stripping-and-sealing"}
+        path2Name={"Stripping & Sealing"}
+      />
       <section className="section-padding-12">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8 order-lg-2">
+            <div className="col-lg-8 order-lg-1">
               <div className="single-service-box-layout1">
                 <h2 className="service-title">Strip & Seal Service</h2>
                 <p>
@@ -22,7 +54,10 @@ const SingleService = () => {
                   original condition for many years.
                 </p>
                 <div className="main-img">
-                  <img src="/img/service/stripping.webp" alt="Kitchen Cleaning" />
+                  <img
+                    src="/img/service/stripping.webp"
+                    alt="Kitchen Cleaning"
+                  />
                 </div>
                 <div className="service-content">
                   <p>
@@ -105,159 +140,51 @@ const SingleService = () => {
                       </div>
                     </div>
                   </div>
-                  <FAQ />
+                  {/* <PricingTable
+                    details={{
+                      pack01: {
+                        title: "Basic",
+                        price: "$99",
+                        features: [
+                          "Surfaces Hand Wiped",
+                          "Floors Cleaned",
+                          "General Dusting",
+                          "Cobwebs Removed",
+                          "Doors Cleaned",
+                        ],
+                      },
+                      pack02: {
+                        title: "Standard",
+                        price: "$199",
+                        features: [
+                          "Surfaces Hand Wiped",
+                          "Floors Cleaned",
+                          "General Dusting",
+                          "Cobwebs Removed",
+                          "Doors Cleaned",
+                        ],
+                      },
+                      pack03: {
+                        title: "Premium",
+                        price: "$299",
+                        features: [
+                          "Surfaces Hand Wiped",
+                          "Floors Cleaned",
+                          "General Dusting",
+                          "Cobwebs Removed",
+                          "Doors Cleaned",
+                        ],
+                      },
+                    }}
+                  /> */}
+
+                  <FAQ faqs={stripAndSealFaqs} />
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 order-lg-1 sidebar-break-md sidebar-widget-area">
-              <div className="widget widget-service-info">
-                <div className="heading-layout4">
-                  <h4>Service Information</h4>
-                </div>
-                <div className="service-info">
-                  <ul>
-                    <li className="active">
-                      <div className="service-price">$150.00</div>
-                    </li>
-                    <li>
-                      <div className="item-title">Cleaning Hours</div>
-                      <div className="item-subtitle">1-3 Hours</div>
-                    </li>
-                    <li>
-                      <div className="item-title">Number of Cleaners</div>
-                      <div className="item-subtitle">02 Cleaner</div>
-                    </li>
-                    <li>
-                      <div className="item-title">Visiting Hours</div>
-                      <div className="item-subtitle">09.00am - 06.00pm</div>
-                    </li>
-                    <li>
-                      <div className="item-title">Contact</div>
-                      <div className="item-subtitle">+88 9504200</div>
-                    </li>
-                    <li>
-                      <div className="item-title">E-mail</div>
-                      <div className="item-subtitle">info@blossom.com</div>
-                    </li>
-                  </ul>
-                  <a
-                    href="#"
-                    className="fw-btn-fill bg-accent text-primarytext mt-1"
-                  >
-                    Book Now
-                  </a>
-                </div>
-              </div>
-
-              <div className="widget widget-contact-form">
-                <div className="heading-layout4">
-                  <h4>Have you Any Question?</h4>
-                </div>
-                <form className="contact-form-box" id="contact-form">
-                  <div className="row">
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="fas fa-user" />
-                      </div>
-                      <input
-                        type="text"
-                        placeholder="Name"
-                        className="form-control"
-                        name="name"
-                        data-error="Name field is required"
-                        required=""
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="far fa-envelope" />
-                      </div>
-                      <input
-                        type="email"
-                        placeholder="E-mail Address"
-                        className="form-control"
-                        name="email"
-                        data-error="email field is required"
-                        required=""
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="fas fa-phone-volume" />
-                      </div>
-                      <input
-                        type="text"
-                        placeholder="Phone"
-                        className="form-control"
-                        name="phone"
-                        data-error="Phone field is required"
-                        required=""
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="fas fa-question" />
-                      </div>
-                      <input
-                        type="text"
-                        placeholder="Subject"
-                        className="form-control"
-                        name="subject"
-                        data-error="Subject field is required"
-                        required=""
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="far fa-comments" />
-                      </div>
-                      <textarea
-                        placeholder="Message"
-                        className="textarea form-control"
-                        name="message"
-                        id="form-message"
-                        rows={4}
-                        cols={20}
-                        data-error="Message field is required"
-                        required=""
-                        defaultValue={""}
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <button
-                        type="submit"
-                        className="fw-btn-fill bg-accent text-primarytext"
-                      >
-                        Send Message
-                      </button>
-                    </div>
-                  </div>
-                  <div className="form-response" />
-                </form>
-              </div>
-
-              <div className="widget widget-banner">
-                <div className="item-img">
-                  <img src="/img/figure/widget-banner.png" alt="banner" />
-                </div>
-                <div className="item-content">
-                  <h2 className="item-title">
-                    <span>30</span>% Discount
-                  </h2>
-                  <div className="item-subtitle">Promotion Offer 16 Days</div>
-                  <a
-                    href="#"
-                    className="fw-btn-fill bg-accent text-primarytext"
-                  >
-                    Contact With US
-                  </a>
-                </div>
-              </div>
+            <div className="col-lg-4 order-lg-2 sidebar-break-md sidebar-widget-area">
+              <RelatedBlogs category={"stripping-and-sealing"} />
+              <ContactForm />
             </div>
           </div>
         </div>

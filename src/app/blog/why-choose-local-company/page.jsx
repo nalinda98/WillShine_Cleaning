@@ -7,7 +7,10 @@ const SingleBlog = () => {
     <div>
       <Banner
         title={"Why Choose Local Company"}
-        path={"Blogs > Blog Details"}
+        pathName={"Blog"}
+        path={"/blog"}
+        path2={"/blog/why-choose-local-company"}
+        path2Name={"Why Choose Local Company"}
       />
       <section className="section-padding-12">
         <div className="container">
@@ -29,21 +32,21 @@ const SingleBlog = () => {
                     <ul>
                       <li className="item-author">
                         <img src="/img/figure/author.png" alt="author" />
-                        By Mark Wily
+                        By Chathura Sanka
                       </li>
                     </ul>
                   </div>
                   <p>
                     When searching for “office cleaning services near me” in
                     Perth, you have the option of large franchises or local
-                    businesses. At <strong>Bossom Property Services</strong>, we
+                    businesses. At <strong>Bossom Cleaning Services</strong>, we
                     believe smaller businesses offer a more personalized,
                     reliable, and affordable solution. Unlike big franchises
                     that treat clients as numbers, we provide tailored services
                     and local expertise to keep your office spotless.
                   </p>
 
-                  <h4>Why Choose Bossom Property Services?</h4>
+                  <h4>Why Choose Bossom Cleaning Services?</h4>
                   <ul>
                     <li>
                       <strong>Personalized & Flexible Services:</strong> We
@@ -88,7 +91,7 @@ const SingleBlog = () => {
                     When searching for “office cleaning services near me” in
                     Perth, don’t settle for the impersonal, generic services of
                     big franchises. Choose{" "}
-                    <strong>Bossom Property Services</strong> for personalized,
+                    <strong>Bossom Cleaning Services</strong> for personalized,
                     reliable, and affordable cleaning solutions. Our local,
                     small business approach ensures that you get the attention
                     and care your office deserves, with cleaning services
@@ -109,33 +112,30 @@ const SingleBlog = () => {
                         <h5 className="item-title">Share :</h5>
                         <ul>
                           <li>
-                            <a href="#">
+                            <a
+                              href="https://www.facebook.com/sharer/sharer.php?u=https://wilshinecleaning.com.au/blog/cleaning-perth"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <i className="fab fa-facebook-f" />
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a
+                              href="https://twitter.com/intent/tweet?url=https://wilshinecleaning.com.au/blog/cleaning-perth"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <i className="fab fa-twitter" />
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a
+                              href="https://www.linkedin.com/shareArticle?mini=true&url=https://wilshinecleaning.com.au/blog/cleaning-perth"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
                               <i className="fab fa-linkedin-in" />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i className="fab fa-google-plus-g" />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i className="fab fa-pinterest" />
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i className="fab fa-vimeo-v" />
                             </a>
                           </li>
                         </ul>

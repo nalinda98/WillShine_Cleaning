@@ -1,5 +1,9 @@
+import AboutProcess from "@/Component/AboutProcess";
 import Banner from "@/Component/Banner";
+import ContactForm from "@/Component/ContactForm";
 import FAQ from "@/Component/FAQ";
+import PricingTable from "@/Component/PricingTable";
+import RelatedBlogs from "@/Component/RelatedBlogs";
 import React from "react";
 
 const SingleService = () => {
@@ -7,246 +11,146 @@ const SingleService = () => {
     <div>
       <Banner
         title={"Office Cleaning Service"}
-        path={"Services > Office Cleaning"}
+        path={"/service"}
+        pathName={"Services"}
+        path2={"/service/office-cleaning"}
+        path2Name={"Office Cleaning"}
       />
       <section className="section-padding-12">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8 order-lg-2">
+            <div className="col-lg-8 order-lg-1">
               <div className="single-service-box-layout1">
                 <h2 className="service-title">Office Cleaning Service</h2>
-                <p>
-                  A clean and organized workspace can boost productivity, reduce stress, and create a professional environment. But who has the time for deep cleaning every day? The good news is, with a few simple hacks, you can keep your office spotless without breaking a sweat. Here are ten office cleaning hacks that will transform your workspace overnight!
-                </p>
                 <div className="main-img">
-                  <img src="/img/service/officeClean.jpg" alt="Kitchen Cleaning" />
+                  <img
+                    src="/img/service/officeClean.jpg"
+                    alt="Office Cleaning"
+                  />
                 </div>
+                <p>
+                  At Blossom Cleaning Services, we specialize in providing
+                  top-notch cleaning solutions exclusively for office buildings.
+                  With our unwavering focus on this niche, we’ve mastered the
+                  art of maintaining a pristine, professional workspace. Our
+                  innovative cleaning techniques, modern equipment, and
+                  dedicated team ensure that your workplace stays clean, safe,
+                  and welcoming.
+                </p>
+
+                <PricingTable
+                  details={{
+                    pack01: {
+                      title: "Basic",
+                      price: "$50",
+                      unit: "+ GST Per Hour",
+                      features: [
+                        "Single-story building",
+                        "Small warehouse or factory",
+                        "Less than 20 employees",
+                        "1–3 hours Estimated Time Required",
+                      ],
+                    },
+                    pack02: {
+                      title: "Standard",
+                      price: "$50",
+                      unit: "+ GST Per Hour",
+                      features: [
+                        "One or two-story building",
+                        "Warehouse and/or factory",
+                        "Fewer than 200 employees",
+                        "3–6 hours Estimated Time Required",
+                      ],
+                    },
+                    pack03: {
+                      title: "Premium",
+                      price: "$50",
+                      unit: "+ GST Per Hour",
+                      features: [
+                        "Multi-story building",
+                        "With or without a warehouse/factory",
+                        "Over 200 employees",
+                        "6+ hours Estimated Time Required",
+                      ],
+                    },
+                  }}
+                />
                 <div className="service-content">
-                  <p>
-                    1. <b>Declutter First, Clean Later:</b> Use a “three-box method” (Keep, Recycle, Trash) and invest in desk organizers.<br/>
-                    2. <b>Use Microfiber Cloths for Dusting:</b> Lightly dampen the cloth to capture more dust.<br/>
-                    3. <b>Disinfect Your Keyboard and Mouse:</b> Cotton swabs dipped in isopropyl alcohol work wonders.<br/>
-                    4. <b>Freshen Up Office Air Naturally:</b> Add small plants or place baking soda to absorb odors.<br/>
-                    5. <b>Use Coffee Filters for Screen Cleaning:</b> Gently wipe your monitor with a dry coffee filter.<br/>
-                    6. <b>Keep Your Office Chair Clean:</b> Use a lint roller and mild soap solution for fabric chairs.<br/>
-                    7. <b>Organize Cables with Binder Clips:</b> Attach binder clips to your desk to manage cables easily.<br/>
-                    8. <b>Use Lemon for a Fresh-Smelling Office:</b> Lemon juice mixed with water works as a natural surface cleaner.<br/>
-                    9. <b>Clean Office Windows with Vinegar:</b> Mix vinegar and water for a streak-free shine.<br/>
-                    10. <b>Keep a Desk Cleaning Kit:</b> Include wipes, microfiber cloths, mini brush, and hand sanitizer.
-                  </p>
-                  <div className="why-choose">
-                    <div className="row">
-                      <div className="col-lg-6">
-                        <div className="media">
-                          <div className="item-icon">
-                            <i className="far fa-check-circle" />
-                          </div>
-                          <div className="media-body space-md">
-                            <h3 className="item-title">Customized Cleaning Plans</h3>
-                            <p>
-                              Blossom Property Services tailors cleaning schedules and tasks to your office's specific needs, ensuring optimal results without disruption.
-                            </p>
+                  <h3>
+                    Why Do So Many Companies Choose Our Office Cleaning Service?
+                  </h3>
+                  <div className="row">
+                    {[
+                      {
+                        img: "/img/icons/unlock.png",
+                        title: "No Lock-In Contracts",
+                        desc: "Enjoy complete flexibility—our results earn your trust, not binding agreements.",
+                      },
+                      {
+                        img: "/img/icons/clean.png",
+                        title: "Specialized Office Cleaning",
+                        desc: "Office cleaning is all we do, so we do it better—no distractions, no dilution.",
+                      },
+                      {
+                        img: "/img/icons/fanchise.jpg",
+                        title: "Not a Franchise",
+                        desc: "We don’t outsource. Our own vetted staff ensures consistent quality service.",
+                      },
+                      {
+                        img: "/img/icons/ok.webp",
+                        title: "Quality Checks & Standards",
+                        desc: "Daily and fortnightly inspections ensure top-tier cleaning at all times.",
+                      },
+                      {
+                        img: "/img/icons/trust.png",
+                        title: "Trusted, Police-Cleared Team",
+                        desc: "All cleaners are carefully screened and trained for professionalism and trust.",
+                      },
+                      {
+                        img: "/img/icons/equipment.jpeg",
+                        title: "Advanced Equipment",
+                        desc: "We use modern, eco-conscious tools for safe and thorough cleaning.",
+                      },
+                      {
+                        img: "/img/icons/document.png",
+                        title: "Customized Plans",
+                        desc: "Every office is different. We create schedules tailored to your needs.",
+                      },
+                      {
+                        img: "/img/icons/team.jpeg",
+                        title: "Reliable, Trained Team",
+                        desc: "Our insured professionals show up on time and exceed expectations.",
+                      },
+                      {
+                        img: "/img/icons/safety.png",
+                        title: "Health & Safety First",
+                        desc: "We prioritize hygiene to reduce germs, allergens, and other hazards.",
+                      },
+                    ].map((item, index) => (
+                      <div className="col-lg-6 col-md-6 mb-4" key={index}>
+                        <div className="media align-items-start">
+                          <img
+                            src={item.img}
+                            alt={item.title}
+                            className="mr-3"
+                            style={{ width: 60, height: 60 }}
+                          />
+                          <div className="">
+                            <h5 className="mt-0">{item.title}</h5>
+                            <p>{item.desc}</p>
                           </div>
                         </div>
                       </div>
-                      <div className="col-lg-6">
-                        <div className="media">
-                          <div className="item-icon">
-                            <i className="far fa-check-circle" />
-                          </div>
-                          <div className="media-body space-md">
-                            <h3 className="item-title">Eco-Friendly Products</h3>
-                            <p>
-                              We use safe, non-toxic, and eco-friendly cleaning supplies, protecting both employees and the environment while delivering excellent cleanliness.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    ))}
                   </div>
-                  <p>
-                    While these office cleaning hacks can help maintain your workspace daily, nothing beats a professional touch. Blossom Property Services specializes in delivering expert office cleaning solutions, offering a healthier, more productive working environment with trained cleaning professionals.
-                  </p>
-                  <div className="service-more-content">
-                    <div className="row">
-                      <div className="col-lg-6">
-                        <div className="item-img">
-                          <img src="/img/service/service10.jpg" alt="thumb" />
-                        </div>
-                      </div>
-                      <div className="col-lg-6">
-                        <div className="item-content">
-                          <h3 className="item-title">
-                            Why Choose Blossom Property Services?
-                          </h3>
-                          <p>
-                            Blossom Property Services stands out because we specialize only in office cleaning. Our vision: "Office Cleaning – It’s All We Do, and We Do It Best!" Our dedication ensures your workspace shines.
-                          </p>
-                          <ul className="item-feature">
-                            <li>Trained Cleaning Professionals</li>
-                            <li>Affordable & Reliable Service</li>
-                            <li>Flexible Scheduling</li>
-                            <li>Eco-Friendly Cleaning Solutions</li>
-                            <li>Guaranteed Customer Satisfaction</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <FAQ />
+
+                  <AboutProcess />
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 order-lg-1 sidebar-break-md sidebar-widget-area">
-              <div className="widget widget-service-info">
-                <div className="heading-layout4">
-                  <h4>Service Information</h4>
-                </div>
-                <div className="service-info">
-                  <ul>
-                    <li className="active">
-                      <div className="service-price">$150.00</div>
-                    </li>
-                    <li>
-                      <div className="item-title">Cleaning Hours</div>
-                      <div className="item-subtitle">1-3 Hours</div>
-                    </li>
-                    <li>
-                      <div className="item-title">Number of Cleaners</div>
-                      <div className="item-subtitle">02 Cleaner</div>
-                    </li>
-                    <li>
-                      <div className="item-title">Visiting Hours</div>
-                      <div className="item-subtitle">09.00am - 06.00pm</div>
-                    </li>
-                    <li>
-                      <div className="item-title">Contact</div>
-                      <div className="item-subtitle">+88 9504200</div>
-                    </li>
-                    <li>
-                      <div className="item-title">E-mail</div>
-                      <div className="item-subtitle">info@blossom.com</div>
-                    </li>
-                  </ul>
-                  <a
-                    href="#"
-                    className="fw-btn-fill bg-accent text-primarytext mt-1"
-                  >
-                    Book Now
-                  </a>
-                </div>
-              </div>
-
-              <div className="widget widget-contact-form">
-                <div className="heading-layout4">
-                  <h4>Have you Any Question?</h4>
-                </div>
-                <form className="contact-form-box" id="contact-form">
-                  <div className="row">
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="fas fa-user" />
-                      </div>
-                      <input
-                        type="text"
-                        placeholder="Name"
-                        className="form-control"
-                        name="name"
-                        data-error="Name field is required"
-                        required=""
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="far fa-envelope" />
-                      </div>
-                      <input
-                        type="email"
-                        placeholder="E-mail Address"
-                        className="form-control"
-                        name="email"
-                        data-error="email field is required"
-                        required=""
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="fas fa-phone-volume" />
-                      </div>
-                      <input
-                        type="text"
-                        placeholder="Phone"
-                        className="form-control"
-                        name="phone"
-                        data-error="Phone field is required"
-                        required=""
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="fas fa-question" />
-                      </div>
-                      <input
-                        type="text"
-                        placeholder="Subject"
-                        className="form-control"
-                        name="subject"
-                        data-error="Subject field is required"
-                        required=""
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <div className="form-icon">
-                        <i className="far fa-comments" />
-                      </div>
-                      <textarea
-                        placeholder="Message"
-                        className="textarea form-control"
-                        name="message"
-                        id="form-message"
-                        rows={4}
-                        cols={20}
-                        data-error="Message field is required"
-                        required=""
-                        defaultValue={""}
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <button
-                        type="submit"
-                        className="fw-btn-fill bg-accent text-primarytext"
-                      >
-                        Send Message
-                      </button>
-                    </div>
-                  </div>
-                  <div className="form-response" />
-                </form>
-              </div>
-
-              <div className="widget widget-banner">
-                <div className="item-img">
-                  <img src="/img/figure/widget-banner.png" alt="banner" />
-                </div>
-                <div className="item-content">
-                  <h2 className="item-title">
-                    <span>30</span>% Discount
-                  </h2>
-                  <div className="item-subtitle">Promotion Offer 16 Days</div>
-                  <a
-                    href="#"
-                    className="fw-btn-fill bg-accent text-primarytext"
-                  >
-                    Contact With US
-                  </a>
-                </div>
-              </div>
-
+            <div className="col-lg-4 order-lg-2 sidebar-break-md sidebar-widget-area">
+              <RelatedBlogs category={"office-cleaning"} />
+              <ContactForm />
             </div>
           </div>
         </div>

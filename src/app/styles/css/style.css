@@ -6042,7 +6042,6 @@ div#wrapper.open > .offcanvas-mask {
 .pricing-box-layout1 {
   background-color: #ffffff;
   border-radius: 4px;
-  padding: 6rem 5rem;
   text-align: center;
   position: relative;
   margin-bottom: 3rem;
@@ -6206,7 +6205,7 @@ div#wrapper.open > .offcanvas-mask {
 /*------------------- 5.11 Process -------------------*/
 .process-box-layout1 {
   text-align: center;
-  padding: 0 4rem;
+  padding: 0 1rem;
   margin-bottom: 3rem;
   position: relative;
 }
@@ -8948,7 +8947,7 @@ div#wrapper.open > .offcanvas-mask {
 }
 /*------------------- 6.5 Padding -------------------*/
 .section-padding-xl {
-  padding: 17rem 0 10rem;
+  padding: 1rem 0 1rem;
 }
 .section-padding-lg {
   padding: 17rem 0 9rem;
@@ -8968,6 +8967,10 @@ div#wrapper.open > .offcanvas-mask {
 .section-padding-lg-6 {
   padding: 17rem 0 8.6rem;
 }
+.section-padding-lg-6 {
+  padding: 1rem 0 1rem;
+}
+
 .section-padding-lg-7 {
   padding: 15.5rem 0 8.2rem;
 }

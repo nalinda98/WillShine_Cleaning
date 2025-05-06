@@ -3,7 +3,7 @@ import React from "react";
 const AboutProcess = () => {
   return (
     <div>
-      <section className="section-padding-lg-2">
+      <section className="section-padding-lg-1">
         <div className="container">
           <div className="heading-layout1">
             <h2>How It Works</h2>
@@ -14,76 +14,52 @@ const AboutProcess = () => {
             </p>
           </div>
           <div className="row">
-            <div className="col-lg-3 single-process">
+            <div className="col-lg-4 single-process">
               <div className="process-box-layout1">
                 <div className="item-bg">
-                  <img src="img/figure/bubble5.png" alt="Contact Us" />
+                  <img src="/img/figure/bubble5.png" alt="Consultation" />
                   <div className="item-icon">
-                    <i className="fas fa-envelope" />
+                    <i className="fas fa-handshake" />
                   </div>
                 </div>
                 <div className="item-content">
-                  <h3 className="item-title">Contact Us</h3>
+                  <h3 className="item-title">Consultation</h3>
                   <p>
-                    Get in touch via phone or our website. Our team will arrange
-                    a free site assessment at your convenience—no contracts
-                    required.
+                    Schedule a free on-site consultation where we assess your needs and create a personalized cleaning plan.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="col-lg-3 single-process">
+            <div className="col-lg-4 single-process">
               <div className="process-box-layout1">
                 <div className="item-bg">
-                  <img src="img/figure/bubble5.png" alt="Site Assessment" />
+                  <img src="/img/figure/bubble5.png" alt="Tailored Proposal" />
                   <div className="item-icon">
-                    <i className="fas fa-search-location" />
+                    <i className="fas fa-file-alt" />
                   </div>
                 </div>
                 <div className="item-content">
-                  <h3 className="item-title">Site Assessment</h3>
+                  <h3 className="item-title">Tailored Proposal</h3>
                   <p>
-                    We assess your workspace and listen to your needs to develop
-                    a comprehensive understanding of what’s required.
+                    Receive a detailed, transparent proposal outlining our services, schedule, and pricing.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="col-lg-3 single-process">
+            <div className="col-lg-4 single-process">
               <div className="process-box-layout1">
                 <div className="item-bg">
-                  <img src="img/figure/bubble5.png" alt="Customized Plan" />
+                  <img src="/img/figure/bubble5.png" alt="Execution" />
                   <div className="item-icon">
-                    <i className="fas fa-tasks" />
+                    <i className="fas fa-broom" />
                   </div>
                 </div>
                 <div className="item-content">
-                  <h3 className="item-title">Customized Plan</h3>
-                  <p>
-                    We tailor a cleaning solution to your business, offering
-                    flexible scheduling and eco-friendly products where
-                    requested.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-3 single-process">
-              <div className="process-box-layout1">
-                <div className="item-bg">
-                  <img src="img/figure/bubble5.png" alt="Quality Assurance" />
-                  <div className="item-icon">
-                    <i className="fas fa-check-double" />
-                  </div>
-                </div>
-                <div className="item-content">
-                  <h3 className="item-title">Quality Assurance</h3>
-                  <p>
-                    Every job is thoroughly inspected by supervisors to ensure
-                    excellence, with ongoing communication and adjustments as
-                    needed.
+                  <h3 className="item-title">Execution & Ongoing Support</h3>
+                  <p style={{ textAlign: "justify" }}>
+                    Our reliable team gets to work, and we regularly check in to adapt our services to your changing needs and ensure your satisfaction.
                   </p>
                 </div>
               </div>
