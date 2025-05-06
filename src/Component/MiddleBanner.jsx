@@ -12,7 +12,7 @@ const MiddleBanner = () => {
                   Experience <span>Spotless Results</span> Every Time
                 </h2>
                 <p>
-                  At Blossom Cleaning Services, we go beyond cleaning — we create healthier, more productive environments. Backed by certified professionals and thorough quality checks, our service is one you can trust.
+                  At Wilshine Cleaning Services, we go beyond cleaning — we create healthier, more productive environments. Backed by certified professionals and thorough quality checks, our service is one you can trust.
                 </p>
                 <a
                   href="#"

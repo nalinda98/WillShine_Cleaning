@@ -45,7 +45,7 @@ const Testominals = () => {
           >
             <div className="testimonial-box-layout1">
               <p>
-                Blossom Cleaning Services has been fantastic for our office
+                Wilshine Cleaning Services has been fantastic for our office
                 cleaning needs. Their team is always professional, punctual, and
                 thorough. Our office looks spotless after every visit, and we
                 love that they use eco-friendly products. Highly recommend them
@@ -77,7 +77,7 @@ const Testominals = () => {
             <div className="testimonial-box-layout1">
               <p>
                 I’m extremely happy with the pressure washing service from
-                Blossom Cleaning Services. They arrived on time, worked
+                Wilshine Cleaning Services. They arrived on time, worked
                 efficiently, and made my driveway and exterior look brand new.
                 Great results, fair pricing, and excellent customer service.
                 Highly recommend!{" "}
@@ -107,7 +107,7 @@ const Testominals = () => {
             </div>
             <div className="testimonial-box-layout1">
               <p>
-                Blossom Property Services is fantastic! Always reliable,
+                Wilshine Cleaning Services is fantastic! Always reliable,
                 thorough, and professional. Highly recommend!{" "}
               </p>
               <h3 className="item-title">Jason</h3>

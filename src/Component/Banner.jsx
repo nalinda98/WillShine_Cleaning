@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 
-const Banner = ({ title, path }) => {
+const Banner = ({ title, path, pathName, path2, path2Name }) => {
   useEffect(() => {
     // Manually set background-image if needed
     const section = document.querySelector(".inner-page-banner.bg-common");
@@ -28,7 +28,16 @@ const Banner = ({ title, path }) => {
                   <li>
                     <a href="/">Home</a>
                   </li>
-                  <li>&nbsp;{path}</li>
+                  {path && (
+                    <li>
+                      <a href={path}>&nbsp;{pathName}</a>
+                    </li>
+                  )}
+                  {path2 && (
+                    <li>
+                      <a href={path2}>&nbsp;{path2Name}</a>
+                    </li>
+                  )}
                 </ul>
               </div>
             </div>

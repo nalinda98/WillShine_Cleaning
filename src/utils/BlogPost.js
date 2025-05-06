@@ -1,7 +1,8 @@
 const BlogPost = [
   {
     img: "/img/blog/hack.png",
-    date: "02 Feb, 2025",
+    category : ["stripping-and-sealing", "carpet-cleaning"],
+    date: "24 Jul, 2019",
     title: "10 Office Cleaning Hacks for an Instant Workspace",
     author: "Chathura Sanka",
     link: "cleaning-hacks",
@@ -9,7 +10,8 @@ const BlogPost = [
   },
   {
     img: "/img/blog/perth.png",
-    date: "02 Feb, 2025",
+    category : ["office-cleaning", "pressure-washing"],
+    date: "24 Jul, 2019",
     title: "Office Cleaning Perth",
     author: "Chathura Sanka",
     link: "cleaning-perth",
@@ -17,7 +19,8 @@ const BlogPost = [
   },
   {
     img: "/img/blog/why.png",
-    date: "02 Feb, 2025",
+    category : ["carpet-cleaning", "office-cleaning"],
+    date: "24 Jul, 2019",
     title: "Why Choose a Local Cleaning Company Over Big Franchises",
     author: "Chathura Sanka",
     link: "why-choose-local-company",
