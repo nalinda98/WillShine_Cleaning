@@ -26,25 +26,26 @@ const EstimateForm = () => {
 
     emailjs
       .sendForm(
-        "service_gva54x5", // your service ID
-        "template_2jmf2ms", // your template ID
+        "service_gva54x5",
+        "template_2jmf2ms",
         form.current,
-        "rtOHcdoMrBTsp_x3V" // your public key
+        "rtOHcdoMrBTsp_x3V"
       )
       .then(
         () => {
-          alert("Estimate sent successfully!");
+          alert("Estimate request sent successfully!");
           e.target.reset();
           setCaptcha(null);
         },
         (error) => {
           console.error(error.text);
-          alert("Failed to send estimate. Please try again later.");
+          alert("Failed to send estimate request. Please try again later.");
         }
       );
   };
 
   return (
+<<<<<<< HEAD
     <div className="col-xl-6 col-lg-6 col-12">
       <div className="about-box-layout2">
         <h3 className="item-title">Get a Customized Cleaning Estimate</h3>
@@ -60,88 +61,112 @@ const EstimateForm = () => {
                   <option value="apartment">Pressure Washing</option>
                 </select>
               </div>
+=======
+    <div className="col-xl-5 col-lg-6 col-12">
+      <div className="about-box-layout2 p-4 bg-light border rounded">
+        <h3 className="item-title mb-4 text-primary">
+          Get a Customized Cleaning Estimate
+        </h3>
+        <form ref={form} onSubmit={sendEmail}>
+          <div className="form-group mb-3">
+            <label>Select Property Type</label>
+            <select name="propertyType" required className="form-control">
+              <option value="">-- Choose --</option>
+              <option value="office">Office Cleaning</option>
+              <option value="strip-seal">Stripping and Sealing</option>
+              <option value="carpet">Carpet Cleaning</option>
+              <option value="pressure">Pressure Washing</option>
+            </select>
+          </div>
+>>>>>>> 24572e036280b6dd86586214b902756d46757cab
 
-              <div className="col-md-6 col-12 form-group">
-                <select name="propertyCategory" required className="form-control">
-                  <option value="">Type of Property</option>
-                  <option value="residential">Residential</option>
-                  <option value="commercial">Commercial</option>
-                  <option value="plot">Plot</option>
-                  <option value="apartment">Apartment</option>
-                </select>
-              </div>
-
-              <div className="col-md-6 col-12 form-group">
-                <select name="frequency" required className="form-control">
-                  <option value="">Cleaning Frequency</option>
-                  <option value="one-time">One-time</option>
-                  <option value="weekly">Weekly</option>
-                  <option value="bi-weekly">Bi-weekly</option>
-                  <option value="monthly">Monthly</option>
-                </select>
-              </div>
-
-              <div className="col-md-6 col-12 form-group">
-                <input
-                  type="text"
-                  name="name"
-                  required
-                  className="form-control"
-                  placeholder="Full Name"
-                />
-              </div>
-
-              <div className="col-md-6 col-12 form-group">
-                <input
-                  type="text"
-                  name="phone"
-                  required
-                  className="form-control"
-                  placeholder="Phone Number"
-                />
-              </div>
-
-              <div className="col-12 form-group">
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  className="form-control"
-                  placeholder="E-mail Address"
-                />
-              </div>
-
-              <div className="col-12 form-group">
-                <textarea
-                  name="message"
-                  required
-                  rows={4}
-                  className="form-control"
-                  placeholder="Additional Details"
-                />
-              </div>
-
-              <div className="col-12 form-group">
-                <ReCAPTCHA
-                  sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
-                  onChange={onChange}
-                  onExpired={onExpired}
-                />
-              </div>
-
-              <div className="col-12 form-group">
-                <button
-                  type="submit"
-                  className="fw-btn-fill bg-accent text-primarytext"
-                  style={{ width: "100%" }}
-                >
-                  Get My Estimate
-                </button>
-              </div>
+          <div className="form-row">
+            <div className="form-group col-md-6 mb-3">
+              <label>Type of Property</label>
+              <select name="propertyCategory" required className="form-control">
+                <option value="">-- Choose --</option>
+                <option value="residential">Residential</option>
+                <option value="commercial">Commercial</option>
+                <option value="plot">Plot</option>
+                <option value="apartment">Apartment</option>
+              </select>
             </div>
-            <div className="form-response" />
-          </form>
-        </div>
+
+            <div className="form-group col-md-6 mb-3">
+              <label>Cleaning Frequency</label>
+              <select name="frequency" required className="form-control">
+                <option value="">-- Choose --</option>
+                <option value="one-time">One-time</option>
+                <option value="weekly">Weekly</option>
+                <option value="bi-weekly">Bi-weekly</option>
+                <option value="monthly">Monthly</option>
+              </select>
+            </div>
+          </div>
+
+          <div className="form-row">
+            <div className="form-group col-md-6 mb-3">
+              <label>Full Name</label>
+              <input
+                type="text"
+                name="name"
+                required
+                className="form-control"
+                placeholder="John Doe"
+              />
+            </div>
+
+            <div className="form-group col-md-6 mb-3">
+              <label>Phone Number</label>
+              <input
+                type="text"
+                name="phone"
+                required
+                className="form-control"
+                placeholder="(123) 456-7890"
+              />
+            </div>
+          </div>
+
+          <div className="form-group mb-3">
+            <label>Email Address</label>
+            <input
+              type="email"
+              name="email"
+              required
+              className="form-control"
+              placeholder="email@example.com"
+            />
+          </div>
+
+          <div className="form-group mb-4">
+            <label>Additional Details</label>
+            <textarea
+              name="message"
+              required
+              rows={4}
+              className="form-control"
+              placeholder="Enter any additional information here..."
+            />
+          </div>
+
+          <div className="form-group mb-4">
+            <ReCAPTCHA
+              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+              onChange={onChange}
+              onExpired={onExpired}
+            />
+          </div>
+
+          <div className="form-group mb-0">
+            <button
+              type="submit"
+              className="btn btn-primary btn-block font-weight-bold"
+            >
+              Get My Estimate
+            </button>
+          </div>
+        </form>
       </div>
     </div>
   );

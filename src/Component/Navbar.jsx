@@ -47,7 +47,7 @@ const Navbar = () => {
                     src="/img/wilshinelogohorizontal.png"
                     style={{ height: "80px", width: "auto" }}
                     alt="logo"
-                    className="img-fluid"
+                    // className="img-fluid"
                   />
                 </a>
               </div>
@@ -147,7 +147,7 @@ const Navbar = () => {
                     </li>
 
                     <li>
-                      <Link href="/contact">Contact</Link>
+                      <a href="/contact">Contact</a>
                     </li>
                   </ul>
                 </nav>
@@ -156,10 +156,10 @@ const Navbar = () => {
                 <div className="header-action-layout1">
                   <ul>
                     <li className="header-action-btn">
-                      <Link href="/#estimate-section" className="item-btn">
+                      <a href="/#estimate-section" className="item-btn">
                         <i className="fas fa-bell" />
                         Get A Quote
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>
