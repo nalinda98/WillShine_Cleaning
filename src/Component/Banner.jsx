@@ -15,7 +15,8 @@ const Banner = ({ title, path, pathName, path2, path2Name }) => {
         className="inner-page-banner bg-common"
         data-bg-image="/img/figure/breadcumb.jpg"
         style={{
-          width: "100vw",
+          width: "100%",
+          height: "150px",
           backgroundSize: "cover",
         }}
       >

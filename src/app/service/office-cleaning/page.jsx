@@ -17,7 +17,6 @@ import {
   FaShieldAlt,
 } from "react-icons/fa";
 
-
 const SingleService = () => {
   return (
     <div>
@@ -94,47 +93,47 @@ const SingleService = () => {
                   <div className="row">
                     {[
                       {
-                        icon: <FaLockOpen size={40} color="#287ff9"/>,
+                        icon: <FaLockOpen size={40} color="#287ff9" />,
                         title: "No Lock-In Contracts",
                         desc: "Enjoy complete flexibility—our results earn your trust, not binding agreements.",
                       },
                       {
-                        icon: <FaBroom size={40} color="#287ff9"/>,
+                        icon: <FaBroom size={40} color="#287ff9" />,
                         title: "Specialized Office Cleaning",
                         desc: "Office cleaning is all we do, so we do it better—no distractions, no dilution.",
                       },
                       {
-                        icon: <FaUserShield size={40} color="#287ff9"/>,
+                        icon: <FaUserShield size={40} color="#287ff9" />,
                         title: "Not a Franchise",
                         desc: "We don’t outsource. Our own vetted staff ensures consistent quality service.",
                       },
                       {
-                        icon: <FaCheckCircle size={40} color="#287ff9"/>,
+                        icon: <FaCheckCircle size={40} color="#287ff9" />,
                         title: "Quality Checks & Standards",
                         desc: "Daily and fortnightly inspections ensure top-tier cleaning at all times.",
                       },
                       {
-                        icon: <FaUserCheck size={40} color="#287ff9"/>,
+                        icon: <FaUserCheck size={40} color="#287ff9" />,
                         title: "Trusted, Police-Cleared Team",
                         desc: "All cleaners are carefully screened and trained for professionalism and trust.",
                       },
                       {
-                        icon: <FaTools size={40} color="#287ff9"/>,
+                        icon: <FaTools size={40} color="#287ff9" />,
                         title: "Advanced Equipment",
                         desc: "We use modern, eco-conscious tools for safe and thorough cleaning.",
                       },
                       {
-                        icon: <FaRegFileAlt size={40} color="#287ff9"/>,
+                        icon: <FaRegFileAlt size={40} color="#287ff9" />,
                         title: "Customized Plans",
                         desc: "Every office is different. We create schedules tailored to your needs.",
                       },
                       {
-                        icon: <FaUsers size={40} color="#287ff9"/>,
+                        icon: <FaUsers size={40} color="#287ff9" />,
                         title: "Reliable, Trained Team",
                         desc: "Our insured professionals show up on time and exceed expectations.",
                       },
                       {
-                        icon: <FaShieldAlt size={40} color="#287ff9"/>,
+                        icon: <FaShieldAlt size={40} color="#287ff9" />,
                         title: "Health & Safety First",
                         desc: "We prioritize hygiene to reduce germs, allergens, and other hazards.",
                       },
@@ -150,8 +149,6 @@ const SingleService = () => {
                       </div>
                     ))}
                   </div>
-
-                  <AboutProcess />
                 </div>
               </div>
             </div>
@@ -160,6 +157,7 @@ const SingleService = () => {
               <ContactForm />
             </div>
           </div>
+          <AboutProcess />
         </div>
       </section>
     </div>

@@ -69,20 +69,35 @@ export default function RootLayout({ children }) {
             {children}
             <Footer />
           </div>
-          <Script src="js/jquery-3.3.1.min.js"></Script>
-          <Script src="js/plugins.js"></Script>
-          <Script src="js/popper.min.js"></Script>
-          <Script src="js/bootstrap.min.js"></Script>
-          <Script src="js/jquery.meanmenu.min.js"></Script>
-          <Script src="vendor/slider/js/jquery.nivo.slider.js"></Script>
-          <Script src="vendor/slider/home.js"></Script>
-          <Script src="vendor/OwlCarousel/owl.carousel.min.js"></Script>
-          <Script src="js/jquery.counterup.min.js"></Script>
-          <Script src="js/waypoints.min.js"></Script>
-          <Script src="js/validator.min.js"></Script>
-          <Script src="js/select2.min.js"></Script>
-          <Script src="js/jquery.datetimepicker.full.min.js"></Script>
-          <Script src="js/main.js"></Script>
+          <Script src="/js/jquery-3.3.1.min.js" strategy="beforeInteractive" />
+          <Script src="/js/popper.min.js" strategy="beforeInteractive" />
+          <Script src="/js/bootstrap.min.js" strategy="beforeInteractive" />
+          <Script src="/js/plugins.js" strategy="beforeInteractive" />
+          <Script
+            src="/js/jquery.meanmenu.min.js"
+            strategy="beforeInteractive"
+          />
+          <Script
+            src="/vendor/slider/js/jquery.nivo.slider.js"
+            strategy="beforeInteractive"
+          />
+          <Script src="/vendor/slider/home.js" strategy="beforeInteractive" />
+          <Script
+            src="/vendor/OwlCarousel/owl.carousel.min.js"
+            strategy="beforeInteractive"
+          />
+          <Script
+            src="/js/jquery.counterup.min.js"
+            strategy="beforeInteractive"
+          />
+          <Script src="/js/waypoints.min.js" strategy="beforeInteractive" />
+          <Script src="/js/validator.min.js" strategy="beforeInteractive" />
+          <Script src="/js/select2.min.js" strategy="beforeInteractive" />
+          <Script
+            src="/js/jquery.datetimepicker.full.min.js"
+            strategy="beforeInteractive"
+          />
+          <Script src="/js/main.js" strategy="afterInteractive" />
           <Script
             src={`https://www.google.com/recaptcha/api.js?render=your_site_key`}
             strategy="beforeInteractive"
