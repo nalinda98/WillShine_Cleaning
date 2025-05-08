@@ -7120,7 +7120,7 @@ div#wrapper.open > .offcanvas-mask {
   .card
   .card-header
   .heading-title:before {
-  content: "\f107";
+  /* content: "\f107"; */
   font-family: "Font Awesome 5 Free";
   font-size: 20px;
   font-weight: 600;

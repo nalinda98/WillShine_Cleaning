@@ -1,9 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 
-const FAQ = ({
-  faqs,
-}) => {
+const FAQ = ({ faqs }) => {
   const [selectedIndex, setSelectedIndex] = React.useState(0);
   const contentRefs = useRef([]);
 
@@ -29,7 +27,9 @@ const FAQ = ({
                   style={{ cursor: "pointer" }}
                   onClick={() => handleToggle(index)}
                 >
-                  {faq.question}
+                  <span>
+                    {selectedIndex === index ? "▼  " : "▶  "} {faq.question}
+                  </span>
                 </h5>
               </div>
               <div

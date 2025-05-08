@@ -42,7 +42,7 @@ const Navbar = () => {
           <div className="row d-flex align-items-center">
             <div className="col-lg-3">
               <div className="logo-area">
-                <a href="index.html" className="temp-logo">
+                <a href="/" className="temp-logo">
                   <img
                     src="/img/wilshinelogohorizontal.png"
                     style={{ height: "80px", width: "auto" }}
