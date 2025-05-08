@@ -32,10 +32,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isSticky]);
   return (
-<<<<<<< Updated upstream
-    <header className="header">
-      
-=======
     <header className="header" style={{zIndex: 2}}>
       <div id="header-topbar" ref={topbarRef} className="bg-assh-2 pd-y-10">
         <div className="container">
@@ -76,7 +72,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
->>>>>>> Stashed changes
       <div
         id="header-middlebar"
         ref={middlebarRef}
