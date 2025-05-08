@@ -136,9 +136,9 @@ const SingleService = () => {
                       },
                     }}
                   />
-                  <HowItWork />
                   {/* <FAQ faqs={pressureWashingFaqs} /> */}
                 </div>
+                  <HowItWork />
               </div>
             </div>
             <div className="col-lg-4 order-lg-2 sidebar-break-md sidebar-widget-area">
