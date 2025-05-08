@@ -13,7 +13,7 @@ const Estimate = () => {
           </p>
         </div>
           <div className="row">
-            <div className="col-xl-7 col-lg-6 col-12">
+            <div className="col-xl-6 col-lg-6 col-12">
               <div className="about-box-layout1">
                 <h2 className="item-title">
                   Our Commitment is to Deliver Exceptional Cleanliness

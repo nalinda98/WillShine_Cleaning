@@ -45,6 +45,23 @@ const EstimateForm = () => {
   };
 
   return (
+<<<<<<< HEAD
+    <div className="col-xl-6 col-lg-6 col-12">
+      <div className="about-box-layout2">
+        <h3 className="item-title">Get a Customized Cleaning Estimate</h3>
+        <div className="contact-form-box" id="contact-form">
+          <form ref={form} onSubmit={sendEmail} className="contact-form-box">
+            <div className="row gutters-5">
+              <div className="col-12 form-group">
+                <select name="propertyType" required className="form-control">
+                  <option value="">Select Property Type</option>
+                  <option value="residential">Office Cleaning</option>
+                  <option value="commercial">Stripping and Sealing</option>
+                  <option value="plot">Carpet Cleaning</option>
+                  <option value="apartment">Pressure Washing</option>
+                </select>
+              </div>
+=======
     <div className="col-xl-5 col-lg-6 col-12">
       <div className="about-box-layout2 p-4 bg-light border rounded">
         <h3 className="item-title mb-4 text-primary">
@@ -61,6 +78,7 @@ const EstimateForm = () => {
               <option value="pressure">Pressure Washing</option>
             </select>
           </div>
+>>>>>>> 24572e036280b6dd86586214b902756d46757cab
 
           <div className="form-row">
             <div className="form-group col-md-6 mb-3">
