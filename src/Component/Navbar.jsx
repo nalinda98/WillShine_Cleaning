@@ -33,45 +33,7 @@ const Navbar = () => {
   }, [isSticky]);
   return (
     <header className="header">
-      <div id="header-topbar" ref={topbarRef} className="bg-assh-2 pd-y-10">
-        <div className="container">
-          <div className="row d-flex align-items-center">
-            <div className="col-lg-6">
-              <div className="header-topbar-layout2">
-                <div className="header-top-left">
-                  <div className="item-location">
-                    {/* <b>Wilshine Cleaning Services</b> */}
-                    {/* <i className="fas fa-map-marker-alt" /> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 d-flex justify-content-end">
-              <div className="header-topbar-layout2">
-                <ul className="header-top-right">
-                  <li className="social-icon">
-                    <a href="https://www.facebook.com/wilshinepropertyservice">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href="https://www.instagram.com/wilshinepropertyservices/">
-                      <i className="fab fa-instagram" />
-                    </a>
-                    <a href="https://www.linkedin.com/company/wilshine-property-services/">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                    <a href="tel:0433691812">
-                      <i className="fas fa-envelope" />{" "}
-                    </a>
-                    <a href="mailto:wilshinepropertyservices@gmail.com">
-                      <i className="fas fa-phone" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
       <div
         id="header-middlebar"
         ref={middlebarRef}
