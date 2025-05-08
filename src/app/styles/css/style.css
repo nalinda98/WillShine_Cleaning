@@ -8811,6 +8811,21 @@ div#wrapper.open > .offcanvas-mask {
 .section-bubble-3 {
   position: relative;
 }
+
+.section-bubble-3-updside {
+  position: relative;
+}
+
+.section-bubble-3-updside:after {
+  content: url('/img/figure/section-bubble3-upside.png');
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 2;
+}
+
 .section-bubble-3:after {
   content: url("/img/figure/section-bubble3.png");
   position: absolute;

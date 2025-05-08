@@ -1,6 +1,13 @@
 import React from "react";
 
 const Testominals = () => {
+  const testimonialStyle = {
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between'
+  };
+
   return (
     <div>
       <section
@@ -10,11 +17,11 @@ const Testominals = () => {
         <div className="container">
           <div className="heading-layout2 mg-b-30">
             <h2 className="text-white">
-              What’s Client’s Say<span>About Us</span>
+              What's Client's Say<span>About Us</span>
             </h2>
           </div>
           <div
-            className="rc-carousel nav-control-layout1"
+            className="rc-carousel nav-control-layout1 h-full"
             data-loop="true"
             data-items={10}
             data-margin={30}
@@ -76,7 +83,7 @@ const Testominals = () => {
             </div>
             <div className="testimonial-box-layout1">
               <p>
-                I’m extremely happy with the pressure washing service from
+                I'm extremely happy with the pressure washing service from
                 Wilshine Cleaning Services. They arrived on time, worked
                 efficiently, and made my driveway and exterior look brand new.
                 Great results, fair pricing, and excellent customer service.

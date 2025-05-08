@@ -27,10 +27,10 @@ const Homepage = () => {
   return (
     <div>
       <HomePageSlider />
-      <HomeService />
       <CertificateSection />
-      <Estimate /> {/* Must have id="estimate-section" inside */}
+      <HomeService />
       <ProjectsCount />
+      <Estimate /> {/* Must have id="estimate-section" inside */}
       <Testominals />
       <HomeBlog />
     </div>

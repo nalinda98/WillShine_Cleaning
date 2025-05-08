@@ -96,7 +96,7 @@ const Navbar = () => {
                 <ul>
                   <li>
                     <div className="item-icon">
-                      <MdAccessTime size={45} />
+                      <MdAccessTime size={45} color="#287FF9" />
                     </div>
                     <div className="item-content">
                       <div className="item-title">Opening Hours</div>
@@ -110,7 +110,7 @@ const Navbar = () => {
                   <li>
                     <div className="item-icon">
                       {/* <i className="fa fa-envelope-o" /> */}
-                      <MdOutlineEmail size={45} />
+                      <MdOutlineEmail size={45} color="#287FF9" />
                     </div>
                     <div className="item-content">
                       <div className="item-title">E-mail Us</div>
@@ -119,7 +119,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <div className="item-icon">
-                      <MdCall size={45} />
+                      <MdCall size={45} color="#287FF9" />
                     </div>
                     <div className="item-content">
                       <div className="item-title">Quick Contact</div>

@@ -4,7 +4,7 @@ import React from "react";
 const HomeService = () => {
   return (
     <section
-      className="section-padding-lg bg-common bg-aash"
+      className="section-padding-lg bg-common bg-aash  section-bubble-3-updside"
       data-bg-image="img/figure/bg-shape1.png"
     >
       <div>
