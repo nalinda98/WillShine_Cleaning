@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
           <a href="#wrapper" data-type="section-switch" className="scrollup">
             <i className="fas fa-angle-double-up"></i>
           </a>
-          <div id="preloader"></div>
+          {/* <div id="preloader"></div> */}
           <div id="wrapper" className="wrapper">
             <Head>
               <meta charSet="utf-8" />

@@ -1,22 +1,49 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Preloader = () => {
+  const [isVisible, setIsVisible] = useState(true);
+  const [isFading, setIsFading] = useState(false);
+
   useEffect(() => {
-    const preloader = document.getElementById("preloader");
-    if (preloader) {
+    const timeout = setTimeout(() => {
+      setIsFading(true);
+      // Wait for fade animation to complete before removing from DOM
       setTimeout(() => {
-        preloader.style.transition = "opacity 0.5s";
-        preloader.style.opacity = 0;
-        setTimeout(() => {
-          preloader.remove();
-        }, 500);
-      }, 300); // optional delay for smoother feel
-    }
+        setIsVisible(false);
+      }, 500); // Match this with the transition duration
+    }, 1000);
+
+    return () => clearTimeout(timeout);
   }, []);
 
-  return null; // this component only manages behavior
+  if (!isVisible) return null;
+
+  return (
+    <div
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        zIndex: 9999,
+        width: "100vw",
+        height: "100vh",
+        backgroundColor: "#fff",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        opacity: isFading ? 0 : 1,
+        transition: "opacity 0.5s ease-out",
+      }}
+    >
+      <img
+        src="/img/preloadnew.gif"
+        alt="Loading..."
+        style={{ width: "250px", height: "250px" }}
+      />
+    </div>
+  );
 };
 
 export default Preloader;
