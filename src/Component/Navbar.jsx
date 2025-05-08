@@ -32,7 +32,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isSticky]);
   return (
-    <header className="header" style={{zIndex: 2}}>
+    <header className="header" style={{ zIndex: 999 }}>
       <div id="header-topbar" ref={topbarRef} className="bg-assh-2 pd-y-10">
         <div className="container">
           <div className="row d-flex align-items-center">
