@@ -40,7 +40,7 @@ const Navbar = () => {
               <div className="header-topbar-layout2">
                 <div className="header-top-left">
                   <div className="item-location">
-                    <b>Wilshine Cleaning Services</b>
+                    {/* <b>Wilshine Cleaning Services</b> */}
                     {/* <i className="fas fa-map-marker-alt" /> */}
                   </div>
                 </div>

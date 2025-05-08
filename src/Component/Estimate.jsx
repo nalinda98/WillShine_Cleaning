@@ -1,4 +1,9 @@
 import React from "react";
+import { Select, Input, Button, DatePicker, TimePicker, Form } from "antd";
+import { CalendarOutlined, ClockCircleOutlined } from "@ant-design/icons";
+
+const { Option } = Select;
+const { TextArea } = Input;
 
 const Estimate = () => {
   return (
@@ -17,7 +22,7 @@ const Estimate = () => {
                 </div>
                 <p>
                   At our company, we pride ourselves on providing services that
-                  not only meet but surpass customer expectations. Whether it’s
+                  not only meet but surpass customer expectations. Whether it's
                   residential or commercial, we believe every cleaning should be
                   thorough and leave a lasting impact. With our team, you can
                   always count on spotless results.
@@ -56,152 +61,226 @@ const Estimate = () => {
                   Get a Customized Cleaning Estimate
                 </h3>
                 <div className="contact-form-box" id="contact-form">
-                  <div className="row gutters-10">
-                    <div className="col-12 form-group">
-                      <select className="select2">
-                        <option value={0}>Residential</option>
-                        <option value={1}>Commercial</option>
-                        <option value={2}>Plot</option>
-                        <option value={3}>Apartment</option>
-                      </select>
+                  <Form layout="vertical">
+                    <div className="row gutters-5">
+                      <div className="col-12 form-group">
+                        <Form.Item
+                          name="propertyType"
+                          rules={[
+                            {
+                              required: true,
+                              message: "Please select service type",
+                            },
+                          ]}
+                        >
+                          <Select placeholder="Select Property Type">
+                            <Option value="residential">Office Cleaning</Option>
+                            <Option value="commercial">Stripping and Sealing</Option>
+                            <Option value="plot">Carpet Cleaning</Option>
+                            <Option value="apartment">Pressure Washing</Option>
+                          </Select>
+                        </Form.Item>
+                      </div>
+                      <div className="col-md-6 col-12 form-group">
+                        <Form.Item
+                          name="propertyCategory"
+                          rules={[
+                            {
+                              required: true,
+                              message: "Please select property category",
+                            },
+                          ]}
+                        >
+                          <Select placeholder="Type of Property">
+                            <Option value="residential">Residential</Option>
+                            <Option value="commercial">Commercial</Option>
+                            <Option value="plot">Plot</Option>
+                            <Option value="apartment">Apartment</Option>
+                          </Select>
+                        </Form.Item>
+                      </div>
+                      {/* <div className="col-md-6 col-12 form-group">
+                        <Form.Item
+                          name="size"
+                          rules={[
+                            { required: true, message: "Please select size" },
+                          ]}
+                        >
+                          <Select placeholder="Approximate Size (Sq. Ft.)">
+                            <Option value="400">400</Option>
+                            <Option value="200">200</Option>
+                            <Option value="600">600</Option>
+                            <Option value="300">300</Option>
+                          </Select>
+                        </Form.Item>
+                      </div> */}
+                      {/* <div className="col-md-6 col-12 form-group">
+                        <Form.Item
+                          name="bedrooms"
+                          rules={[
+                            {
+                              required: true,
+                              message: "Please select number of bedrooms",
+                            },
+                          ]}
+                        >
+                          <Select placeholder="Number of Bedrooms">
+                            <Option value="1">1</Option>
+                            <Option value="2">2</Option>
+                            <Option value="3">3</Option>
+                            <Option value="4">4</Option>
+                          </Select>
+                        </Form.Item>
+                      </div> */}
+                      {/* <div className="col-md-6 col-12 form-group">
+                        <Form.Item
+                          name="bathrooms"
+                          rules={[
+                            {
+                              required: true,
+                              message: "Please select number of bathrooms",
+                            },
+                          ]}
+                        >
+                          <Select placeholder="Number of Bathrooms">
+                            <Option value="1">1</Option>
+                            <Option value="2">2</Option>
+                            <Option value="3">3</Option>
+                            <Option value="4">4</Option>
+                          </Select>
+                        </Form.Item>
+                      </div> */}
+
+                      <div className="col-md-6 col-12 form-group">
+                        <Form.Item
+                          name="frequency"
+                          rules={[
+                            {
+                              required: true,
+                              message: "Please select cleaning frequency",
+                            },
+                          ]}
+                        >
+                          <Select placeholder="Cleaning Frequency">
+                            <Option value="one-time">One-time</Option>
+                            <Option value="weekly">Weekly</Option>
+                            <Option value="bi-weekly">Bi-weekly</Option>
+                            <Option value="monthly">Monthly</Option>
+                          </Select>
+                        </Form.Item>
+                      </div>
+                      {/* <div className="col-md-6 col-12 form-group">
+                        <Form.Item
+                          name="zip"
+                          rules={[
+                            {
+                              required: true,
+                              message: "Please enter ZIP code",
+                            },
+                          ]}
+                        >
+                          <Input placeholder="ZIP Code" />
+                        </Form.Item>
+                      </div> */}
+                      <div className="col-md-6 col-12 form-group">
+                        <Form.Item
+                          name="date"
+                          rules={[
+                            { required: true, message: "Please select date" },
+                          ]}
+                        >
+                          <DatePicker
+                            placeholder="Select Date"
+                            suffixIcon={<CalendarOutlined />}
+                            style={{ width: "100%" }}
+                          />
+                        </Form.Item>
+                      </div>
+                      <div className="col-md-6 col-12 form-group">
+                        <Form.Item
+                          name="time"
+                          rules={[
+                            { required: true, message: "Please select time" },
+                          ]}
+                        >
+                          <TimePicker
+                            format="HH"
+                            placeholder="Select Time"
+                            suffixIcon={<ClockCircleOutlined />}
+                            style={{ width: "100%" }}
+                          />
+                        </Form.Item>
+                      </div>
+                      <div className="col-md-6 col-12 form-group">
+                        <Form.Item
+                          name="name"
+                          rules={[
+                            {
+                              required: true,
+                              message: "Please enter your name",
+                            },
+                          ]}
+                        >
+                          <Input placeholder="Full Name" />
+                        </Form.Item>
+                      </div>
+                      <div className="col-md-6 col-12 form-group">
+                        <Form.Item
+                          name="phone"
+                          rules={[
+                            {
+                              required: true,
+                              message: "Please enter your phone number",
+                            },
+                          ]}
+                        >
+                          <Input placeholder="Phone Number" />
+                        </Form.Item>
+                      </div>
+                      <div className="col-12 form-group">
+                        <Form.Item
+                          name="email"
+                          rules={[
+                            {
+                              required: true,
+                              message: "Please enter your email",
+                            },
+                            {
+                              type: "email",
+                              message: "Please enter a valid email",
+                            },
+                          ]}
+                        >
+                          <Input placeholder="E-mail Address" />
+                        </Form.Item>
+                      </div>
+                      <div className="col-12 form-group mg-b-20">
+                        <Form.Item
+                          name="message"
+                          rules={[
+                            {
+                              required: true,
+                              message: "Please enter additional details",
+                            },
+                          ]}
+                        >
+                          <TextArea placeholder="Additional Details" rows={4} />
+                        </Form.Item>
+                      </div>
+                      <div className="col-12 form-group">
+                        <Form.Item>
+                          <Button
+                            type="primary"
+                            htmlType="submit"
+                            className="fw-btn-fill bg-accent text-primarytext"
+                            style={{ width: "100%" }}
+                          >
+                            Get My Estimate
+                          </Button>
+                        </Form.Item>
+                      </div>
                     </div>
-                    <div className="col-md-6 col-12 form-group">
-                      <select className="select2">
-                        <option value={0}>Type of Property</option>
-                        <option value={1}>Residential</option>
-                        <option value={2}>Commercial</option>
-                        <option value={3}>Plot</option>
-                        <option value={4}>Apartment</option>
-                      </select>
-                    </div>
-                    <div className="col-md-6 col-12 form-group">
-                      <select className="select2">
-                        <option value={0}>Approximate Size (Sq. Ft.)</option>
-                        <option value={1}>400</option>
-                        <option value={2}>200</option>
-                        <option value={3}>600</option>
-                        <option value={4}>300</option>
-                      </select>
-                    </div>
-                    <div className="col-md-6 col-12 form-group">
-                      <select className="select2">
-                        <option value={0}>Number of Bedrooms</option>
-                        <option value={1}>1</option>
-                        <option value={2}>2</option>
-                        <option value={3}>3</option>
-                        <option value={4}>4</option>
-                      </select>
-                    </div>
-                    <div className="col-md-6 col-12 form-group">
-                      <select className="select2">
-                        <option value={0}>Number of Bathrooms</option>
-                        <option value={1}>1</option>
-                        <option value={2}>2</option>
-                        <option value={3}>3</option>
-                        <option value={4}>4</option>
-                      </select>
-                    </div>
-                    <div className="col-md-6 col-12 form-group">
-                      <select className="select2">
-                        <option value={0}>Cleaning Frequency</option>
-                        <option value={1}>One-time</option>
-                        <option value={2}>Weekly</option>
-                        <option value={3}>Bi-weekly</option>
-                        <option value={4}>Monthly</option>
-                      </select>
-                    </div>
-                    <div className="col-md-6 col-12 form-group">
-                      <input
-                        type="text"
-                        placeholder="ZIP Code"
-                        className="form-control"
-                        name="zip"
-                        data-error="ZIP Code field is required"
-                        required=""
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-md-6 col-12 form-group datetime-picker">
-                      <i className="far fa-calendar-alt" />
-                      <input
-                        type="text"
-                        className="form-control rt-date"
-                        placeholder="dd/mm/yy"
-                        name="date"
-                        id="form-date"
-                        data-error="Date field is required"
-                        required=""
-                      />
-                    </div>
-                    <div className="col-md-6 col-12 form-group datetime-picker">
-                      <i className="far fa-clock" />
-                      <input
-                        type="text"
-                        className="form-control rt-time"
-                        placeholder="Time"
-                        name="time"
-                        id="form-time"
-                        data-error="Time field is required"
-                        required=""
-                      />
-                    </div>
-                    <div className="col-md-6 col-12 form-group">
-                      <input
-                        type="text"
-                        placeholder="Full Name"
-                        className="form-control"
-                        name="name"
-                        data-error="Name field is required"
-                        required=""
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-md-6 col-12 form-group">
-                      <input
-                        type="text"
-                        placeholder="Phone Number"
-                        className="form-control"
-                        name="phone"
-                        data-error="Phone field is required"
-                        required=""
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <input
-                        type="email"
-                        placeholder="E-mail Address"
-                        className="form-control"
-                        name="email"
-                        data-error="Email field is required"
-                        required=""
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group mg-b-20">
-                      <textarea
-                        placeholder="Additional Details"
-                        className="textarea form-control"
-                        name="message"
-                        id="form-message"
-                        rows={2}
-                        cols={20}
-                        data-error="Message field is required"
-                        required=""
-                        defaultValue={""}
-                      />
-                      <div className="help-block with-errors" />
-                    </div>
-                    <div className="col-12 form-group">
-                      <button
-                        type="submit"
-                        className="fw-btn-fill bg-accent text-primarytext"
-                      >
-                        Get My Estimate
-                        <i className="fas fa-angle-right" />
-                      </button>
-                    </div>
-                  </div>
+                  </Form>
                   <div className="form-response" />
                 </div>
               </div>
