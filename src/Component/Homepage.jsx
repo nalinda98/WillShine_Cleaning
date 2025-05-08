@@ -29,8 +29,8 @@ const Homepage = () => {
       <HomePageSlider />
       <CertificateSection />
       <HomeService />
-      <ProjectsCount />
       <Estimate /> {/* Must have id="estimate-section" inside */}
+      <ProjectsCount />
       <Testominals />
       <HomeBlog />
     </div>
