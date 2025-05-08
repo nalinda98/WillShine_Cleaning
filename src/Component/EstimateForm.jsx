@@ -45,7 +45,7 @@ const EstimateForm = () => {
   };
 
   return (
-    <div className="col-xl-5 col-lg-6 col-12">
+    <div className="col-xl-6 col-lg-6 col-12">
       <div className="about-box-layout2">
         <h3 className="item-title">Get a Customized Cleaning Estimate</h3>
         <div className="contact-form-box" id="contact-form">

@@ -20,21 +20,7 @@ const AboutContent = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-12">
-              <div className="about-box-layout7">
-                <div className="top-right-item">
-                  <p>
-                    Wilshine Cleaning Services is proudly Western Australia
-                    owned and operated, delivering exceptional office cleaning
-                    and hygiene services. Backed by years of industry
-                    experience, our professional team uses proven methods to
-                    achieve outstanding results. We prioritize quality through
-                    regular supervision, creating clean, healthy environments
-                    that promote productivity and peace of mind.
-                  </p>
-                </div>
-              </div>
-            </div>
+            
             <div className="col-lg-12">
               <div className="about-box-layout7">
                 <div className="item-popup-img">
@@ -47,6 +33,21 @@ const AboutContent = () => {
                       <i className="flaticon-play-arrow" />
                     </a>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-12">
+              <div className="about-box-layout7">
+                <div className="top-right-item">
+                  <p>
+                    Wilshine Cleaning Services is proudly Western Australia
+                    owned and operated, delivering exceptional office cleaning
+                    and hygiene services. Backed by years of industry
+                    experience, our professional team uses proven methods to
+                    achieve outstanding results. We prioritize quality through
+                    regular supervision, creating clean, healthy environments
+                    that promote productivity and peace of mind.
+                  </p>
                 </div>
               </div>
             </div>

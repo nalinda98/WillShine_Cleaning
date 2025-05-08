@@ -4211,7 +4211,8 @@ div#wrapper.open > .offcanvas-mask {
 =========================================================================*/
 /*------------------- 5.1 About Us -------------------*/
 .about-box-layout1 {
-  padding-right: 12rem;
+  padding-right: 3rem;
+  padding-left: 1rem;
   position: relative;
   z-index: 5;
 }
@@ -4538,7 +4539,7 @@ div#wrapper.open > .offcanvas-mask {
   }
 }
 .about-box-layout7 .top-right-item {
-  padding-top: 5rem;
+  padding-top: 0rem;
 }
 @media only screen and (max-width: 991px) {
   .about-box-layout7 .top-right-item {
@@ -4546,7 +4547,7 @@ div#wrapper.open > .offcanvas-mask {
   }
 }
 .about-box-layout7 .item-popup-img {
-  margin-bottom: 5.5rem;
+  margin-bottom: 0.5rem;
   position: relative;
 }
 .about-box-layout7 .item-popup-img .item-icon {
@@ -9005,7 +9006,7 @@ div#wrapper.open > .offcanvas-mask {
   padding: 7rem 0 7rem;
 }
 .section-padding-md-5 {
-  padding: 11.4rem 0 9rem;
+  padding: 7rem 0 7rem;
 }
 .section-padding-md-6 {
   padding: 11.5rem 0 20rem;
