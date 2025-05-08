@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import { MdAccessTime, MdCall, MdOutlineEmail } from "react-icons/md";
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -82,7 +83,7 @@ const Navbar = () => {
               <div className="logo-area">
                 <a href="index.html" className="temp-logo">
                   <img
-                    src="/img/horizontal_logo_without_background.png"
+                    src="/img/wilshinelogohorizontal.png"
                     style={{ height: "80px", width: "auto" }}
                     alt="logo"
                     className="img-fluid"
@@ -95,7 +96,7 @@ const Navbar = () => {
                 <ul>
                   <li>
                     <div className="item-icon">
-                      <i className="far fa-clock" />
+                      <MdAccessTime size={45} />
                     </div>
                     <div className="item-content">
                       <div className="item-title">Opening Hours</div>
@@ -108,7 +109,8 @@ const Navbar = () => {
                   </li>
                   <li>
                     <div className="item-icon">
-                      <i className="flaticon-message" />
+                      {/* <i className="fa fa-envelope-o" /> */}
+                      <MdOutlineEmail size={45} />
                     </div>
                     <div className="item-content">
                       <div className="item-title">E-mail Us</div>
@@ -117,7 +119,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <div className="item-icon">
-                      <i className="flaticon-phone-call" />
+                      <MdCall size={45} />
                     </div>
                     <div className="item-content">
                       <div className="item-title">Quick Contact</div>
