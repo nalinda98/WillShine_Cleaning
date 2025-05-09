@@ -1,4 +1,4 @@
-// File: C:\GitRepos\Blossom_Property\src\app\service\page.jsx
+// File: /home/nalinda/Documents/blossom/src/app/service/page.jsx
 import * as entry from '../../../../src/app/service/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

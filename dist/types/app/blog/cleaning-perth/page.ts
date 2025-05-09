@@ -1,4 +1,4 @@
-// File: C:\GitRepos\Blossom_Property\src\app\blog\cleaning-perth\page.jsx
+// File: /home/nalinda/Documents/blossom/src/app/blog/cleaning-perth/page.jsx
 import * as entry from '../../../../../src/app/blog/cleaning-perth/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

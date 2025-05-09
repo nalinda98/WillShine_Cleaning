@@ -1,15 +1,15 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/blog/cleaning-hacks/page": "app/blog/cleaning-hacks/page.js",
   "/about/page": "app/about/page.js",
-  "/blog/why-choose-local-company/page": "app/blog/why-choose-local-company/page.js",
-  "/page": "app/page.js",
-  "/contact/page": "app/contact/page.js",
+  "/blog/cleaning-hacks/page": "app/blog/cleaning-hacks/page.js",
   "/blog/cleaning-perth/page": "app/blog/cleaning-perth/page.js",
   "/blog/page": "app/blog/page.js",
+  "/blog/why-choose-local-company/page": "app/blog/why-choose-local-company/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/page": "app/page.js",
+  "/service/carpet-cleaning/page": "app/service/carpet-cleaning/page.js",
   "/service/office-cleaning/page": "app/service/office-cleaning/page.js",
   "/service/page": "app/service/page.js",
   "/service/pressure-washing/page": "app/service/pressure-washing/page.js",
-  "/service/stripping-and-sealing/page": "app/service/stripping-and-sealing/page.js",
-  "/service/carpet-cleaning/page": "app/service/carpet-cleaning/page.js"
+  "/service/stripping-and-sealing/page": "app/service/stripping-and-sealing/page.js"
 }

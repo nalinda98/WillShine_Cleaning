@@ -23,7 +23,7 @@ const Estimate = () => {
                   to exceed your expectations every time.
                 </div>
                 <p>
-                  At our company, we pride ourselves on providing services that
+                  At Wilshine cleaning services, we pride ourselves on providing services that
                   not only meet but surpass customer expectations. Whether it's
                   residential or commercial, we believe every cleaning should be
                   thorough and leave a lasting impact. With our team, you can

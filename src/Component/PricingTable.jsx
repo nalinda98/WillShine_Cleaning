@@ -5,6 +5,9 @@ const PricingTable = ({ details }) => {
     <div>
       <section className="section-padding-xl  ">
         <div className="container">
+        <div className="heading-layout1 mt-5" >
+            <h2>Pricing Plans</h2>
+          </div>
           <div className="row d-flex" style={{ alignItems: "stretch" }}>
             {Object.entries(details).map(([key, pack], index) => (
               <div className="col-lg-4 d-flex" key={key}>

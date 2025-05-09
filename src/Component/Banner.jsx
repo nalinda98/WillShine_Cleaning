@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const Banner = ({ title, path, pathName, path2, path2Name }) => {
   useEffect(() => {
@@ -9,17 +9,33 @@ const Banner = ({ title, path, pathName, path2, path2Name }) => {
       section.style.backgroundImage = `url(${section.dataset.bgImage})`;
     }
   }, []);
+  const [bgImage, setBgImage] = useState("/img/figure/breadcumba.png");
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setBgImage("/img/figure/bcmobile.png");
+      } else {
+        setBgImage("/img/figure/breadcumba.png");
+      }
+    };
+
+    handleResize(); // Set initial image
+    window.addEventListener("resize", handleResize); // Update on resize
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div>
       <section
-        className="inner-page-banner bg-common"
-        data-bg-image="/img/figure/breadcumb.jpg"
-        style={{
-          width: "100%",
-          height: "150px",
-          backgroundSize: "cover",
-        }}
-      >
+      className="inner-page-banner bg-common"
+      style={{
+        width: "100%",
+        height: "150px",
+        backgroundSize: "cover",
+        backgroundImage: `url(${bgImage})`,
+      }}
+    >
         <div className="container">
           <div className="row">
             <div className="col-12">

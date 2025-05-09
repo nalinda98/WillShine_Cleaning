@@ -1,4 +1,4 @@
-// File: C:\GitRepos\Blossom_Property\src\app\service\stripping-and-sealing\page.jsx
+// File: /home/nalinda/Documents/blossom/src/app/service/stripping-and-sealing/page.jsx
 import * as entry from '../../../../../src/app/service/stripping-and-sealing/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
