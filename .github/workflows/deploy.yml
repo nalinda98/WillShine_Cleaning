@@ -24,10 +24,9 @@ jobs:
       - name: Build and export static site
         run: |
           npm run build
-          npm run export
 
       - name: Archive static site
-        run: tar -czf static-site.tar.gz out
+        run: tar -czf static-site.tar.gz dist
 
       - name: Deploy to EC2 via SSH
         uses: appleboy/scp-action@v0.1.4
