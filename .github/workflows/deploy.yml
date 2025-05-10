@@ -24,6 +24,7 @@ jobs:
       - name: Build and export static site
         run: |
           npm run build
+          ls -al
 
       - name: Archive static site
         run: tar -czf static-site.tar.gz dist
