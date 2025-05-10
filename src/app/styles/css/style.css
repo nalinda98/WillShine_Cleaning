@@ -1612,17 +1612,16 @@ h6 {
   left: 0;
 }
 #preloader {
-  background: #0d0121 url("/img/preloader.gif") no-repeat scroll center center;
-  height: 100%;
-  left: 0;
-  /* opacity: 0%; */
-  display: none;
-  overflow: visible;
   position: fixed;
   top: 0;
-  width: 100%;
-  z-index: 9999999;
+  left: 0;
+  z-index: 99999;
+  width: 100vw;
+  height: 100vh;
+  background: #fff url("/img/preloadernew.gif") no-repeat center center;
+  background-size: 50px 50px;
 }
+
 .scrollup {
   overflow: hidden;
   position: fixed;
@@ -3192,7 +3191,7 @@ nav.template-main-menu > ul > li:hover .template-mega-menu {
   font-style: italic;
 }
 .header-middlebar-layout1 {
-  padding: 30px 0;
+  padding: 5px 0;
 }
 .header-middlebar-layout1 .middlebar-content ul li {
   display: inline-flex;
@@ -3363,7 +3362,7 @@ div#wrapper.open > .offcanvas-mask {
   padding: 0 !important;
   position: fixed !important;
   top: 0;
-  z-index: 20;
+  z-index: 99;
 }
 .mean-container .mean-bar:after {
   content: "";
@@ -3856,7 +3855,8 @@ div#wrapper.open > .offcanvas-mask {
 }
 .widget-recent-post {
   background-color: #f8f8f8;
-  padding: 40px 40px;
+  padding: 0px 0px;
+  padding-bottom: 30px;
   border-radius: 4px;
 }
 .widget-recent-post .recent-post-list li {
@@ -4012,7 +4012,8 @@ div#wrapper.open > .offcanvas-mask {
 }
 .widget-contact-form {
   background-color: #f8f8f8;
-  padding: 40px 40px;
+  padding: 0px 0px;
+  padding-bottom: 20px;
   border-radius: 4px;
 }
 @media only screen and (max-width: 479px) {
@@ -4209,7 +4210,8 @@ div#wrapper.open > .offcanvas-mask {
 =========================================================================*/
 /*------------------- 5.1 About Us -------------------*/
 .about-box-layout1 {
-  padding-right: 12rem;
+  padding-right: 3rem;
+  padding-left: 1rem;
   position: relative;
   z-index: 5;
 }
@@ -4272,7 +4274,7 @@ div#wrapper.open > .offcanvas-mask {
 }
 .about-box-layout2 {
   background-color: #287ff9;
-  padding: 5rem 5.5rem 5.5rem;
+  padding: 2rem 2rem 2rem;
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -4536,7 +4538,7 @@ div#wrapper.open > .offcanvas-mask {
   }
 }
 .about-box-layout7 .top-right-item {
-  padding-top: 5rem;
+  padding-top: 0rem;
 }
 @media only screen and (max-width: 991px) {
   .about-box-layout7 .top-right-item {
@@ -4544,7 +4546,7 @@ div#wrapper.open > .offcanvas-mask {
   }
 }
 .about-box-layout7 .item-popup-img {
-  margin-bottom: 5.5rem;
+  margin-bottom: 0.5rem;
   position: relative;
 }
 .about-box-layout7 .item-popup-img .item-icon {
@@ -5447,7 +5449,7 @@ div#wrapper.open > .offcanvas-mask {
 }
 /*------------------- 5.4 Brand -------------------*/
 .brand-wrap-layout2 {
-  padding: 15.5rem 0 12rem;
+  padding: 7rem 0 7rem;
 }
 .brand-box-layout1 {
   text-align: center;
@@ -6212,7 +6214,7 @@ div#wrapper.open > .offcanvas-mask {
 .process-box-layout1:after {
   content: url("/img/figure/teer.png");
   position: absolute;
-  top: 10rem;
+  top: 5rem;
   right: -50px;
 }
 @media only screen and (max-width: 991px) {
@@ -7118,7 +7120,7 @@ div#wrapper.open > .offcanvas-mask {
   .card
   .card-header
   .heading-title:before {
-  content: "\f107";
+  /* content: "\f107"; */
   font-family: "Font Awesome 5 Free";
   font-size: 20px;
   font-weight: 600;
@@ -8381,6 +8383,7 @@ div#wrapper.open > .offcanvas-mask {
 }
 .testimonial-box-layout1 {
   background-color: #ffffff;
+  height: 100%;
   padding: 8rem 5rem 4rem;
   border-radius: 4px;
   text-align: center;
@@ -8811,6 +8814,21 @@ div#wrapper.open > .offcanvas-mask {
 .section-bubble-3 {
   position: relative;
 }
+
+.section-bubble-3-updside {
+  position: relative;
+}
+
+.section-bubble-3-updside:after {
+  content: url('/img/figure/section-bubble3-upside.png');
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 2;
+}
+
 .section-bubble-3:after {
   content: url("/img/figure/section-bubble3.png");
   position: absolute;
@@ -8950,7 +8968,7 @@ div#wrapper.open > .offcanvas-mask {
   padding: 1rem 0 1rem;
 }
 .section-padding-lg {
-  padding: 17rem 0 9rem;
+  padding: 7rem 0 7rem;
 }
 .section-padding-lg-2 {
   padding: 17rem 0 8.2rem;
@@ -8984,10 +9002,10 @@ div#wrapper.open > .offcanvas-mask {
   padding: 11.4rem 0 8.6rem;
 }
 .section-padding-md-4 {
-  padding: 11.5rem 0 13.2rem;
+  padding: 7rem 0 7rem;
 }
 .section-padding-md-5 {
-  padding: 11.4rem 0 9rem;
+  padding: 7rem 0 0rem;
 }
 .section-padding-md-6 {
   padding: 11.5rem 0 20rem;

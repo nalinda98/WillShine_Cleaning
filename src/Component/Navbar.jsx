@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
+import { MdAccessTime, MdCall, MdOutlineEmail } from "react-icons/md";
 
 const Navbar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -31,46 +32,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isSticky]);
   return (
-    <header className="header">
-      <div id="header-topbar" ref={topbarRef} className="bg-assh-2 pd-y-10">
-        <div className="container">
-          <div className="row d-flex align-items-center">
-            <div className="col-lg-6">
-              <div className="header-topbar-layout2">
-                <div className="header-top-left">
-                  <div className="item-location">
-                    <b>Wilshine Cleaning Services</b>
-                    {/* <i className="fas fa-map-marker-alt" /> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 d-flex justify-content-end">
-              <div className="header-topbar-layout2">
-                <ul className="header-top-right">
-                  <li className="social-icon">
-                    <a href="https://www.facebook.com/wilshinepropertyservice">
-                      <i className="fab fa-facebook-f" />
-                    </a>
-                    <a href="https://www.instagram.com/wilshinepropertyservices/">
-                      <i className="fab fa-instagram" />
-                    </a>
-                    <a href="https://www.linkedin.com/company/wilshine-property-services/">
-                      <i className="fab fa-linkedin-in" />
-                    </a>
-                    <a href="tel:0433691812">
-                      <i className="fas fa-envelope" />{" "}
-                    </a>
-                    <a href="mailto:wilshinepropertyservices@gmail.com">
-                      <i className="fas fa-phone" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <header className="header" style={{ zIndex: 999 }}>
       <div
         id="header-middlebar"
         ref={middlebarRef}
@@ -80,12 +42,12 @@ const Navbar = () => {
           <div className="row d-flex align-items-center">
             <div className="col-lg-3">
               <div className="logo-area">
-                <a href="index.html" className="temp-logo">
+                <a href="/" className="temp-logo">
                   <img
-                    src="/img/horizontal_logo_without_background.png"
+                    src="/img/wilshinelogohorizontal.png"
                     style={{ height: "80px", width: "auto" }}
                     alt="logo"
-                    className="img-fluid"
+                    // className="img-fluid"
                   />
                 </a>
               </div>
@@ -95,7 +57,7 @@ const Navbar = () => {
                 <ul>
                   <li>
                     <div className="item-icon">
-                      <i className="far fa-clock" />
+                      <MdAccessTime size={45} color="#287FF9" />
                     </div>
                     <div className="item-content">
                       <div className="item-title">Opening Hours</div>
@@ -108,7 +70,8 @@ const Navbar = () => {
                   </li>
                   <li>
                     <div className="item-icon">
-                      <i className="flaticon-message" />
+                      {/* <i className="fa fa-envelope-o" /> */}
+                      <MdOutlineEmail size={45} color="#287FF9" />
                     </div>
                     <div className="item-content">
                       <div className="item-title">E-mail Us</div>
@@ -117,7 +80,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <div className="item-icon">
-                      <i className="flaticon-phone-call" />
+                      <MdCall size={45} color="#287FF9" />
                     </div>
                     <div className="item-content">
                       <div className="item-title">Quick Contact</div>
@@ -137,7 +100,7 @@ const Navbar = () => {
         className={`header-menu menu-layout3 ${isSticky ? "rt-sticky" : ""}`}
       >
         <div className="container">
-          <div className="bg-Primary border-radius-4 pl-4">
+          <div className="bg-Primary border-radius-4 ">
             <div className="row d-flex align-items-center">
               <div className="col-lg-9 d-flex justify-content-start position-static">
                 <nav id="dropdown" className="template-main-menu">
@@ -184,7 +147,7 @@ const Navbar = () => {
                     </li>
 
                     <li>
-                      <Link href="/contact">Contact</Link>
+                      <a href="/contact">Contact</a>
                     </li>
                   </ul>
                 </nav>
@@ -193,10 +156,10 @@ const Navbar = () => {
                 <div className="header-action-layout1">
                   <ul>
                     <li className="header-action-btn">
-                      <Link href="/#estimate-section" className="item-btn">
+                      <a href="/#estimate-section" className="item-btn">
                         <i className="fas fa-bell" />
                         Get A Quote
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>

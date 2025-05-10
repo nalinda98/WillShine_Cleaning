@@ -4,15 +4,16 @@ import React from "react";
 const HomeService = () => {
   return (
     <section
-      className="section-padding-lg bg-common bg-aash"
+      className="section-padding-lg bg-common bg-aash  "
       data-bg-image="img/figure/bg-shape1.png"
     >
       <div>
         <div className="heading-layout1">
           <h2>Our Cleaning Services</h2>
           <p>
-            Wilshine Cleaning Services offers top-quality residential,
-            commercial, and end-of-lease cleaning services across Sydney.
+            Wilshine Cleaning Services offers top-quality office cleaning, as
+            well as pressure washing and carpet cleaning, to both commercial and
+            residential clients across Perth.
           </p>
         </div>
         <div

@@ -65,7 +65,9 @@ const SingleService = () => {
           <div className="row">
             <div className="col-lg-8 order-lg-1">
               <div className="single-service-box-layout1">
-                <h2 className="service-title">Wilshine Pressure Washing Services</h2>
+                <h2 className="service-title">
+                  Wilshine Pressure Washing Services
+                </h2>
                 <p style={{ textAlign: "justify" }}>
                   At Wilshine Cleaning Services, we specialize in high-quality
                   pressure washing to bring new life to your home or business.
@@ -195,11 +197,14 @@ const SingleService = () => {
                               }}
                             />
                           </div>
-                          <div className="mt-3">
+                          <div className="mt-3 p-2">
                             <h5 className="card-title text-primary">
                               Driveway Cleaning
                             </h5>
-                            <p className="card-text" style={{ textAlign: "justify" }}>
+                            <p
+                              className="card-text"
+                              style={{ textAlign: "justify" }}
+                            >
                               Remove years of grime, oil stains, and dirt from
                               your driveway. We restore curb appeal with deep
                               power washing.
@@ -228,11 +233,14 @@ const SingleService = () => {
                               }}
                             />
                           </div>
-                          <div className="mt-3">
+                          <div className="mt-3  p-2">
                             <h5 className="card-title text-primary">
                               Patio & Deck Cleaning
                             </h5>
-                            <p className="card-text" style={{ textAlign: "justify" }}>
+                            <p
+                              className="card-text"
+                              style={{ textAlign: "justify" }}
+                            >
                               Bring back the beauty of your patio or timber deck
                               with safe, effective cleaning that removes moss,
                               mildew, and discoloration.
@@ -261,11 +269,14 @@ const SingleService = () => {
                               }}
                             />
                           </div>
-                          <div className="mt-3">
+                          <div className="mt-3  p-2">
                             <h5 className="card-title text-primary">
                               Pool Area Cleaning
                             </h5>
-                            <p className="card-text" style={{ textAlign: "justify" }}>
+                            <p
+                              className="card-text"
+                              style={{ textAlign: "justify" }}
+                            >
                               Keep your poolside clean and slip-free with our
                               specialized surface treatments and pressure
                               washing.
@@ -275,7 +286,7 @@ const SingleService = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   {/* <Testominals /> */}
                   <FAQ faqs={pressureWashingFaqs} />
                 </div>

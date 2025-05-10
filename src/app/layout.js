@@ -16,6 +16,7 @@ import "./styles/css/select2.min.css";
 import "./styles/css/jquery.datetimepicker.css";
 import Head from "next/head";
 import Script from "next/script";
+import Preloader from "@/Component/Preloader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,11 +40,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Preloader />
         <div>
           <a href="#wrapper" data-type="section-switch" className="scrollup">
             <i className="fas fa-angle-double-up"></i>
           </a>
-          <div id="preloader"></div>
+          {/* <div id="preloader"></div> */}
           <div id="wrapper" className="wrapper">
             <Head>
               <meta charSet="utf-8" />

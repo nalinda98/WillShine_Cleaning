@@ -18,7 +18,7 @@ const SingleService = () => {
       />
       <section className="section-padding-12">
         <div className="container">
-          <div className="row">
+          <div className="row mb-5">
             <div className="col-lg-8 order-lg-1">
               <div className="single-service-box-layout1">
                 <h2 className="service-title">Professional Carpet Cleaning</h2>
@@ -136,7 +136,6 @@ const SingleService = () => {
                       },
                     }}
                   />
-                  <HowItWork />
                   {/* <FAQ faqs={pressureWashingFaqs} /> */}
                 </div>
               </div>
@@ -146,6 +145,7 @@ const SingleService = () => {
               <ContactForm />
             </div>
           </div>
+          <HowItWork />
         </div>
       </section>
     </div>
