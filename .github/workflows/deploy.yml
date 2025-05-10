@@ -46,5 +46,5 @@ jobs:
           script: |
             cd ~/next-deploy
             tar -xzf server-app.tar.gz
-            /home/ubuntu/.nvm/versions/node/v22.15.0/bin/npm install --production
-            /home/ubuntu/.nvm/versions/node/v22.15.0/bin/npm restart next-app || /home/ubuntu/.nvm/versions/node/v22.15.0/bin/npm start dist/server.js --name next-app
+            /home/${{ secrets.EC2_USER }}/.nvm/versions/node/v22.15.0/bin/npm install --production
+            /home/${{ secrets.EC2_USER }}/.nvm/versions/node/v22.15.0/bin/npm restart next-app || /home/ubuntu/.nvm/versions/node/v22.15.0/bin/npm start dist/server.js --name next-app
