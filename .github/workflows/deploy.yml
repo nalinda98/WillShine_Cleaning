@@ -44,7 +44,9 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
+            export NVM_DIR="$HOME/.nvm"
+            source "$NVM_DIR/nvm.sh"
             cd ~/next-deploy
             tar -xzf server-app.tar.gz
-            /home/${{ secrets.EC2_USER }}/.nvm/versions/node/v22.15.0/bin/npm install --production
-            /home/${{ secrets.EC2_USER }}/.nvm/versions/node/v22.15.0/bin/npm restart next-app || /home/ubuntu/.nvm/versions/node/v22.15.0/bin/npm start dist/server.js --name next-app
+            npm install --production
+            pm2 restart next-app || pm2 start dist/server.js --name next-app
