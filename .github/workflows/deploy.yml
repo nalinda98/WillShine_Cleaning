@@ -35,7 +35,7 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
-          source: "app.tar.gz"
+          source: "static-site.tar.gz"
           target: "~/next-deploy"
 
       - name: SSH into EC2 and run deploy commands
@@ -46,6 +46,6 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd ~/next-deploy
-            tar -xzf app.tar.gz
+            tar -xzf static-site.tar.gz
             npm install --production
             pm2 restart next-app || pm2 start npm --name next-app -- start
