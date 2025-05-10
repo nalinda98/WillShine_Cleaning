@@ -48,4 +48,4 @@ jobs:
             cd ~/next-deploy
             tar -xzf static-site.tar.gz
             npm install --production
-            pm2 restart next-app || pm2 start npm --name next-app -- start
+            pm2 restart next-app2 || pm2 start npm --name next-app2 -- start
