@@ -26,7 +26,7 @@ jobs:
 
       - name: Archive server app (dist + package files)
         run: |
-          tar -czf server-app.tar.gz .next package.json package-lock.json
+          tar -czf server-app.tar.gz dist package.json package-lock.json
 
       - name: Upload to EC2
         uses: appleboy/scp-action@v0.1.4
@@ -48,5 +48,7 @@ jobs:
             source "$NVM_DIR/nvm.sh"
             cd ~/next-deploy
             tar -xzf server-app.tar.gz
+            mkdir .next
+            cp -r dist/* .next/
             npm install --production
             pm2 restart next-app || pm2 start .next/server.js --name next-app
