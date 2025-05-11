@@ -51,4 +51,4 @@ jobs:
             mkdir .next
             cp -r dist/* .next/
             npm install --production
-            pm2 restart next-app || pm2 start .next/server.js --name next-app
+            pm2 restart next-app || pm2 start npm --name next-app -- start
