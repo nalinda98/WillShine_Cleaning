@@ -5,6 +5,17 @@ import FAQ from "@/Component/FAQ";
 import PricingTable from "@/Component/PricingTable";
 import RelatedBlogs from "@/Component/RelatedBlogs";
 import React from "react";
+import {
+  FaLockOpen,
+  FaBroom,
+  FaUserShield,
+  FaCheckCircle,
+  FaUserCheck,
+  FaTools,
+  FaRegFileAlt,
+  FaUsers,
+  FaShieldAlt,
+} from "react-icons/fa";
 
 const SingleService = () => {
   return (
@@ -82,60 +93,55 @@ const SingleService = () => {
                   <div className="row">
                     {[
                       {
-                        img: "/img/icons/unlock.png",
+                        icon: <FaLockOpen size={40} color="#287ff9" />,
                         title: "No Lock-In Contracts",
                         desc: "Enjoy complete flexibility—our results earn your trust, not binding agreements.",
                       },
                       {
-                        img: "/img/icons/clean.png",
+                        icon: <FaBroom size={40} color="#287ff9" />,
                         title: "Specialized Office Cleaning",
                         desc: "Office cleaning is all we do, so we do it better—no distractions, no dilution.",
                       },
                       {
-                        img: "/img/icons/fanchise.jpg",
+                        icon: <FaUserShield size={40} color="#287ff9" />,
                         title: "Not a Franchise",
                         desc: "We don’t outsource. Our own vetted staff ensures consistent quality service.",
                       },
                       {
-                        img: "/img/icons/ok.webp",
+                        icon: <FaCheckCircle size={40} color="#287ff9" />,
                         title: "Quality Checks & Standards",
                         desc: "Daily and fortnightly inspections ensure top-tier cleaning at all times.",
                       },
                       {
-                        img: "/img/icons/trust.png",
+                        icon: <FaUserCheck size={40} color="#287ff9" />,
                         title: "Trusted, Police-Cleared Team",
                         desc: "All cleaners are carefully screened and trained for professionalism and trust.",
                       },
                       {
-                        img: "/img/icons/equipment.jpeg",
+                        icon: <FaTools size={40} color="#287ff9" />,
                         title: "Advanced Equipment",
                         desc: "We use modern, eco-conscious tools for safe and thorough cleaning.",
                       },
                       {
-                        img: "/img/icons/document.png",
+                        icon: <FaRegFileAlt size={40} color="#287ff9" />,
                         title: "Customized Plans",
                         desc: "Every office is different. We create schedules tailored to your needs.",
                       },
                       {
-                        img: "/img/icons/team.jpeg",
+                        icon: <FaUsers size={40} color="#287ff9" />,
                         title: "Reliable, Trained Team",
                         desc: "Our insured professionals show up on time and exceed expectations.",
                       },
                       {
-                        img: "/img/icons/safety.png",
+                        icon: <FaShieldAlt size={40} color="#287ff9" />,
                         title: "Health & Safety First",
                         desc: "We prioritize hygiene to reduce germs, allergens, and other hazards.",
                       },
                     ].map((item, index) => (
                       <div className="col-lg-6 col-md-6 mb-4" key={index}>
                         <div className="media align-items-start">
-                          <img
-                            src={item.img}
-                            alt={item.title}
-                            className="mr-3"
-                            style={{ width: 60, height: 60 }}
-                          />
-                          <div className="">
+                          <div className="mr-3">{item.icon}</div>
+                          <div>
                             <h5 className="mt-0">{item.title}</h5>
                             <p>{item.desc}</p>
                           </div>
@@ -143,8 +149,6 @@ const SingleService = () => {
                       </div>
                     ))}
                   </div>
-
-                  <AboutProcess />
                 </div>
               </div>
             </div>
@@ -153,6 +157,7 @@ const SingleService = () => {
               <ContactForm />
             </div>
           </div>
+          <AboutProcess />
         </div>
       </section>
     </div>

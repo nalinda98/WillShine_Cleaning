@@ -15,7 +15,7 @@ const ServiceBanner = () => {
                   Together <span>We'll Explore</span> New Things
                 </h2>
                 <a
-                  href="#"
+                  href="/contact"
                   className="btn-fill-md bg-accent btn-slide-hover text-primarytext"
                 >
                   Book an Appointment

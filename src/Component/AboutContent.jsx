@@ -6,31 +6,21 @@ const AboutContent = () => {
       <section className="section-padding-md-5">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-12">
               <div className="about-box-layout7">
-                <div className="top-left-item">
+                {/* <div className="top-left-item">
                   <div className="item-tagline">Know About Us</div>
                   <h2 className="item-title">
                     Trusted Office Cleaning Experts in Western Australia
                   </h2>
+                </div> */}
+                <div className="heading-layout1">
+                  <h2>Who we are</h2>
+                  <p>Trusted Office Cleaning Experts in Western Australia</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-6">
-              <div className="about-box-layout7">
-                <div className="top-right-item">
-                  <p>
-                    Wilshine Cleaning Services is proudly Western Australia owned
-                    and operated, delivering exceptional office cleaning and
-                    hygiene services. Backed by years of industry experience,
-                    our professional team uses proven methods to achieve
-                    outstanding results. We prioritize quality through regular
-                    supervision, creating clean, healthy environments that
-                    promote productivity and peace of mind.
-                  </p>
-                </div>
-              </div>
-            </div>
+            
             <div className="col-lg-12">
               <div className="about-box-layout7">
                 <div className="item-popup-img">
@@ -43,6 +33,21 @@ const AboutContent = () => {
                       <i className="flaticon-play-arrow" />
                     </a>
                   </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-12">
+              <div className="about-box-layout7">
+                <div className="top-right-item">
+                  <p>
+                    Wilshine Cleaning Services is proudly Western Australia
+                    owned and operated, delivering exceptional office cleaning
+                    and hygiene services. Backed by years of industry
+                    experience, our professional team uses proven methods to
+                    achieve outstanding results. We prioritize quality through
+                    regular supervision, creating clean, healthy environments
+                    that promote productivity and peace of mind.
+                  </p>
                 </div>
               </div>
             </div>

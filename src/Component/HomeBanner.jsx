@@ -15,7 +15,7 @@ const HomeBanner = () => {
                   Together <span>We'll Explore</span> New Things
                 </h2>
                 <a
-                  href="#"
+                  href="/contact"
                   className="btn-fill-md btn-slide-hover bg-accent text-primarytext"
                 >
                   Read More<i className="fas fa-angle-right"></i>

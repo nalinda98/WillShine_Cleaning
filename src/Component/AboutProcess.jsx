@@ -3,8 +3,8 @@ import React from "react";
 const AboutProcess = () => {
   return (
     <div>
-      <section className="section-padding-lg-1">
-        <div className="container">
+      <section className="section-padding-lg-1 container">
+        <div style={{ marginTop: "100px" }} >
           <div className="heading-layout1">
             <h2>How It Works</h2>
             <p>
@@ -25,7 +25,8 @@ const AboutProcess = () => {
                 <div className="item-content">
                   <h3 className="item-title">Consultation</h3>
                   <p>
-                    Schedule a free on-site consultation where we assess your needs and create a personalized cleaning plan.
+                    Schedule a free on-site consultation where we assess your
+                    needs and create a personalized cleaning plan.
                   </p>
                 </div>
               </div>
@@ -42,7 +43,8 @@ const AboutProcess = () => {
                 <div className="item-content">
                   <h3 className="item-title">Tailored Proposal</h3>
                   <p>
-                    Receive a detailed, transparent proposal outlining our services, schedule, and pricing.
+                    Receive a detailed, transparent proposal outlining our
+                    services, schedule, and pricing.
                   </p>
                 </div>
               </div>
@@ -58,8 +60,10 @@ const AboutProcess = () => {
                 </div>
                 <div className="item-content">
                   <h3 className="item-title">Execution & Ongoing Support</h3>
-                  <p style={{ textAlign: "justify" }}>
-                    Our reliable team gets to work, and we regularly check in to adapt our services to your changing needs and ensure your satisfaction.
+                  <p>
+                    Our reliable team gets to work, and we regularly check in to
+                    adapt our services to your changing needs and ensure your
+                    satisfaction.
                   </p>
                 </div>
               </div>

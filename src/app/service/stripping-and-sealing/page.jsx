@@ -28,7 +28,7 @@ const SingleService = () => {
         "Simply fill out the following details, and we'll contact you within 24 hours to schedule a free site visit and provide a quote.",
     },
   ];
-  
+
   return (
     <div>
       <Banner
@@ -177,14 +177,17 @@ const SingleService = () => {
                       },
                     }}
                   /> */}
-
-                  <FAQ faqs={stripAndSealFaqs} />
                 </div>
               </div>
             </div>
             <div className="col-lg-4 order-lg-2 sidebar-break-md sidebar-widget-area">
               <RelatedBlogs category={"stripping-and-sealing"} />
               <ContactForm />
+            </div>
+          </div>
+          <div className="single-service-box-layout1">
+            <div className="service-content">
+              <FAQ faqs={stripAndSealFaqs} />
             </div>
           </div>
         </div>

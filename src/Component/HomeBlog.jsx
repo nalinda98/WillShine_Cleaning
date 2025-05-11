@@ -7,7 +7,7 @@ const HomeBlog = () => {
     <section className="section-padding-lg section-bubble">
       <div className="container">
         <div className="heading-layout1">
-          <h2> Our Latest Blogs</h2>
+          <h2>Our Latest Blogs</h2>
           <p>
             Perspiciatis unde omnis iste natus error sit voluptatem accusantium
             fa-angle-double-up oremque laudantium, totam remeaque ipsa
@@ -16,23 +16,44 @@ const HomeBlog = () => {
         <div className="row">
           {BlogPost.map((post, index) =>
             index > 2 ? null : (
-              <div key={index} className="col-lg-4 col-md-6 col-12">
-                <div className="blog-box-layout1 bg-assh">
-                  <div className="item-img">
+              <div key={index} className="col-lg-4 col-md-6 col-12 mb-4">
+                <div className="blog-box-layout1 bg-assh h-100 d-flex flex-column">
+                  <div
+                    className="item-img"
+                    style={{ height: "220px", overflow: "hidden" }}
+                  >
                     <a href={`/blog/${post.link}`}>
-                      <img src={post.img} alt="blog-thumb" />
+                      <Image
+                        src={post.img}
+                        alt="blog-thumb"
+                        width={400}
+                        height={220}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                        }}
+                      />
                     </a>
                   </div>
-                  <div className="item-content">
-                    <div className="item-date">
-                      <i className="fas fa-calendar-alt" />
+                  <div className="item-content flex-grow-1 d-flex flex-column justify-content-between">
+                    {/* Top: Date */}
+                    <div className="item-date mb-2">
+                      <i className="fas fa-calendar-alt mr-1" />
                       {post.date}
                     </div>
-                    <h3 className="item-title">
-                      <a href={`/blog/${post.link}`}>{post.title}</a>
-                    </h3>
-                    <div className="item-author">By {post.author}</div>
-                    <p>{post.description}</p>
+
+                    {/* Middle: Title */}
+                    <div className="my-2 text-center">
+                      <h3 className="item-title mb-0">
+                        <a href={`/blog/${post.link}`}>{post.title}</a>
+                      </h3>
+                    </div>
+
+                    {/* Bottom: Author */}
+                    <div className="item-author mt-2 text-right">
+                      By {post.author}
+                    </div>
                   </div>
                 </div>
               </div>
