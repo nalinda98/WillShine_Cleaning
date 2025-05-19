@@ -1,4 +1,5 @@
 import React from "react";
+import "./CertificateSection.css";
 
 const CertificateSection = () => {
   return (
@@ -47,7 +48,7 @@ const CertificateSection = () => {
             <div className="brand-box-layout2">
               <div className="item-img">
                 <a href="#">
-                  <img src="img/brand/brand6.png" alt="brand" />
+                  <img src="img/brand/certificate1.png" alt="brand"/>
                 </a>
               </div>
             </div>

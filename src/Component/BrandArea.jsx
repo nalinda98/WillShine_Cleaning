@@ -7,11 +7,11 @@ import "swiper/css/navigation";
 
 const BrandArea = () => {
   const brands = [
-    "img/brand/brand1.png",
-    "img/brand/brand2.png",
-    "img/brand/brand3.png",
-    "img/brand/brand4.png",
-    "img/brand/brand5.png",
+    "img/brand/l1.png",
+    "img/brand/l2.png",
+    "img/brand/l3.png",
+    "img/brand/l4.png",
+    "img/brand/l5.png",
   ];
 
   return (

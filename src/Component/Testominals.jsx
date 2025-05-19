@@ -27,7 +27,7 @@ const Testimonials = () => {
 
                 <div className="mt-auto">
                   <h3 className="item-title mb-1">Optimum Roofing</h3>
-                  <div className="item-subtitle mb-2">CEO, RT</div>
+                  {/* <div className="item-subtitle mb-2">CEO, RT</div> */}
                   <ul className="item-rating list-inline mb-0">
                     {[...Array(5)].map((_, i) => (
                       <li key={i} className="list-inline-item">
@@ -56,7 +56,7 @@ const Testimonials = () => {
 
                 <div className="mt-auto">
                   <h3 className="item-title mb-1">Tanya Regan</h3>
-                  <div className="item-subtitle mb-2">CEO, RT</div>
+                  {/* <div className="item-subtitle mb-2">CEO, RT</div> */}
                   <ul className="item-rating list-inline mb-0">
                     {[...Array(5)].map((_, i) => (
                       <li key={i} className="list-inline-item">
@@ -82,7 +82,7 @@ const Testimonials = () => {
 
                 <div className="mt-auto">
                   <h3 className="item-title mb-1">Jason</h3>
-                  <div className="item-subtitle mb-2">CEO, RT</div>
+                  {/* <div className="item-subtitle mb-2">CEO, RT</div> */}
                   <ul className="item-rating list-inline mb-0">
                     {[...Array(5)].map((_, i) => (
                       <li key={i} className="list-inline-item">

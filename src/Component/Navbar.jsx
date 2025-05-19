@@ -134,7 +134,7 @@ const Navbar = () => {
                     </li>
                     <li>
                       <a href="/blog">Blogs</a>
-                      <ul className="dropdown-menu-col-1">
+                      {/* <ul className="dropdown-menu-col-1">
                         <li>
                           <a href="/blog/cleaning-hacks">Cleaning Hacks</a>
                         </li>
@@ -146,7 +146,7 @@ const Navbar = () => {
                         <li>
                           <a href="/blog/cleaning-perth">Cleaning Perth</a>
                         </li>
-                      </ul>
+                      </ul> */}
                     </li>
 
                     <li>

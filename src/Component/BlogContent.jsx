@@ -26,10 +26,10 @@ const BlogContent = () => {
                           <a href={post.path}>{post.title}</a>
                         </h3>
                         <div className="item-author">By {post.author}</div>
-                        <p>
+                        {/* <p>
                           Aimply dummy text of the printing anden type setting
                           industrym Ipsum has been the industry's standard.
-                        </p>
+                        </p> */}
                       </div>
                     </div>
                   </div>
