@@ -102,7 +102,7 @@ const SingleService = () => {
                   <PricingTable
                     details={{
                       pack01: {
-                        title: "Basic",
+                        title: "Empty",
                         price: "$100",
                         unit: "Start From",
                         features: [
@@ -113,7 +113,7 @@ const SingleService = () => {
                         ],
                       },
                       pack02: {
-                        title: "Standard",
+                        title: "Furnished",
                         price: "$110",
                         unit: "Start From",
                         features: [
@@ -124,7 +124,7 @@ const SingleService = () => {
                         ],
                       },
                       pack03: {
-                        title: "Premium",
+                        title: "Furnished/ Unfurnished",
                         price: "$3.00",
                         unit: "per sqm",
                         features: [

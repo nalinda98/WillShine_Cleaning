@@ -1879,6 +1879,8 @@ h6 {
   li:last-child {
   margin-bottom: 0;
 }
+
+
 .footer-top-box .footer-box-layout1 .footer-menu-box .footer-menu-list li a {
   font-size: 15px;
   color: #dcdcdc;
@@ -6139,7 +6141,7 @@ div#wrapper.open > .offcanvas-mask {
   transition: all 0.3s ease-out;
 }
 .pricing-box-layout1 .item-title {
-  font-size: 30px;
+  font-size: 24px;
   color: #111111;
   font-weight: 600;
   margin-bottom: 25px;

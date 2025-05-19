@@ -12,10 +12,13 @@ const MiddleBanner = () => {
                   Experience <span>Spotless Results</span> Every Time
                 </h2>
                 <p>
-                  At Wilshine Cleaning Services, we go beyond cleaning — we create healthier, more productive environments. Backed by certified professionals and thorough quality checks, our service is one you can trust.
+                  At Wilshine Cleaning Services, we go beyond cleaning — we
+                  create healthier, more productive environments. Backed by
+                  certified professionals and thorough quality checks, our
+                  service is one you can trust.
                 </p>
                 <a
-                  href="#"
+                  href="/#estimate-section"
                   className="btn-fill-sm btn-slide-hover bg-accent text-primarytext"
                 >
                   Request a Free Assessment

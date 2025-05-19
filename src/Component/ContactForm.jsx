@@ -48,7 +48,7 @@ const ContactForm = () => {
     <div className="col-lg-12 sidebar-break-md sidebar-widget-area">
       <div className="widget widget-contact-form">
         <div className="heading-layout4">
-          <h4>Have you Any Question?</h4>
+          <h4>Contact us for a Free Quotation</h4>
         </div>
         <form className="contact-form-box" ref={form} onSubmit={sendEmail}>
           <div className="row">

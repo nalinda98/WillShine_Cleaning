@@ -130,6 +130,9 @@ const Navbar = () => {
                       </ul>
                     </li>
                     <li>
+                      <a href="/gallery">Gallery</a>
+                    </li>
+                    <li>
                       <a href="/blog">Blogs</a>
                       <ul className="dropdown-menu-col-1">
                         <li>

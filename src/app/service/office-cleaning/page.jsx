@@ -52,7 +52,7 @@ const SingleService = () => {
                 <PricingTable
                   details={{
                     pack01: {
-                      title: "Basic",
+                      title: "Small Office Building",
                       price: "$50",
                       unit: "+ GST Per Hour",
                       features: [
@@ -63,7 +63,7 @@ const SingleService = () => {
                       ],
                     },
                     pack02: {
-                      title: "Standard",
+                      title: "Medium Office Building",
                       price: "$50",
                       unit: "+ GST Per Hour",
                       features: [
@@ -74,7 +74,7 @@ const SingleService = () => {
                       ],
                     },
                     pack03: {
-                      title: "Premium",
+                      title: "Large Office Building",
                       price: "$50",
                       unit: "+ GST Per Hour",
                       features: [

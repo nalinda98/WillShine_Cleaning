@@ -18,14 +18,14 @@ const Footer = () => {
           <div className="footer-top-box">
             <div className="row">
               {/* Features Section */}
-              <div className="col-lg-4 col-sm-6">
+              {/* <div className="col-lg-4 col-sm-6">
                 <div className="footer-box-layout1">
                   <div className="footer-title">
                     <h4>FEATURES</h4>
                   </div>
                   <ul className="footer-menu-list">
                     <li>
-                      <a href="#">Residential Services</a>
+                      <a href="#">Office Cleaning</a>
                     </li>
                     <li>
                       <a href="#">Commercial Services</a>
@@ -41,26 +41,26 @@ const Footer = () => {
                     </li>
                   </ul>
                 </div>
-              </div>
+              </div> */}
 
               {/* Company Section */}
               <div className="col-lg-4 col-sm-6">
                 <div className="footer-box-layout1">
                   <div className="footer-title">
-                    <h4>Services</h4>
+                    <h4>SERVICES</h4>
                   </div>
                   <ul className="footer-menu-list">
                     <li>
-                      <a href="about1.html">Office Cleaning</a>
+                      <a href="about1.html" className="text-white">Office Cleaning</a>
                     </li>
                     <li>
-                      <a href="#">Striping & Sealing</a>
+                      <a href="#" className="text-white">Striping & Sealing</a>
                     </li>
                     <li>
-                      <a href="#">Carpet Cleaning</a>
+                      <a href="#" className="text-white">Carpet Cleaning</a>
                     </li>
                     <li>
-                      <a href="#">Preasure Washing</a>
+                      <a href="#" className="text-white">Preasure Washing</a>
                     </li>
                   </ul>
                 </div>
@@ -74,16 +74,16 @@ const Footer = () => {
                   </div>
                   <ul className="footer-menu-list">
                     <li>
-                      <a href="/">Home</a>
+                      <a href="/" className="text-white">Home</a>
                     </li>
                     <li>
-                      <a href="/about">About Us</a>
+                      <a href="/about" className="text-white">About Us</a>
                     </li>
                     <li>
-                      <a href="/blog">Blogs</a>
+                      <a href="/blog" className="text-white">Blogs</a>
                     </li>
                     <li>
-                      <a href="/contact">Contact Us</a>
+                      <a href="/contact" className="text-white">Contact Us</a>
                     </li>
                   </ul>
                 </div>
