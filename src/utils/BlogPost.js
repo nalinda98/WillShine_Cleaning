@@ -30,7 +30,7 @@ const BlogPost = [
     shortName: "Why Choose Local Company",
   },
   {
-    img: "/img/blog/hack.png",
+    img: "/img/blog/diy.png",
     category: ["carpet-cleaning"],
     date: "15 May, 2025",
     title: "Can DIY Carpet Cleaning Complete with Professional Results?",
@@ -60,7 +60,7 @@ const BlogPost = [
     shortName: "Hidden Dangers in Your Carpet",
   },
   {
-    img: "/img/blog/hack.png",
+    img: "/img/blog/ocrc.png",
     category: ["office-cleaning"],
     date: "15 May, 2025",
     title: "The Difference Between Deep Cleaning and Regular Cleaning",
@@ -70,7 +70,7 @@ const BlogPost = [
     shortName: "Cleaning vs Regular Cleaning",
   },
   {
-    img: "/img/blog/hack.png",
+    img: "/img/blog/bcrc.png",
     category: ["office-cleaning"],
     date: "15 May, 2025",
     title: "Office Cleaning vs Residential Cleaning",
@@ -80,7 +80,7 @@ const BlogPost = [
     shortName: "Office vs Residential Cleaning",
   },
   {
-    img: "/img/blog/hack.png",
+    img: "/img/blog/checklist.png",
     category: ["office-cleaning"],
     date: "15 May, 2025",
     title: "Office Cleaning Checklist",
@@ -90,7 +90,7 @@ const BlogPost = [
     shortName: "Office Cleaning Checklist",
   },
   {
-    img: "/img/blog/hack.png",
+    img: "/img/blog/hos.png",
     category: ["office-cleaning"],
     date: "15 May, 2025",
     title: "How Often Should You Clean Your Office?",
@@ -100,7 +100,7 @@ const BlogPost = [
     shortName: "Clean Your Office",
   },
   {
-    img: "/img/blog/hack.png",
+    img: "/img/blog/hac.png",
     category: ["office-cleaning"],
     date: "15 May, 2025",
     title: "How a Clean & Tidy Workplace Improves Efficiency and Productivity",

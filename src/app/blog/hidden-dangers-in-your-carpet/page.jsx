@@ -55,112 +55,100 @@ const SingleBlog = () => {
                     className="p-4 space-y-4 bg-white text-gray-800"
                   >
                     <h2 className="text-xl font-semibold">
-                      Professional Carpet Cleaning: A Smart Investment
+                      What’s Hiding in Your Carpet?
                     </h2>
                     <p>
-                      Many homeowners see carpet cleaning as just another
-                      household expense. But what if we told you that
-                      professional carpet cleaning isn’t just a cost—it’s an
-                      investment? At Wilshine Cleaning, we’ve helped countless
-                      clients not only restore the look and feel of their
-                      carpets but also save money over time by preventing costly
-                      repairs and replacements. Here's how professional carpet
-                      cleaning pays off in the long run.
+                      When you walk into your home, your carpet might look clean
+                      on the surface—but what’s hiding beneath the fibers may
+                      surprise you. Carpets can act like sponges, trapping dust,
+                      allergens, bacteria, pet dander, and even mold spores.
+                      While regular vacuuming helps with surface debris, it’s
+                      not enough to remove what’s buried deep inside. At
+                      Wilshine Cleaning, we believe that annual professional
+                      carpet cleaning isn’t just a luxury—it’s a necessity for a
+                      healthy and safe home. Here’s why.
                     </p>
 
+                    <ul className="list-disc ml-5 space-y-1">
+                      <li>
+                        <strong>Dust mites and allergens:</strong> These
+                        microscopic pests thrive in warm, humid environments and
+                        can trigger allergies and asthma.
+                      </li>
+                      <li>
+                        <strong>Pet dander and hair:</strong> Even if you don’t
+                        allow pets on the carpet, their dander settles into the
+                        fibers and sticks around.
+                      </li>
+                      <li>
+                        <strong>Bacteria and germs:</strong> Food crumbs,
+                        spills, and dirt tracked in from outside create the
+                        perfect breeding ground for bacteria.
+                      </li>
+                      <li>
+                        <strong>Mold and mildew:</strong> In humid or poorly
+                        ventilated homes, carpets can trap moisture, leading to
+                        mold growth beneath the surface.
+                      </li>
+                      <li>
+                        <strong>Pollutants and toxins:</strong> Pesticides,
+                        smoke particles, and other toxins from outside can cling
+                        to carpet fibers.
+                      </li>
+                    </ul>
+
+                    <h3 className="font-semibold pt-4">
+                      Why Annual Professional Cleaning Matters
+                    </h3>
                     <ol className="list-decimal ml-5 space-y-2">
                       <li>
-                        <strong>Extends the Life of Your Carpet:</strong> Dirt,
-                        dust, and debris act like sandpaper. Professional
-                        cleaning removes these particles, preserving your
-                        carpet’s appearance.
-                        <div className="text-sm">
-                          🧼 A well-maintained carpet can last 2–3 times longer
-                          than a neglected one.
-                        </div>
+                        <strong>Protects Your Family’s Health:</strong> Deep
+                        steam cleaning or hot water extraction removes allergens
+                        and bacteria that can trigger health problems.
                       </li>
                       <li>
-                        <strong>Prevents Permanent Stains and Damage:</strong>{" "}
-                        Professionals treat stains safely and effectively,
-                        avoiding permanent damage.
+                        <strong>Extends the Life of Your Carpet:</strong> Annual
+                        cleaning lifts grit and helps maintain your carpet’s
+                        texture and appearance.
                       </li>
                       <li>
-                        <strong>Improves Indoor Air Quality:</strong> Cleaning
-                        removes allergens and dust mites, improving
-                        health—especially for those with allergies.
+                        <strong>Eliminates Odors:</strong> Professional-grade
+                        equipment neutralizes deep odors—not just masks them.
                       </li>
                       <li>
-                        <strong>Reduces the Risk of Mold and Mildew:</strong>{" "}
-                        High-powered machines ensure carpets dry completely,
-                        preventing mold growth.
-                      </li>
-                      <li>
-                        <strong>Saves You Time and Effort:</strong> Let the pros
-                        handle it quickly and efficiently, giving you back your
-                        valuable time.
-                      </li>
-                      <li>
-                        <strong>Boosts Property Value and Appeal:</strong> Clean
-                        carpets enhance your home's look, smell, and
-                        appeal—great for selling or renting.
+                        <strong>Improves Indoor Air Quality:</strong> Removing
+                        built-up particles reduces airborne pollutants, leading
+                        to fresher, cleaner air.
                       </li>
                     </ol>
 
                     <h3 className="font-semibold pt-4">
-                      Real Value, Real Results
-                    </h3>
-                    <table className="w-full border border-gray-300 text-sm">
-                      <thead className="bg-gray-100">
-                        <tr>
-                          <th className="border p-2">Carpet Maintenance</th>
-                          <th className="border p-2">Approximate Cost</th>
-                          <th className="border p-2">Lifespan Impact</th>
-                          <th className="border p-2">Long-Term Savings</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td className="border p-2">
-                            Professional Cleaning (Annually)
-                          </td>
-                          <td className="border p-2">$150–$500</td>
-                          <td className="border p-2">
-                            Extends life by 5–10 years
-                          </td>
-                          <td className="border p-2">High</td>
-                        </tr>
-                        <tr>
-                          <td className="border p-2">Carpet Replacement</td>
-                          <td className="border p-2">$1,500–$5,000</td>
-                          <td className="border p-2">
-                            Every 7–10 years (without care)
-                          </td>
-                          <td className="border p-2">Costly</td>
-                        </tr>
-                        <tr>
-                          <td className="border p-2">
-                            DIY Cleaning (frequent)
-                          </td>
-                          <td className="border p-2">$50–$100/rental</td>
-                          <td className="border p-2">Minimal impact</td>
-                          <td className="border p-2">Risk of damage</td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                    <h3 className="font-semibold pt-4">
-                      Invest in Clean, Save in the Long Run
+                      Why Choose Professional Over DIY?
                     </h3>
                     <p>
-                      Whether you’re protecting your carpet, your health, or
-                      your time, professional carpet cleaning from Wilshine
-                      Cleaning pays for itself over and over again. It’s not
-                      just about a clean floor—it’s about smart home care.
+                      While rental carpet cleaners or home machines might seem
+                      like a budget-friendly option, they often lack the power
+                      and efficiency of professional-grade equipment. DIY
+                      methods can also leave excess moisture in the carpet,
+                      which leads to mold or mildew issues. At Wilshine
+                      Cleaning, our trained technicians use industry-leading
+                      equipment and eco-friendly cleaning solutions to ensure a
+                      deep, safe, and thorough clean—every time.
+                    </p>
+
+                    <h3 className="font-semibold pt-4">
+                      Make It a Habit: Schedule Your Annual Cleaning
+                    </h3>
+                    <p>
+                      Just like you schedule a yearly physical or car service,
+                      make annual carpet cleaning part of your home maintenance
+                      routine. It’s a small step that delivers big results in
+                      cleanliness, health, and peace of mind.
                     </p>
                     <p>
                       <strong>
-                        📞 Contact Wilshine Cleaning today and schedule your
-                        next deep carpet clean.
+                        📞 Contact Wilshine Cleaning today to book your
+                        professional carpet cleaning service.
                       </strong>
                     </p>
                   </section>

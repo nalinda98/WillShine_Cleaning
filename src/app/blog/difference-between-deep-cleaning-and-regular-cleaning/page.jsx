@@ -52,115 +52,125 @@ const SingleBlog = () => {
                   </div>
                   <section
                     id="office-cleaning-section"
-                    className="p-4 space-y-4 bg-white text-gray-800"
+                    className=" space-y-4 bg-white text-gray-800"
                   >
                     <h2 className="text-xl font-semibold">
-                      Professional Carpet Cleaning: A Smart Investment
+                      Regular vs Deep Office Cleaning: What’s the Difference?
                     </h2>
                     <p>
-                      Many homeowners see carpet cleaning as just another
-                      household expense. But what if we told you that
-                      professional carpet cleaning isn’t just a cost—it’s an
-                      investment? At Wilshine Cleaning, we’ve helped countless
-                      clients not only restore the look and feel of their
-                      carpets but also save money over time by preventing costly
-                      repairs and replacements. Here's how professional carpet
-                      cleaning pays off in the long run.
+                      When it comes to keeping your workplace clean, not all
+                      cleaning is created equal. While regular office cleaning
+                      is essential for day-to-day hygiene, deep cleaning goes
+                      several steps further, targeting areas that often get
+                      overlooked. At WillShine Cleaning, we offer both regular
+                      and deep cleaning services to meet the unique needs of
+                      Perth businesses. Here’s what sets them apart—and why both
+                      are important.
                     </p>
 
-                    <ol className="list-decimal ml-5 space-y-2">
-                      <li>
-                        <strong>Extends the Life of Your Carpet:</strong> Dirt,
-                        dust, and debris act like sandpaper. Professional
-                        cleaning removes these particles, preserving your
-                        carpet’s appearance.
-                        <div className="text-sm">
-                          🧼 A well-maintained carpet can last 2–3 times longer
-                          than a neglected one.
-                        </div>
-                      </li>
-                      <li>
-                        <strong>Prevents Permanent Stains and Damage:</strong>{" "}
-                        Professionals treat stains safely and effectively,
-                        avoiding permanent damage.
-                      </li>
-                      <li>
-                        <strong>Improves Indoor Air Quality:</strong> Cleaning
-                        removes allergens and dust mites, improving
-                        health—especially for those with allergies.
-                      </li>
-                      <li>
-                        <strong>Reduces the Risk of Mold and Mildew:</strong>{" "}
-                        High-powered machines ensure carpets dry completely,
-                        preventing mold growth.
-                      </li>
-                      <li>
-                        <strong>Saves You Time and Effort:</strong> Let the pros
-                        handle it quickly and efficiently, giving you back your
-                        valuable time.
-                      </li>
-                      <li>
-                        <strong>Boosts Property Value and Appeal:</strong> Clean
-                        carpets enhance your home's look, smell, and
-                        appeal—great for selling or renting.
-                      </li>
-                    </ol>
-
                     <h3 className="font-semibold pt-4">
-                      Real Value, Real Results
-                    </h3>
-                    <table className="w-full border border-gray-300 text-sm">
-                      <thead className="bg-gray-100">
-                        <tr>
-                          <th className="border p-2">Carpet Maintenance</th>
-                          <th className="border p-2">Approximate Cost</th>
-                          <th className="border p-2">Lifespan Impact</th>
-                          <th className="border p-2">Long-Term Savings</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td className="border p-2">
-                            Professional Cleaning (Annually)
-                          </td>
-                          <td className="border p-2">$150–$500</td>
-                          <td className="border p-2">
-                            Extends life by 5–10 years
-                          </td>
-                          <td className="border p-2">High</td>
-                        </tr>
-                        <tr>
-                          <td className="border p-2">Carpet Replacement</td>
-                          <td className="border p-2">$1,500–$5,000</td>
-                          <td className="border p-2">
-                            Every 7–10 years (without care)
-                          </td>
-                          <td className="border p-2">Costly</td>
-                        </tr>
-                        <tr>
-                          <td className="border p-2">
-                            DIY Cleaning (frequent)
-                          </td>
-                          <td className="border p-2">$50–$100/rental</td>
-                          <td className="border p-2">Minimal impact</td>
-                          <td className="border p-2">Risk of damage</td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-                    <h3 className="font-semibold pt-4">
-                      Invest in Clean, Save in the Long Run
+                      🧼 What Is Regular Office Cleaning?
                     </h3>
                     <p>
-                      Whether you’re protecting your carpet, your health, or
-                      your time, professional carpet cleaning from Wilshine
-                      Cleaning pays for itself over and over again. It’s not
-                      just about a clean floor—it’s about smart home care.
+                      Regular office cleaning refers to the routine maintenance
+                      of your workspace to ensure it remains neat, sanitary, and
+                      presentable. This is usually done daily or several times a
+                      week.
+                    </p>
+                    <ul className="list-disc ml-5 space-y-1">
+                      <li>Emptying bins</li>
+                      <li>Vacuuming or mopping floors</li>
+                      <li>Cleaning and sanitising bathrooms</li>
+                      <li>Wiping down desks and common surfaces</li>
+                      <li>Cleaning kitchenettes and break rooms</li>
+                      <li>Dusting visible areas</li>
+                      <li>Restocking soap, paper towels, and toilet paper</li>
+                    </ul>
+                    <p>
+                      🟢 <strong>Purpose:</strong> Maintain cleanliness, reduce
+                      germs, and keep the space pleasant for staff and visitors.
+                      <br />
+                      🕒 <strong>Frequency:</strong> Daily, 2–3 times weekly, or
+                      based on office traffic
+                    </p>
+
+                    <h3 className="font-semibold pt-4">
+                      🧽 What Is Deep Cleaning?
+                    </h3>
+                    <p>
+                      Deep cleaning is a more intensive process that reaches
+                      hidden, hard-to-reach, or neglected areas that regular
+                      cleaning often misses. It’s a top-to-bottom refresh of
+                      your entire workplace.
+                    </p>
+                    <ul className="list-disc ml-5 space-y-1">
+                      <li>Steam cleaning carpets and upholstered furniture</li>
+                      <li>Strip & seal of vinyl floors</li>
+                      <li>
+                        Pressure washing outdoor areas like entrances and
+                        walkways
+                      </li>
+                      <li>
+                        Cleaning behind large furniture and office equipment
+                      </li>
+                      <li>Dusting vents, ceiling fans, and light fixtures</li>
+                      <li>
+                        Disinfecting keyboards, telephones, and shared
+                        electronics
+                      </li>
+                      <li>
+                        Detailed cleaning of skirting boards, corners, and grout
+                        lines
+                      </li>
+                      <li>Interior window and blind cleaning</li>
+                    </ul>
+                    <p>
+                      🔴 <strong>Purpose:</strong> Remove built-up dirt,
+                      bacteria, allergens, and improve the long-term cleanliness
+                      and hygiene of the office.
+                      <br />
+                      📆 <strong>Frequency:</strong> Recommended quarterly or at
+                      least twice a year.
+                    </p>
+
+                    <h3 className="font-semibold pt-4">
+                      🏢 Why Both Cleaning Types Matter
+                    </h3>
+                    <ul className="list-disc ml-5 space-y-1">
+                      <li>✅ Maintain a professional appearance</li>
+                      <li>
+                        ✅ Reduce staff sick days caused by germs or allergens
+                      </li>
+                      <li>
+                        ✅ Extend the lifespan of flooring, carpets, and
+                        furniture
+                      </li>
+                      <li>
+                        ✅ Prepare for audits, inspections, or high-profile
+                        client visits
+                      </li>
+                      <li>
+                        ✅ Promote a healthier and more productive workspace
+                      </li>
+                    </ul>
+
+                    <h3 className="font-semibold pt-4">
+                      ✨ WillShine Cleaning Offers Both – Tailored for Your
+                      Business
+                    </h3>
+                    <p>
+                      At WillShine Cleaning, we create cleaning plans that
+                      combine both regular and deep cleaning to suit your needs.
+                      We also provide strip & seal, carpet cleaning, and
+                      pressure washing services to give your business a total
+                      refresh. 📍 Servicing commercial properties across Perth,
+                      we’re proud to deliver consistent results with attention
+                      to detail.
                     </p>
                     <p>
                       <strong>
-                        📞 Contact Wilshine Cleaning today and schedule your
-                        next deep carpet clean.
+                        📞 Get in touch today to discuss a custom cleaning
+                        solution for your office.
                       </strong>
                     </p>
                   </section>
