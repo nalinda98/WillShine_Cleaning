@@ -1,14 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Threads from "./Threads";
 
 const Banner = ({ title, path, pathName, path2, path2Name }) => {
-  useEffect(() => {
-    // Manually set background-image if needed
-    const section = document.querySelector(".inner-page-banner.bg-common");
-    if (section && section.dataset.bgImage) {
-      section.style.backgroundImage = `url(${section.dataset.bgImage})`;
-    }
-  }, []);
   const [bgImage, setBgImage] = useState("/img/figure/breadcumba.png");
 
   useEffect(() => {
@@ -20,24 +14,49 @@ const Banner = ({ title, path, pathName, path2, path2Name }) => {
       }
     };
 
-    handleResize(); // Set initial image
-    window.addEventListener("resize", handleResize); // Update on resize
+    handleResize();
+    window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
     <div>
       <section
-      className="inner-page-banner bg-common"
-      style={{
-        width: "100%",
-        height: "150px",
-        backgroundSize: "cover",
-        backgroundImage: `url(${bgImage})`,
-      }}
-    >
-        <div className="container">
-          <div className="row">
+        className="inner-page-banner bg-common"
+        style={{
+          width: "100%",
+          height: "150px",
+          backgroundColor: "#006df0", // light blue
+          position: "relative",
+          overflow: "hidden",
+        }}
+      >
+        {/* Threads animation in background */}
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            zIndex: 0, // Behind the content
+          }}
+        >
+          <Threads color={[1,1,1]} amplitude={5} distance={1.5} enableMouseInteraction={false} />
+        </div>
+
+        {/* Foreground content */}
+        <div
+          className="container"
+          style={{
+            position: "relative",
+            zIndex: 1,
+            height: "100%",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <div className="row w-100">
             <div className="col-12">
               <div className="breadcrumbs-area">
                 <h1>{title}</h1>
