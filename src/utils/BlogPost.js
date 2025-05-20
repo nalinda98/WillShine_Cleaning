@@ -40,7 +40,7 @@ const BlogPost = [
     shortName: "DIY Carpet Cleaning",
   },
   {
-    img: "/img/blog/hack.png",
+    img: "/img/blog/save.png",
     category: ["carpet-cleaning"],
     date: "15 May, 2025",
     title: "How Professional Carpet Cleaning Saves You Money",
@@ -50,7 +50,7 @@ const BlogPost = [
     shortName: "Carpet Cleaning Saves Money",
   },
   {
-    img: "/img/blog/hack.png",
+    img: "/img/blog/hidden.jpg",
     category: ["carpet-cleaning"],
     date: "15 May, 2025",
     title: "The Hidden Dangers in Your Carpet",
@@ -108,6 +108,16 @@ const BlogPost = [
     link: "how-a-clean-tidy-workplace-improves-efficiency-and-productivity",
     path: "/blog/how-a-clean-tidy-workplace-improves-efficiency-and-productivity",
     shortName: "Clean & Tidy Workplace",
+  },
+  {
+    img: "/img/blog/flu.png",
+    category: ["office-cleaning"],
+    date: "15 May, 2025",
+    title: "Flu Season at Work?",
+    author: "Chathura Sanka",
+    link: "flu-season-at-work",
+    path: "/blog/flu-season-at-work",
+    shortName: "Flu Season at Work?",
   },
   {
     img: "/img/blog/wrpw.png",
