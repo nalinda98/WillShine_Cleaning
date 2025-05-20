@@ -110,7 +110,7 @@ const BlogPost = [
     shortName: "Clean & Tidy Workplace",
   },
   {
-    img: "/img/blog/hack.png",
+    img: "/img/blog/wrpw.png",
     category: ["pressure-washing"],
 
     date: "15 May, 2025",
@@ -121,7 +121,7 @@ const BlogPost = [
     shortName: "Regular Pressure Washing",
   },
   {
-    img: "/img/blog/hack.png",
+    img: "/img/blog/tpm.png",
     category: ["pressure-washing"],
     date: "15 May, 2025",
     author: "Chathura Sanka",
@@ -131,7 +131,7 @@ const BlogPost = [
     shortName: "Top Paver Maintanance Tips",
   },
   {
-    img: "/img/blog/hack.png",
+    img: "/img/blog/wtpw.png",
     category: ["pressure-washing"],
     date: "15 May, 2025",
     author: "Chathura Sanka",
@@ -141,7 +141,7 @@ const BlogPost = [
     shortName: "When to Pressure Wash Your Home",
   },
   {
-    img: "/img/blog/hack.png",
+    img: "/img/blog/pwb.jpg",
     category: ["pressure-washing"],
     date: "15 May, 2025",
     author: "Chathura Sanka",
@@ -151,7 +151,7 @@ const BlogPost = [
     shortName: "Pressure Washing vs Soft Washing",
   },
   {
-    img: "/img/blog/hack.png",
+    img: "/img/blog/pwb.jpg",
     category: ["pressure-washing"],
     date: "15 May, 2025",
     author: "Chathura Sanka",
@@ -161,7 +161,7 @@ const BlogPost = [
     shortName: "Pressure Washing for Businesses",
   },
   {
-    img: "/img/blog/hack.png",
+    img: "/img/blog/driveway.png",
     category: ["pressure-washing"],
     date: "15 May, 2025",
     author: "Chathura Sanka",
@@ -171,7 +171,7 @@ const BlogPost = [
     shortName: "Keep Your Driveway & Pavers Clean",
   },
   {
-    img: "/img/blog/hack.png",
+    img: "/img/blog/bbts.png",
     category: ["stripping-and-sealing"],
     date: "15 May, 2025",
     author: "Chathura Sanka",
@@ -181,7 +181,7 @@ const BlogPost = [
     shortName: "Bring Back the Shine",
   },
   {
-    img: "/img/blog/hack.png",
+    img: "/img/blog/wis.png",
     category: ["stripping-and-sealing"],
     date: "15 May, 2025",
     author: "Chathura Sanka",
@@ -191,7 +191,7 @@ const BlogPost = [
     shortName: "What is Strip & Seal",
   },
   {
-    img: "/img/blog/hack.png",
+    img: "/img/blog/wsfm.png",
     category: ["stripping-and-sealing"],
     date: "15 May, 2025",
     author: "Chathura Sanka",
