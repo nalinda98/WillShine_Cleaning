@@ -14,6 +14,7 @@ import "./styles/vendor/OwlCarousel/owl.carousel.min.css";
 import "./styles/vendor/OwlCarousel/owl.theme.default.min.css";
 import "./styles/css/select2.min.css";
 import "./styles/css/jquery.datetimepicker.css";
+import "./../../public/site.webmanifest.json";
 import Head from "next/head";
 import Script from "next/script";
 import Preloader from "@/Component/Preloader";
