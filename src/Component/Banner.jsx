@@ -16,7 +16,7 @@ const Banner = ({ title, path, pathName, path2, path2Name }) => {
       if (window.innerWidth <= 768) {
         setBgImage("/img/figure/bcmobile.png");
       } else {
-        setBgImage("/img/figure/breadcumba.png");
+        setBgImage("/img/figure/image.jpg");
       }
     };
 

@@ -19,11 +19,6 @@ const EstimateForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    if (!captcha) {
-      alert("Please complete the reCAPTCHA");
-      return;
-    }
-
     emailjs
       .sendForm(
         "service_gva54x5",
@@ -134,13 +129,13 @@ const EstimateForm = () => {
             />
           </div>
 
-          <div className="form-group mb-4">
+          {/* <div className="form-group mb-4">
             <ReCAPTCHA
               sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
               onChange={onChange}
               onExpired={onExpired}
             />
-          </div>
+          </div> */}
 
           <div className="form-group mb-0">
             <button

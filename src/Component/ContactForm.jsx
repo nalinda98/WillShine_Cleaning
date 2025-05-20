@@ -20,10 +20,6 @@ const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    if (!captcha) {
-      alert("Please complete the reCAPTCHA");
-      return;
-    }
 
     emailjs
       .sendForm(
@@ -112,13 +108,13 @@ const ContactForm = () => {
                 required
               />
             </div>
-            <div className="col-12 form-group">
+            {/* <div className="col-12 form-group">
               <ReCAPTCHA
                 sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                 onChange={onChange}
                 onExpired={onExpired}
               />
-            </div>
+            </div> */}
             <div className="col-12 form-group">
               <button
                 type="submit"
