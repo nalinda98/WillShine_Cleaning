@@ -7,6 +7,29 @@ import RelatedBlogs from "@/Component/RelatedBlogs";
 import React from "react";
 
 const SingleService = () => {
+  const faqData = [
+    {
+      question: "How often should I have my carpets professionally cleaned?",
+      answer: "We recommend professional carpet cleaning every 6 to 12 months, depending on foot traffic, pets, and allergies. Regular cleaning extends the life of your carpet and keeps your indoor environment healthy.",
+    },
+    {
+      question: "How long does it take for carpets to dry after cleaning?",
+      answer: "Typically, carpets take 4 to 8 hours to dry completely. Drying time can vary based on ventilation, carpet type, and weather. We advise keeping the area well-ventilated to speed up the process.",
+    },
+    {
+      question: "Do you use eco-friendly or safe cleaning products?",
+      answer: "Yes. At WillShine Cleaning, we use non-toxic, eco-friendly cleaning solutions that are safe for children, pets, and people with allergies.",
+    },
+    {
+      question: "Can carpet cleaning remove all stains?",
+      answer: "While we can remove most common stains (like coffee, dirt, and pet accidents), some permanent stains (like bleach or dye damage) may not be fully removable. We always do a pre-inspection and discuss stain removal possibilities upfront.",
+    },
+    {
+      question: "Do I need to move furniture before the cleaners arrive?",
+      answer: "We ask that you remove small and fragile items. Our team can help move light furniture (like chairs or small tables), but for larger items, please let us know in advance so we can plan accordingly.",
+    },
+  ];
+  
   return (
     <div>
       <Banner
@@ -137,6 +160,7 @@ const SingleService = () => {
                     }}
                   />
                   {/* <FAQ faqs={pressureWashingFaqs} /> */}
+                  <FAQ faqs={faqData} />
                 </div>
               </div>
             </div>

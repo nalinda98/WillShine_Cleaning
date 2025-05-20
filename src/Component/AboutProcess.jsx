@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutProcess = () => {
   return (
-    <div>
+    <div >
       <section className="section-padding-lg-1 container">
         <div style={{ marginTop: "100px" }} >
           <div className="heading-layout1">

@@ -2,7 +2,7 @@ import React from "react";
 
 const HowItWork = () => {
   return (
-    <section className="section-padding-lg-1">
+    <section className="section-padding-lg-1" style={{ marginTop: "100px" }}>
       <div className="container">
         <div className="heading-layout1">
           <h2>How It Works</h2>

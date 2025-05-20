@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Banner from "@/Component/Banner";
 import { RowsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/rows.css";
 
@@ -46,19 +47,28 @@ function renderNextImage({ alt = "", title, sizes }, { photo, width, height }) {
 
 export default function PhotoGallery() {
   return (
-    <div className="container py-2 max-w-6xl mx-auto px-4 py-8">
-      <RowsPhotoAlbum
-        photos={photos}
-        render={{ image: renderNextImage }}
-        defaultContainerWidth={1200}
-        spacing={10}
-        sizes={{
-          size: "1168px",
-          sizes: [
-            { viewport: "(max-width: 1200px)", size: "calc(100vw - 32px)" },
-          ],
-        }}
+    <div>
+      <Banner
+        title={"Gallery"}
+        path={"/gallery"}
+        pathName={"Gallery"}
+        path2={""}
+        path2Name={""}
       />
+      <div className="container py-2 max-w-6xl mx-auto px-4 py-8 mt-5 mb-5" >
+        <RowsPhotoAlbum
+          photos={photos}
+          render={{ image: renderNextImage }}
+          defaultContainerWidth={1200}
+          spacing={10}
+          sizes={{
+            size: "1168px",
+            sizes: [
+              { viewport: "(max-width: 1200px)", size: "calc(100vw - 32px)" },
+            ],
+          }}
+        />
+      </div>
     </div>
   );
 }

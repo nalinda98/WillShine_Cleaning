@@ -178,6 +178,7 @@ const SingleService = () => {
                     }}
                   /> */}
                 </div>
+              <FAQ faqs={stripAndSealFaqs} />
               </div>
             </div>
             <div className="col-lg-4 order-lg-2 sidebar-break-md sidebar-widget-area">
@@ -187,7 +188,6 @@ const SingleService = () => {
           </div>
           <div className="single-service-box-layout1">
             <div className="service-content">
-              <FAQ faqs={stripAndSealFaqs} />
             </div>
           </div>
         </div>

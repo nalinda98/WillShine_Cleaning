@@ -151,7 +151,7 @@ const BlogPost = [
     shortName: "When to Pressure Wash Your Home",
   },
   {
-    img: "/img/blog/pwb.jpg",
+    img: "/img/blog/pwv.png",
     category: ["pressure-washing"],
     date: "15 May, 2025",
     author: "Chathura Sanka",

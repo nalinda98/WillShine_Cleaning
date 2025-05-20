@@ -2,6 +2,8 @@ import React from "react";
 import BlogSidebar from "./BlogSidebar";
 import BlogPost from "../utils/BlogPost";
 import Image from "next/image";
+import { Tag } from "antd";
+import { FaTags } from "react-icons/fa";
 
 const BlogContent = () => {
   return (
@@ -11,9 +13,9 @@ const BlogContent = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="row">
-                {BlogPost
-                .sort((a, b) => new Date(b.date) - new Date(a.date))
-                .map((post, index) => (
+                {BlogPost.sort(
+                  (a, b) => new Date(b.date) - new Date(a.date)
+                ).map((post, index) => (
                   <div key={index} className="col-lg-4 col-md-6 col-12 mb-4">
                     <div className="blog-box-layout1 bg-assh h-100 d-flex flex-column">
                       <div
@@ -37,10 +39,28 @@ const BlogContent = () => {
                       <div className="item-content flex-grow-1 d-flex flex-column justify-content-between">
                         {/* Top: Date */}
                         <div className="item-date ">
+                          <div className="mb-2">
+                            {post.category.map((cat, index) => (
+                              <>
+                                <Tag
+                                  key={index}
+                                  color="blue"
+                                  className="mr-2"
+                                  style={{
+                                    fontSize: "12px",
+                                    padding: "4px 7px",
+                                    borderRadius: "5px",
+                                  }}
+                                >
+                                  <FaTags /> &nbsp;
+                                  {cat}
+                                </Tag>
+                              </>
+                            ))}
+                          </div>
                           <i className="fas fa-calendar-alt mr-1" />
                           {post.date}
                         </div>
-
                         {/* Middle: Title */}
                         <div className=" ">
                           <h3 className="item-title mb-0">

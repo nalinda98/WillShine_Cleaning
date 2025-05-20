@@ -18,6 +18,39 @@ import {
 } from "react-icons/fa";
 
 const SingleService = () => {
+  const faqData = [
+    {
+      question: "What types of office cleaning services do you offer?",
+      answer:
+        "We provide comprehensive office cleaning services, including daily general cleaning, deep cleaning, sanitization, office hygiene services, and common area cleaning such as lobbies and car parks.",
+    },
+    {
+      question: "Do you require long-term contracts?",
+      answer:
+        "No, we don’t require long-term contracts. We believe our exceptional service quality will retain your trust without binding agreements.",
+    },
+    {
+      question: "Can you create a customized cleaning plan for my office?",
+      answer:
+        "Yes! We tailor our cleaning services to meet your specific needs. After assessing your workspace, we develop a personalized plan that ensures minimal disruption to your operations.",
+    },
+    {
+      question: "What if we don’t like your service?",
+      answer:
+        "We conduct regular supervision and inspections after each cleaning session to ensure the highest standards are maintained. If any issues arise, we address them immediately.",
+    },
+    {
+      question: "What are your cleaning hours?",
+      answer:
+        "We offer flexible scheduling, including after-hours and weekend services, to accommodate your business operations.",
+    },
+    {
+      question: "Are your cleaners insured and trained?",
+      answer:
+        "Yes, all our staff are fully insured, trained, and experienced to deliver professional cleaning services safely and effectively.",
+    },
+  ];
+
   return (
     <div>
       <Banner
@@ -150,6 +183,7 @@ const SingleService = () => {
                     ))}
                   </div>
                 </div>
+                <FAQ faqs={faqData} />
               </div>
             </div>
             <div className="col-lg-4 order-lg-2 sidebar-break-md sidebar-widget-area">
