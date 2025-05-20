@@ -44,21 +44,12 @@ const EstimateForm = () => {
       <div className="about-box-layout2 p-4 bg-light border rounded">
         <div className="about-box-layout1">
           <div className="item-title">
-            <h3><b>Request an Estimate</b></h3>
+            <h3>
+              <b>Request an Estimate</b>
+            </h3>
           </div>
         </div>
         <form ref={form} onSubmit={sendEmail}>
-          <div className="form-group mb-3">
-            <label>Select Property Type</label>
-            <select name="propertyType" required className="form-control">
-              <option value="">-- Choose --</option>
-              <option value="office">Office Cleaning</option>
-              <option value="strip-seal">Stripping and Sealing</option>
-              <option value="carpet">Carpet Cleaning</option>
-              <option value="pressure">Pressure Washing</option>
-            </select>
-          </div>
-
           <div className="form-row">
             {/* <div className="form-group col-md-6 mb-3">
               <label>Type of Property</label>
@@ -70,7 +61,16 @@ const EstimateForm = () => {
                 <option value="apartment">Apartment</option>
               </select>
             </div> */}
-
+            <div className="form-group col-md-6 mb-3">
+              <label>Select Property Type</label>
+              <select name="propertyType" required className="form-control">
+                <option value="">-- Choose --</option>
+                <option value="office">Office Cleaning</option>
+                <option value="strip-seal">Stripping and Sealing</option>
+                <option value="carpet">Carpet Cleaning</option>
+                <option value="pressure">Pressure Washing</option>
+              </select>
+            </div>
             <div className="form-group col-md-6 mb-3">
               <label>Cleaning Frequency</label>
               <select name="frequency" required className="form-control">
