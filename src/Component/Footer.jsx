@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import Image from "next/image";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,79 +12,210 @@ const Footer = () => {
   const handleShow = () => setShowModal(true);
   const handleClose = () => setShowModal(false);
 
+  const whiteText = { color: "white" };
+
   return (
     <div>
-      <footer className="footer-wrap-layout1 section-shape1">
+      <footer
+        className="footer-wrap-layout1 section-shape1"
+        style={{ color: "white" }}
+      >
         <div className="container">
           <div className="footer-top-box">
             <div className="row">
-              {/* Features Section */}
-              {/* <div className="col-lg-4 col-sm-6">
+              {/* About Section */}
+              <div className="col-lg-3 col-sm-6">
                 <div className="footer-box-layout1">
                   <div className="footer-title">
-                    <h4>FEATURES</h4>
+                    <h4 style={whiteText}>ABOUT US</h4>
                   </div>
-                  <ul className="footer-menu-list">
-                    <li>
-                      <a href="#">Office Cleaning</a>
-                    </li>
-                    <li>
-                      <a href="#">Commercial Services</a>
-                    </li>
-                    <li>
-                      <a href="#">Vehicle Wash</a>
-                    </li>
-                    <li>
-                      <a href="#">Laundry Facilities</a>
-                    </li>
-                    <li>
-                      <a href="#">Carpet Removal</a>
-                    </li>
-                  </ul>
+                  <Image
+                    src="/img/whitelogo.png"
+                    alt="Logo"
+                    width={200}
+                    height={100}
+                    style={{ marginBottom: "20px" }}
+                  />
+                  <p style={whiteText}>
+                    Wilshine Property Services is a leading provider of
+                    professional cleaning and property maintenance services.
+                  </p>
                 </div>
-              </div> */}
+              </div>
 
-              {/* Company Section */}
-              <div className="col-lg-4 col-sm-6">
+              {/* Services Section */}
+              <div className="col-lg-3 col-sm-6">
                 <div className="footer-box-layout1">
                   <div className="footer-title">
-                    <h4>SERVICES</h4>
+                    <h4 style={whiteText}>SERVICES</h4>
                   </div>
-                  <ul className="footer-menu-list">
-                    <li>
-                      <a href="about1.html" className="text-white">Office Cleaning</a>
+                  <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                    <li style={{ marginBottom: "10px" }}>
+                      <a
+                        href="about1.html"
+                        style={{
+                          color: "white",
+                          textDecoration: "none",
+                          fontSize: "16px",
+                        }}
+                      >
+                        Office Cleaning
+                      </a>
+                    </li>
+                    <li style={{ marginBottom: "10px" }}>
+                      <a
+                        href="#"
+                        style={{
+                          color: "white",
+                          textDecoration: "none",
+                          fontSize: "16px",
+                        }}
+                      >
+                        Striping & Sealing
+                      </a>
+                    </li>
+                    <li style={{ marginBottom: "10px" }}>
+                      <a
+                        href="#"
+                        style={{
+                          color: "white",
+                          textDecoration: "none",
+                          fontSize: "16px",
+                        }}
+                      >
+                        Carpet Cleaning
+                      </a>
                     </li>
                     <li>
-                      <a href="#" className="text-white">Striping & Sealing</a>
-                    </li>
-                    <li>
-                      <a href="#" className="text-white">Carpet Cleaning</a>
-                    </li>
-                    <li>
-                      <a href="#" className="text-white">Preasure Washing</a>
+                      <a
+                        href="#"
+                        style={{
+                          color: "white",
+                          textDecoration: "none",
+                          fontSize: "16px",
+                        }}
+                      >
+                        Pressure Washing
+                      </a>
                     </li>
                   </ul>
                 </div>
               </div>
 
               {/* Quick Links Section */}
-              <div className="col-lg-4 col-sm-6">
+              <div className="col-lg-3 col-sm-6">
                 <div className="footer-box-layout1">
                   <div className="footer-title">
-                    <h4>QUICK LINKS</h4>
+                    <h4 style={whiteText}>QUICK LINKS</h4>
                   </div>
-                  <ul className="footer-menu-list">
-                    <li>
-                      <a href="/" className="text-white">Home</a>
+                  <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+                    <li style={{ marginBottom: "10px" }}>
+                      <a
+                        href="/"
+                        style={{
+                          color: "white",
+                          textDecoration: "none",
+                          fontSize: "16px",
+                        }}
+                      >
+                        Home
+                      </a>
+                    </li>
+                    <li style={{ marginBottom: "10px" }}>
+                      <a
+                        href="/about"
+                        style={{
+                          color: "white",
+                          textDecoration: "none",
+                          fontSize: "16px",
+                        }}
+                      >
+                        About Us
+                      </a>
+                    </li>
+                    <li style={{ marginBottom: "10px" }}>
+                      <a
+                        href="/blog"
+                        style={{
+                          color: "white",
+                          textDecoration: "none",
+                          fontSize: "16px",
+                        }}
+                      >
+                        Blogs
+                      </a>
                     </li>
                     <li>
-                      <a href="/about" className="text-white">About Us</a>
+                      <a
+                        href="/contact"
+                        style={{
+                          color: "white",
+                          textDecoration: "none",
+                          fontSize: "16px",
+                        }}
+                      >
+                        Contact Us
+                      </a>
                     </li>
-                    <li>
-                      <a href="/blog" className="text-white">Blogs</a>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Contact Section */}
+              <div className="col-lg-3 col-sm-6">
+                <div className="footer-box-layout1">
+                  <div className="footer-title">
+                    <h4 style={whiteText}>CONTACT US</h4>
+                  </div>
+                  <ul
+                    className="footer-menu-list"
+                    style={{ listStyle: "none", padding: 0 }}
+                  >
+                    <li
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        color: "white",
+                        marginBottom: "10px",
+                      }}
+                    >
+                      <i
+                        className="fas fa-phone"
+                        style={{ marginRight: "10px", fontSize: "16px" }}
+                      />
+                      <span>043 369 1812</span>
                     </li>
-                    <li>
-                      <a href="/contact" className="text-white">Contact Us</a>
+                    <li
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        color: "white",
+                        marginBottom: "10px",
+                      }}
+                    >
+                      <i
+                        className="fas fa-envelope"
+                        style={{ marginRight: "10px", fontSize: "16px" }}
+                      />
+                      <a
+                        href="mailto:info@wilshinecleaning.com.au"
+                        style={{ color: "white", textDecoration: "none" }}
+                      >
+                        info@wilshinecleaning.com.au
+                      </a>
+                    </li>
+                    <li
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        color: "white",
+                      }}
+                    >
+                      <i
+                        className="fas fa-clock"
+                        style={{ marginRight: "10px", fontSize: "16px" }}
+                      />
+                      <span>Mon - Fri: 9:00 AM - 5:00 PM</span>
                     </li>
                   </ul>
                 </div>
@@ -95,11 +227,11 @@ const Footer = () => {
           <div className="footer-bottom-box">
             <div className="row">
               <div className="col-md-6">
-                <div className="copyright">
+                <div className="copyright" style={whiteText}>
                   © {currentYear} All rights reserved | Designed & Developed by
                   <a
                     href="https://buildzoneit.com/"
-                    style={{ color: "white", fontWeight: "bold" }}
+                    style={{ ...whiteText, fontWeight: "bold" }}
                   >
                     {" "}
                     BuildZone IT
@@ -110,7 +242,11 @@ const Footer = () => {
                 <div className="footer-bottom-menu">
                   <ul>
                     <li>
-                      <button className="btn btn-link p-0" onClick={handleShow}>
+                      <button
+                        className="btn btn-link p-0"
+                        onClick={handleShow}
+                        style={whiteText}
+                      >
                         Privacy Policy
                       </button>
                     </li>

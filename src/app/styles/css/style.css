@@ -1852,7 +1852,7 @@ h6 {
   background-color: #14287b;
 }
 .footer-top-box {
-  padding: 9.4rem 0 4rem;
+  padding: 7.4rem 0 1rem;
 }
 .footer-top-box .footer-box-layout1 {
   margin-bottom: 4rem;
@@ -2251,7 +2251,7 @@ h6 {
 }
 .footer-bottom-box {
   border-top: 1px solid #2c4195;
-  padding: 3.5rem 0;
+  padding: 2rem 0;
 }
 @media only screen and (max-width: 767px) {
   .footer-bottom-box {
