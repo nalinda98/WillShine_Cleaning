@@ -34,7 +34,11 @@ const SingleBlog = () => {
             <div className="col-lg-8">
               <div className="single-blog-box-layout1">
                 <div className="main-img">
-                  <img src={item.img} alt="blog" />
+                  <img src={item.img}
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                    }}  alt="blog" />
                 </div>
                 <div className="item-details">
                   <div className="item-date">

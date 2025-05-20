@@ -8,8 +8,9 @@ const RecentPost = () => {
         <h4>Recent Posts</h4>
       </div>
       <ul className="recent-post-list">
-        {
-          BlogPost.map((post, index) => (
+        {BlogPost.sort((a, b) => new Date(b.date) - new Date(a.date))
+          .slice(0, 4)
+          .map((post, index) => (
             <li key={index}>
               <div className="item-img">
                 <a href={`/blog/${post.link}`}>
@@ -25,9 +26,7 @@ const RecentPost = () => {
                 </div>
               </div>
             </li>
-          ))
-        }
-       
+          ))}
       </ul>
     </div>
   );
