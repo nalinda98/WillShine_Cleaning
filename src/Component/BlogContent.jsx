@@ -1,6 +1,7 @@
 import React from "react";
 import BlogSidebar from "./BlogSidebar";
 import BlogPost from "../utils/BlogPost";
+import Image from "next/image";
 
 const BlogContent = () => {
   return (
@@ -10,62 +11,51 @@ const BlogContent = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="row">
-                {BlogPost.map((post, index) => (
-                  <div key={index} className="col-md-4 col-12">
-                    <div className="blog-box-layout1">
-                      <div className="item-img">
-                        <a href={post.path}>
-                          <img src={post.img} alt="blog-thumb" />
+                {BlogPost
+                .sort((a, b) => new Date(b.date) - new Date(a.date))
+                .map((post, index) => (
+                  <div key={index} className="col-lg-4 col-md-6 col-12 mb-4">
+                    <div className="blog-box-layout1 bg-assh h-100 d-flex flex-column">
+                      <div
+                        className="item-img"
+                        style={{ height: "220px", overflow: "hidden" }}
+                      >
+                        <a href={`/blog/${post.link}`}>
+                          <Image
+                            src={post.img}
+                            alt="blog-thumb"
+                            width={400}
+                            height={220}
+                            style={{
+                              width: "100%",
+                              height: "100%",
+                              objectFit: "cover",
+                            }}
+                          />
                         </a>
                       </div>
-                      <div className="item-content">
-                        <div className="item-date">
-                          <i className="fas fa-calendar-alt" /> {post.date}
+                      <div className="item-content flex-grow-1 d-flex flex-column justify-content-between">
+                        {/* Top: Date */}
+                        <div className="item-date ">
+                          <i className="fas fa-calendar-alt mr-1" />
+                          {post.date}
                         </div>
-                        <h3 className="item-title">
-                          <a href={post.path}>{post.title}</a>
-                        </h3>
+
+                        {/* Middle: Title */}
+                        <div className=" ">
+                          <h3 className="item-title mb-0">
+                            <a href={`/blog/${post.link}`}>{post.title}</a>
+                          </h3>
+                        </div>
+
+                        {/* Bottom: Author */}
                         <div className="item-author">By {post.author}</div>
-                        {/* <p>
-                          Aimply dummy text of the printing anden type setting
-                          industrym Ipsum has been the industry's standard.
-                        </p> */}
                       </div>
                     </div>
                   </div>
                 ))}
               </div>
-
-              {/* Pagination */}
-              {/* <div className="pagination-layout1 text-center pt-5">
-                <ul>
-                  <li>
-                    <a href="/blog/1" className="nav-item active">
-                      1
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/blog/2" className="nav-item">
-                      2
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/blog/3" className="nav-item">
-                      3
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/blog/4" className="nav-item">
-                      4
-                    </a>
-                  </li>
-                </ul>
-              </div> */}
             </div>
-
-            {/* <div className="col-lg-4 sidebar-break-md sidebar-widget-area">
-              <BlogSidebar />
-            </div> */}
           </div>
         </div>
       </section>

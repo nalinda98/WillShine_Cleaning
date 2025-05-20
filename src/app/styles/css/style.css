@@ -5459,6 +5459,7 @@ div#wrapper.open > .offcanvas-mask {
 }
 .brand-box-layout1 .item-img img {
   display: inline-block;
+  height: 100px;
   width: auto;
 }
 .brand-box-layout2 {

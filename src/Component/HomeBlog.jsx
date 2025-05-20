@@ -9,8 +9,9 @@ const HomeBlog = () => {
         <div className="heading-layout1">
           <h2>Our Latest Blogs</h2>
           <p>
-            Perspiciatis unde omnis iste natus error sit voluptatem accusantium
-            fa-angle-double-up oremque laudantium, totam remeaque ipsa
+            Stay updated with our latest news and insights. Explore our blog
+            posts to discover valuable information and tips that can help you
+            in your journey.
           </p>
         </div>
         <div className="row">
@@ -52,7 +53,7 @@ const HomeBlog = () => {
                     </div>
 
                     {/* Bottom: Author */}
-                    <div className="item-author mt-2 text-right">
+                    <div className="item-author mt-2">
                       By {post.author}
                     </div>
                   </div>
