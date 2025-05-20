@@ -60,7 +60,7 @@ const EstimateForm = () => {
           </div>
 
           <div className="form-row">
-            <div className="form-group col-md-6 mb-3">
+            {/* <div className="form-group col-md-6 mb-3">
               <label>Type of Property</label>
               <select name="propertyCategory" required className="form-control">
                 <option value="">-- Choose --</option>
@@ -69,7 +69,7 @@ const EstimateForm = () => {
                 <option value="plot">Plot</option>
                 <option value="apartment">Apartment</option>
               </select>
-            </div>
+            </div> */}
 
             <div className="form-group col-md-6 mb-3">
               <label>Cleaning Frequency</label>
