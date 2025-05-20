@@ -40,6 +40,26 @@ const BlogPost = [
     shortName: "DIY Carpet Cleaning",
   },
   {
+    img: "/img/blog/wis.png",
+    category: ["stripping-and-sealing"],
+    date: "15 May, 2025",
+    author: "Chathura Sanka",
+    title: "What is Strip & Seal and Why does Your Floor Need It?",
+    link: "what-is-strip-seal-and-why-does-your-floor-need-it",
+    path : "/blog/what-is-strip-seal-and-why-does-your-floor-need-it", 
+    shortName: "What is Strip & Seal",
+  },
+  {
+    img: "/img/blog/hos.png",
+    category: ["office-cleaning"],
+    date: "15 May, 2025",
+    title: "How Often Should You Clean Your Office?",
+    author: "Chathura Sanka",
+    link: "how-often-should-you-clean-your-office",
+    path: "/blog/how-often-should-you-clean-your-office",
+    shortName: "Clean Your Office",
+  },
+  {
     img: "/img/blog/save.png",
     category: ["carpet-cleaning"],
     date: "15 May, 2025",
@@ -89,16 +109,7 @@ const BlogPost = [
     path: "/blog/office-cleaning-checklist",
     shortName: "Office Cleaning Checklist",
   },
-  {
-    img: "/img/blog/hos.png",
-    category: ["office-cleaning"],
-    date: "15 May, 2025",
-    title: "How Often Should You Clean Your Office?",
-    author: "Chathura Sanka",
-    link: "how-often-should-you-clean-your-office",
-    path: "/blog/how-often-should-you-clean-your-office",
-    shortName: "Clean Your Office",
-  },
+  
   {
     img: "/img/blog/hac.png",
     category: ["office-cleaning"],
@@ -190,16 +201,7 @@ const BlogPost = [
     path : "/blog/bring-back-the-shine",
     shortName: "Bring Back the Shine",
   },
-  {
-    img: "/img/blog/wis.png",
-    category: ["stripping-and-sealing"],
-    date: "15 May, 2025",
-    author: "Chathura Sanka",
-    title: "What is Strip & Seal and Why does Your Floor Need It?",
-    link: "what-is-strip-seal-and-why-does-your-floor-need-it",
-    path : "/blog/what-is-strip-seal-and-why-does-your-floor-need-it", 
-    shortName: "What is Strip & Seal",
-  },
+  
   {
     img: "/img/blog/wsfm.png",
     category: ["stripping-and-sealing"],

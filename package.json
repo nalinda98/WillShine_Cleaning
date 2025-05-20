@@ -15,6 +15,7 @@
     "@emailjs/browser": "^4.4.1",
     "antd": "^5.25.0",
     "emailjs-com": "^3.2.0",
+    "framer-motion": "^12.12.1",
     "next": "^15.3.0",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
