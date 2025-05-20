@@ -287,9 +287,9 @@ const SingleService = () => {
                     </div>
                   </div>
 
+                </div>
                   {/* <Testominals /> */}
                   <FAQ faqs={pressureWashingFaqs} />
-                </div>
               </div>
             </div>
 
