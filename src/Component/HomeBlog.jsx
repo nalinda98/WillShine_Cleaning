@@ -14,7 +14,8 @@ const HomeBlog = () => {
           </p>
         </div>
         <div className="row">
-          {BlogPost.map((post, index) =>
+          {BlogPost.sort((a, b) => new Date(b.date) - new Date(a.date))
+          .map((post, index) =>
             index > 2 ? null : (
               <div key={index} className="col-lg-4 col-md-6 col-12 mb-4">
                 <div className="blog-box-layout1 bg-assh h-100 d-flex flex-column">
