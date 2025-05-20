@@ -11,13 +11,15 @@ import { FaTags } from "react-icons/fa";
 const { TabPane } = Tabs;
 
 const BlogContent = () => {
-  const categories = [
-    "All",
-    "carpet-cleaning",
-    "office-cleaning",
-    "pressure-washing",
-    "stripping-and-sealing",
-  ];
+  const categoryMap = {
+    All: "All",
+    "carpet-cleaning": "Carpet Cleaning",
+    "office-cleaning": "Office Cleaning",
+    "pressure-washing": "Pressure Washing",
+    "stripping-and-sealing": "Stripping and Sealing",
+  };
+
+  const categories = Object.keys(categoryMap);
 
   const [activeTab, setActiveTab] = useState("All");
 
@@ -37,7 +39,7 @@ const BlogContent = () => {
             className="mb-4"
           >
             {categories.map((category) => (
-              <TabPane tab={category} key={category} />
+              <TabPane tab={categoryMap[category]} key={category} />
             ))}
           </Tabs>
 
@@ -89,7 +91,7 @@ const BlogContent = () => {
                                       borderRadius: "5px",
                                     }}
                                   >
-                                    <FaTags /> &nbsp;{cat}
+                                    <FaTags /> &nbsp;{categoryMap[cat] || cat}
                                   </Tag>
                                 ))}
                               </div>
